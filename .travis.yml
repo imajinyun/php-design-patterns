@@ -1,0 +1,39 @@
+language: php
+
+dist: trusty
+
+sudo: false
+
+php:
+  - 7.0
+
+matrix:
+  fast_finish: true
+
+  include:
+    - php: 7.0
+      env: PHPCS=1 DEFAULT=0
+    - php: 7.1
+      env: PHPCS=1 DEFAULT=0
+
+install:
+  - curl -s http://getcomposer.org/installer | php
+  - composer install --no-interaction --prefer-dist --dev
+
+before_script:
+  - mkdir -p build/logs
+
+script:
+  - composer require php-coveralls/php-coveralls
+  - if [[ $PHPCS = 1 ]]; then vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover=build/logs/clover.xml; fi
+  - php vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover build/logs/clover.xml
+
+after_success:
+    - travis_retry php vendor/bin/coveralls -v
+    - if [[ $PHPCS = 1 ]]; then bash <(curl -s https://codecov.io/bash); fi
+    - if [[ $PHPCS = 1 ]]; then travis_retry php vendor/bin/coveralls -v; fi
+    - php vendor/bin/codacycoverage clover build/logs/clover.xml
+
+notifications:
+  email: false
+

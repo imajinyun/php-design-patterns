@@ -1,0 +1,34 @@
+<?php
+
+namespace DesignPattern\Structural\Bridge;
+
+abstract class Service
+{
+    /**
+     * @var \DesignPattern\Structural\Bridge\FormatterInterface
+     */
+    protected $formatter;
+
+    /**
+     * Service constructor.
+     *
+     * @param \DesignPattern\Structural\Bridge\FormatterInterface $formatter
+     */
+    public function __construct(FormatterInterface $formatter)
+    {
+        $this->formatter = $formatter;
+    }
+
+    /**
+     * @param \DesignPattern\Structural\Bridge\FormatterInterface $formatter
+     */
+    public function setFormatter(FormatterInterface $formatter)
+    {
+        $this->formatter = $formatter;
+    }
+
+    /**
+     * @return string
+     */
+    abstract public function get() : string;
+}

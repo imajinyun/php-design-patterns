@@ -1,0 +1,14 @@
+version: 0.0.{build}
+image: Visual Studio 2015
+clone_folder: C:\projects\php-study-codes
+branches:
+  only:
+    - master
+init:
+  - git config --global core.autocrlf input
+shallow_clone: true
+platform: Any CPU
+build: off
+skip_tags: true
+matrix:
+  fast_finish: true

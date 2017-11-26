@@ -1,0 +1,17 @@
+<?php
+
+namespace DesignPattern\Behavioral\Observer\Spl;
+
+class ProductObserver implements \SplObserver
+{
+    /**
+     * Update product price.
+     *
+     * @param \SplSubject $subject
+     */
+    public function update(\SplSubject $subject)
+    {
+        /** @var \DesignPattern\Behavioral\Observer\Spl\Product $subject */
+        echo sprintf('Product has a new price: %d$.', $subject->getPrice());
+    }
+}
