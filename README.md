@@ -1,6 +1,6 @@
-# php-study-code
+# `PHP Design Pattern`
 
-[![Build Status](https://travis-ci.org/imajinyun/php-study-codes.svg?branch=master)](https://travis-ci.org/imajinyun/php-study-codes)
+[![Build Status](https://travis-ci.org/imajinyun/php-design-pattern.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-pattern)
 [![Build status](https://ci.appveyor.com/api/projects/status/m4lnkqgo42gp2mvf/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-study-codes/branch/master)
 [![codecov](https://codecov.io/gh/imajinyun/php-study-codes/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-study-codes)
 [![Coverage Status](https://coveralls.io/repos/github/imajinyun/php-study-codes/badge.svg)](https://coveralls.io/github/imajinyun/php-study-codes)
@@ -12,7 +12,7 @@
 [![PHP Version](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/imajinyun/php-study-codes/master/LICENSE)
 
-## 🌽 This is some of the code that I sort out and extract when I'm learning the PHP language.
+## 🌽 This is an example of some design patterns implemented in PHP language.
 
 ### Install the PHP Testing Framework - `phpunit`
 
@@ -28,8 +28,8 @@ $ phpunit --version
 ### Testing Code
 
 ```bash
-$ git clone https://github.com/imajinyun/php-study-codes.git
-$ cd ./php-study-codes
+$ git clone https://github.com/imajinyun/php-design-pattern.git
+$ cd ./php-design-pattern
 $ phpunit -v
 ```
 
