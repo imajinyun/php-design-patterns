@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/imajinyun/php-study-codes/badge.svg)](https://coveralls.io/github/imajinyun/php-study-codes)
 [![Build Status](https://scrutinizer-ci.com/g/imajinyun/php-study-codes/badges/build.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-study-codes/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-study-codes/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-study-codes/?branch=master)
-[![StyleCI](https://styleci.io/repos/84544429/shield?branch=master)](https://styleci.io/repos/84544429)
+[![StyleCI](https://styleci.io/repos/112085360/shield?branch=master)](https://styleci.io/repos/112085360)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8ab067aae9e246b9b3597e277e812093)](https://www.codacy.com/app/imajinyun/php-study-codes?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-study-codes&amp;utm_campaign=Badge_Grade)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1181/badge)](https://bestpractices.coreinfrastructure.org/projects/1181)
 [![PHP Version](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)
