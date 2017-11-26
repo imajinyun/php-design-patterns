@@ -10,7 +10,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8ab067aae9e246b9b3597e277e812093)](https://www.codacy.com/app/imajinyun/php-study-codes?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-study-codes&amp;utm_campaign=Badge_Grade)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1181/badge)](https://bestpractices.coreinfrastructure.org/projects/1181)
 [![PHP Version](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/imajinyun/php-study-codes/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/imajinyun/php-design-pattern.svg)](https://github.com/imajinyun/php-design-pattern/blob/master/LICENSE)
 
 ## 🌽 This is an example of some design patterns implemented in PHP language.
 
