@@ -26,6 +26,6 @@ class Number implements ExpressionInterface
      */
     public function interpret(array $context) : int
     {
-        return trim($this->value);
+        return $this->value;
     }
 }
