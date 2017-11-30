@@ -16,9 +16,14 @@ matrix:
     - php: 7.1
       env: PHPCS=1 DEFAULT=0
 
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
 install:
   - curl -s http://getcomposer.org/installer | php
-  - composer install --no-interaction --prefer-dist --dev
+  - composer install --prefer-dist --no-interaction
 
 before_script:
   - mkdir -p build/logs
