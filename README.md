@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/imajinyun/php-design-pattern.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-pattern)
 [![Build status](https://ci.appveyor.com/api/projects/status/m4lnkqgo42gp2mvf/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-study-codes/branch/master)
 [![codecov](https://codecov.io/gh/imajinyun/php-study-codes/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-study-codes)
-[![Coverage Status](https://coveralls.io/repos/github/imajinyun/php-study-codes/badge.svg)](https://coveralls.io/github/imajinyun/php-study-codes)
+[![Coverage Status](https://coveralls.io/repos/github/imajinyun/php-design-pattern/badge.svg?branch=master)](https://coveralls.io/github/imajinyun/php-design-pattern?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/badges/build.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/?branch=master)
 [![StyleCI](https://styleci.io/repos/112085360/shield?branch=master)](https://styleci.io/repos/112085360)
