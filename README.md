@@ -8,7 +8,6 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/?branch=master)
 [![StyleCI](https://styleci.io/repos/112085360/shield?branch=master)](https://styleci.io/repos/112085360)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/368998e20fe64b2da7f8ef1f42444527)](https://www.codacy.com/app/imajinyun/php-design-pattern?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-design-pattern&amp;utm_campaign=Badge_Grade)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1422/badge)](https://bestpractices.coreinfrastructure.org/projects/1422)
 [![PHP Version](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)
 [![GitHub license](https://img.shields.io/github/license/imajinyun/php-design-pattern.svg)](https://github.com/imajinyun/php-design-pattern/blob/master/LICENSE)
 

@@ -1,5 +1,5 @@
 {
-    "name": "majinyun/php-design-pattern",
+    "name": "imajinyun/php-design-pattern",
     "description": "This is an example of some design patterns implemented in PHP language.",
     "type": "project",
     "require": {
