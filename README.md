@@ -12,7 +12,7 @@
 [![PHP Version](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)](https://img.shields.io/badge/php-%E2%89%A57.0-8892BF.svg)
 [![GitHub license](https://img.shields.io/github/license/imajinyun/php-design-pattern.svg)](https://github.com/imajinyun/php-design-pattern/blob/master/LICENSE)
 
-## 🌽 This is an example of some design patterns implemented in PHP language.
+## 🌹 This is an example of some design patterns implemented in PHP language.
 
 ### Install the PHP Testing Framework - `phpunit`
 
