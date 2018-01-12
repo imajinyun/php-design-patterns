@@ -13,6 +13,6 @@ class DateFormatter implements FormatterInterface
      */
     public function format(string $string) : string
     {
-        return date('Y-m-d', $string);
+        return date('Y-m-d', (int)$string);
     }
 }
