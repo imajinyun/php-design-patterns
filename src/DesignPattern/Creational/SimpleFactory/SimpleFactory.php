@@ -30,7 +30,7 @@ class SimpleFactory
      */
     public function create(string $language) : LanguageInterface
     {
-        if (!array_key_exists($language, $this->language)) {
+        if (! array_key_exists($language, $this->language)) {
             throw new \InvalidArgumentException("$language is not valid programming language.");
         }
         $class = $this->language[$language];

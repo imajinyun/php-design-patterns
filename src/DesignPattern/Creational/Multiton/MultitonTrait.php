@@ -22,7 +22,7 @@ trait MultitonTrait
         $class = static::class;
         $parameter = array_slice(func_get_args(), 1);
 
-        if (!isset(static::$instances[$identifier])) {
+        if (! isset(static::$instances[$identifier])) {
             $reflection = new \ReflectionClass($class);
             $constructor = $reflection->getConstructor();
             $object = $reflection->newInstanceWithoutConstructor();

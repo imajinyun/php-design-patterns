@@ -20,5 +20,9 @@ interface ObserverInterface
      *
      * @return mixed
      */
-    public function report(int $code, string $message, SubjectInterface $subject);
+    public function report(
+        int $code,
+        string $message,
+        SubjectInterface $subject
+    );
 }

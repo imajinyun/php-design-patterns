@@ -12,7 +12,10 @@ abstract class AbstractFactory
      *
      * @return \DesignPattern\Creational\AbstractFactory\Image
      */
-    abstract public function createImage(string $src, string $title = '') : Image;
+    abstract public function createImage(
+        string $src,
+        string $title = ''
+    ) : Image;
 
     /**
      * Create a Text component.

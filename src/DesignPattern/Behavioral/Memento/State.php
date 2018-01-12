@@ -25,15 +25,16 @@ class State
     /**
      * @var array
      */
-    private static $validStates = [
-        self::STATUS_LOCKED,
-        self::STATUS_CONFIRMED,
-        self::STATUS_PAID,
-        self::STATUS_SHIPPED,
-        self::STATUS_SETTLED,
-        self::STATUS_COMPLETED,
-        self::STATUS_CANCELED,
-    ];
+    private static $validStates
+        = [
+            self::STATUS_LOCKED,
+            self::STATUS_CONFIRMED,
+            self::STATUS_PAID,
+            self::STATUS_SHIPPED,
+            self::STATUS_SETTLED,
+            self::STATUS_COMPLETED,
+            self::STATUS_CANCELED,
+        ];
 
     /**
      * State constructor.
@@ -59,7 +60,7 @@ class State
      */
     private static function isValidState(int $state)
     {
-        if (!in_array($state, self::$validStates, true)) {
+        if (! in_array($state, self::$validStates, true)) {
             throw new \InvalidArgumentException('Invalid state given.');
         }
     }

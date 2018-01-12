@@ -25,8 +25,11 @@ class Observer implements ObserverInterface
      *
      * @return null
      */
-    public function report(int $code, string $message, SubjectInterface $subject)
-    {
+    public function report(
+        int $code,
+        string $message,
+        SubjectInterface $subject
+    ) {
         // TODO: Implement report() method.
     }
 }

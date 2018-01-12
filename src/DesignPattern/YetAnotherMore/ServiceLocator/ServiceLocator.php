@@ -40,8 +40,11 @@ class ServiceLocator
      * @param array  $parameter
      * @param bool   $isShare
      */
-    public function addClass(string $class, array $parameter, bool $isShare = false)
-    {
+    public function addClass(
+        string $class,
+        array $parameter,
+        bool $isShare = false
+    ) {
         $this->services[$class] = $parameter;
         $this->shared[$class] = $isShare;
     }
@@ -53,7 +56,8 @@ class ServiceLocator
      */
     public function has(string $class) : bool
     {
-        return isset($this->services[$class]) || isset($this->instantiated[$class]);
+        return isset($this->services[$class])
+            || isset($this->instantiated[$class]);
     }
 
     /**

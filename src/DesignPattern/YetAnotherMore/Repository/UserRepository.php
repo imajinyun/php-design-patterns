@@ -32,7 +32,8 @@ class UserRepository implements RepositoryInterface
         $array = $this->storage->read($id);
 
         if ($array === null) {
-            throw new \InvalidArgumentException(sprintf('User with ID #%d does not exist.', $id));
+            throw new \InvalidArgumentException(sprintf('User with ID #%d does not exist.',
+                $id));
         }
 
         return User::arrayToObject($array);
