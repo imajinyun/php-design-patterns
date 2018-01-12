@@ -29,7 +29,7 @@ cache:
   - C:\tools\php -> .appveyor.yml
 
 init:
-  - SET PATH=C:\Program Files\OpenSSL;C:\tools\php;%MYSQL_PATH%\bin;%PATH%
+  - SET PATH=C:\Program Files\OpenSSL;C:\tools\php;%PATH%
   - SET PHP=1
   - SET ANSICON=121x90 (121x90)
   - SET COMPOSER_NO_INTERACTION=1
