@@ -3,7 +3,7 @@
     "description": "This is an example of some design patterns implemented in PHP language.",
     "type": "project",
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.1",
         "phpunit/phpunit": "^6.4",
         "psr/http-message": "^1.0"
     },
