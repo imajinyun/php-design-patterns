@@ -44,18 +44,18 @@ class LogicalSpecification extends AbstractSpecification
 
         if ($type === 'not') {
             return ! $this->specifications[0]->isSatisfiedBy($item);
-        } else {
-            $flag = $type === 'and';
-            foreach ($this->specifications as $specification) {
-                if ($flag && ! $specification->isSatisfiedBy($item)) {
-                    return false;
-                } elseif (! $flag && $specification->isSatisfiedBy($item)) {
-                    return true;
-                }
-            }
-
-            return $flag;
         }
+
+        $flag = $type === 'and';
+        foreach ($this->specifications as $specification) {
+            if ($flag && ! $specification->isSatisfiedBy($item)) {
+                return false;
+            } elseif (! $flag && $specification->isSatisfiedBy($item)) {
+                return true;
+            }
+        }
+
+        return $flag;
     }
 
     /**
@@ -67,7 +67,7 @@ class LogicalSpecification extends AbstractSpecification
      */
     private static function checkType(string $type)
     {
-        if (! in_array($type, ['not', 'and', 'or'], true)) {
+        if (! \in_array($type, ['not', 'and', 'or'], true)) {
             throw new \InvalidArgumentException('Logical type parameter error.');
         }
     }

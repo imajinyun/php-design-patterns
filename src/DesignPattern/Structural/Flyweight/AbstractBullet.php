@@ -15,8 +15,10 @@ abstract class AbstractBullet implements BulletInterface
      * Setting extrinsic state.
      *
      * @param int $positionInMagazine
+     *
+     * @return void
      */
-    public function setPositionInMagazine(int $positionInMagazine = 0)
+    public function setPositionInMagazine(int $positionInMagazine = 0) : void
     {
         $this->positionInMagazine = $positionInMagazine;
     }

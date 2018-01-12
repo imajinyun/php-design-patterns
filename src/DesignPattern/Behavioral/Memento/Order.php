@@ -33,8 +33,10 @@ class Order
      * Restore state from memento.
      *
      * @param \DesignPattern\Behavioral\Memento\Memento|null $memento
+     *
+     * @return void
      */
-    public function restoreStateFromMemento(Memento $memento = null)
+    public function restoreStateFromMemento(Memento $memento = null) : void
     {
         $this->state = $memento !== null ? $memento->getState() : null;
     }
@@ -53,8 +55,10 @@ class Order
      * Set current state object.
      *
      * @param \DesignPattern\Behavioral\Memento\State $state
+     *
+     * @return void
      */
-    public function setState(State $state)
+    public function setState(State $state) : void
     {
         $this->state = $state;
     }

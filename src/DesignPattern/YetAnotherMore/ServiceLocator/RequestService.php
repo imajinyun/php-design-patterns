@@ -2,6 +2,6 @@
 
 namespace DesignPattern\YetAnotherMore\ServiceLocator;
 
-class RequestService
+class RequestService implements ServiceInterface
 {
 }

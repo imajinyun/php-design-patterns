@@ -43,8 +43,10 @@ class Collection
 
     /**
      * @param \DesignPattern\Behavioral\Strategy\ComparatorInterface $comparator
+     *
+     * @return void
      */
-    public function setComparator(ComparatorInterface $comparator)
+    public function setComparator(ComparatorInterface $comparator) : void
     {
         $this->comparator = $comparator;
     }

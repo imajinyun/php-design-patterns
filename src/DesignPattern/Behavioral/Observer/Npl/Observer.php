@@ -9,7 +9,7 @@ class Observer implements ObserverInterface
      *
      * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
      *
-     * @return string
+     * @return mixed|void
      */
     public function update(SubjectInterface $subject)
     {

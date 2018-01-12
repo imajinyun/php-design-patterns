@@ -13,8 +13,6 @@ class MacBook implements NotebookInterface
      * Sets the color of the MacBook.
      *
      * @param string $color
-     *
-     * @return void
      */
     public function setColor(string $color)
     {

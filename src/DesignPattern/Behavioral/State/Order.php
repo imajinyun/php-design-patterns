@@ -34,8 +34,10 @@ class Order
 
     /**
      * @param \DesignPattern\Behavioral\State\StateInterface $state
+     *
+     * @return void
      */
-    public function setState(StateInterface $state)
+    public function setState(StateInterface $state) : void
     {
         $this->state = $state;
     }

@@ -17,8 +17,10 @@ abstract class AbstractTemplate
     /**
      * This is the public service provided by this class and its subclasses.
      * Notice it is final to "freeze" the global behavior of algorithm.
+     *
+     * @return void
      */
-    final public function run()
+    final public function run() : void
     {
         $this->toDoThings[] = $this->toPrepare();
         $this->toDoThings[] = $this->toExecute();

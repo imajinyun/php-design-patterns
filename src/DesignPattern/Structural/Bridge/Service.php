@@ -21,8 +21,10 @@ abstract class Service
 
     /**
      * @param \DesignPattern\Structural\Bridge\FormatterInterface $formatter
+     *
+     * @return void
      */
-    public function setFormatter(FormatterInterface $formatter)
+    public function setFormatter(FormatterInterface $formatter) : void
     {
         $this->formatter = $formatter;
     }

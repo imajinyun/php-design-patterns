@@ -4,10 +4,10 @@ namespace DesignPattern\Creational\FactoryMethod;
 
 abstract class FactoryMethod
 {
-    const LOW_CONFIG = 1;
-    const MEDIUM_CONFIG = 2;
-    const HIGH_CONFIG = 3;
-    const GENERAL_CONFIG = 4;
+    public const LOW_CONFIG = 1;
+    public const MEDIUM_CONFIG = 2;
+    public const HIGH_CONFIG = 3;
+    public const GENERAL_CONFIG = 4;
 
     /**
      * The children of the class must implement this method.

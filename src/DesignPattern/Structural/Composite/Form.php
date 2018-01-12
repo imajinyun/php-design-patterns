@@ -14,9 +14,6 @@ class Form implements RenderableInterface
      */
     private $name;
 
-    /**
-     * @var object
-     */
     private $elements;
 
     /**

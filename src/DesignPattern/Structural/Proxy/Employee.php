@@ -7,12 +7,12 @@ class Employee
     /**
      * No access to WiFi.
      */
-    const ACCESS_LEVEL_DENY = 0;
+    public const ACCESS_LEVEL_DENY = 0;
 
     /**
      * Access granted to WiFi.
      */
-    const ACCESS_LEVEL_ALLOW = 1;
+    public const ACCESS_LEVEL_ALLOW = 1;
 
     /**
      * @var string

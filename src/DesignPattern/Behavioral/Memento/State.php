@@ -4,13 +4,13 @@ namespace DesignPattern\Behavioral\Memento;
 
 class State
 {
-    const STATUS_LOCKED = 1;
-    const STATUS_CONFIRMED = 2;
-    const STATUS_PAID = 3;
-    const STATUS_SHIPPED = 4;
-    const STATUS_SETTLED = 5;
-    const STATUS_COMPLETED = 6;
-    const STATUS_CANCELED = 7;
+    public const STATUS_LOCKED = 1;
+    public const STATUS_CONFIRMED = 2;
+    public const STATUS_PAID = 3;
+    public const STATUS_SHIPPED = 4;
+    public const STATUS_SETTLED = 5;
+    public const STATUS_COMPLETED = 6;
+    public const STATUS_CANCELED = 7;
 
     /**
      * @var int
@@ -56,9 +56,10 @@ class State
      *
      * @param int $state
      *
+     * @return void
      * @throws \InvalidArgumentException When state is not set.
      */
-    private static function isValidState(int $state)
+    private static function isValidState(int $state) : void
     {
         if (! \in_array($state, self::$validStates, true)) {
             throw new \InvalidArgumentException('Invalid state given.');

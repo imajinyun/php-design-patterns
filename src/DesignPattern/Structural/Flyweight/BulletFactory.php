@@ -34,6 +34,6 @@ class BulletFactory
      */
     public static function getBulletCount() : int
     {
-        return count(self::$bullets);
+        return \count(self::$bullets);
     }
 }

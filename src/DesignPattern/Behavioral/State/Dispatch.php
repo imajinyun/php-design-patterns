@@ -10,7 +10,6 @@ class Dispatch extends AbstractState
      * @param Order $order
      *
      * @throws \LogicException
-     * @return void
      */
     public function toPay(Order $order)
     {
@@ -23,7 +22,6 @@ class Dispatch extends AbstractState
      * @param Order $order
      *
      * @throws \LogicException
-     * @return void
      */
     public function toDispatch(Order $order)
     {

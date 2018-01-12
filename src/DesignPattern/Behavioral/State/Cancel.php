@@ -4,15 +4,14 @@ namespace DesignPattern\Behavioral\State;
 
 class Cancel extends AbstractState
 {
-    const ORDER_CANCEL = 1;
-    const ORDER_PAY = 2;
-    const ORDER_DISPATCH = 3;
+    public const ORDER_CANCEL = 1;
+    public const ORDER_PAY = 2;
+    public const ORDER_DISPATCH = 3;
 
     /**
      * @param Order $order
      *
      * @throws \LogicException
-     * @return void
      */
     public function toCancel(Order $order)
     {
@@ -23,7 +22,6 @@ class Cancel extends AbstractState
      * @param Order $order
      *
      * @throws \LogicException
-     * @return void
      */
     public function toPay(Order $order)
     {
@@ -34,7 +32,6 @@ class Cancel extends AbstractState
      * @param Order $order
      *
      * @throws \LogicException
-     * @return void
      */
     public function toDispatch(Order $order)
     {

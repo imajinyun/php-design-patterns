@@ -15,7 +15,6 @@ trait MultitonTrait
      * @param string $identifier
      *
      * @return \DesignPattern\Creational\Multiton\Multiton
-     * @throws \ReflectionException
      */
     public static function getInstance(string $identifier) : Multiton
     {
@@ -41,11 +40,15 @@ trait MultitonTrait
     /**
      * Set multiton instance.
      *
-     * @param string                                      $identifier
+     * @param string $identifier
      * @param \DesignPattern\Creational\Multiton\Multiton $instance
+     *
+     * @return void
      */
-    public static function setInstance(string $identifier, Multiton $instance)
-    {
+    public static function setInstance(
+        string $identifier,
+        Multiton $instance
+    ) : void {
         static::$instances[$identifier] = $instance;
     }
 

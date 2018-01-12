@@ -20,11 +20,7 @@ class JsonTemplate extends AbstractTemplate
         return json_encode($stdClass);
     }
 
-    /**
-     * @return null
-     */
-    protected function getHelper()
+    protected function getHelper() : void
     {
-        return null;
     }
 }

@@ -4,12 +4,18 @@ namespace DesignPattern\Behavioral\Command;
 
 class Computer
 {
-    public function startup()
+    /**
+     * @return void
+     */
+    public function startup() : void
     {
         echo 'System is starting up...';
     }
 
-    public function shutdown()
+    /**
+     * @return void
+     */
+    public function shutdown() : void
     {
         echo 'System is shutting down...';
     }

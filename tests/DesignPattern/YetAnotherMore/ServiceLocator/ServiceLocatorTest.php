@@ -48,10 +48,6 @@ class ServiceLocatorTest extends TestCase
         $this->serviceLocator->addClass(ResponseService::class, [1], true);
         $response = $this->serviceLocator->get(ResponseService::class);
         self::assertInstanceOf(ResponseService::class, $response);
-
-        $this->serviceLocator->addClass(\stdClass::class, [1, 2], true);
-        $stdClass = $this->serviceLocator->get(\stdClass::class);
-        self::assertInstanceOf(\stdClass::class, $stdClass);
     }
 
     /**

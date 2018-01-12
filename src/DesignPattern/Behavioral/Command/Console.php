@@ -33,16 +33,20 @@ class Console
      * Set command.
      *
      * @param \DesignPattern\Behavioral\Command\CommandInterface $command
+     *
+     * @return void
      */
-    public function setCommand(CommandInterface $command)
+    public function setCommand(CommandInterface $command) : void
     {
         $this->command = $command;
     }
 
     /**
      * Command execute.
+     *
+     * @return void
      */
-    public function invoke()
+    public function invoke() : void
     {
         $this->command->execute();
     }

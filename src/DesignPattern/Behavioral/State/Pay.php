@@ -19,7 +19,6 @@ class Pay extends AbstractState
     /**
      * @param \DesignPattern\Behavioral\State\Order $order
      *
-     * @return null
      * @throws \LogicException
      */
     public function toDispatch(Order $order)

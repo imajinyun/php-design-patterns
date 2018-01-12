@@ -23,11 +23,18 @@ class ServiceLocator
      * Add instance.
      *
      * @param string $class
-     * @param object $service
+     * @param \DesignPattern\YetAnotherMore\ServiceLocator\RequestService|
+     *        \DesignPattern\YetAnotherMore\ServiceLocator\ResponseService
+     *        $service
      * @param bool   $isShare
+     *
+     * @return void
      */
-    public function addInstance(string $class, $service, bool $isShare = true)
-    {
+    public function addInstance(
+        string $class,
+        $service,
+        bool $isShare = true
+    ) : void {
         $this->services[$class] = $service;
         $this->instantiated[$class] = $service;
         $this->shared[$class] = $isShare;
@@ -39,12 +46,14 @@ class ServiceLocator
      * @param string $class
      * @param array  $parameter
      * @param bool   $isShare
+     *
+     * @return void
      */
     public function addClass(
         string $class,
         array $parameter,
         bool $isShare = false
-    ) {
+    ) : void {
         $this->services[$class] = $parameter;
         $this->shared[$class] = $isShare;
     }
@@ -88,13 +97,13 @@ class ServiceLocator
      *
      * @param string $class
      *
-     * @return object
+     * @return \DesignPattern\YetAnotherMore\ServiceLocator\ServiceInterface
      * @throws \OutOfRangeException
      */
-    private function getInstance(string $class)
+    private function getInstance(string $class) : ServiceInterface
     {
         $args = $this->services[$class];
-        switch (count($args)) {
+        switch (\count($args)) {
             case 0:
                 $object = new $class();
                 break;

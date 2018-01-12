@@ -14,8 +14,10 @@ abstract class Computer
      *
      * @param string $key
      * @param object $val
+     *
+     * @return void
      */
-    public function setComponent(string $key, $val)
+    public function setComponent(string $key, $val) : void
     {
         $this->data[$key] = $val;
     }

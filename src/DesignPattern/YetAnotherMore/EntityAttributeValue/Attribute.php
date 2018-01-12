@@ -27,8 +27,10 @@ class Attribute
 
     /**
      * @param \DesignPattern\YetAnotherMore\EntityAttributeValue\Value $value
+     *
+     * @return void
      */
-    public function addValue(Value $value)
+    public function addValue(Value $value) : void
     {
         $this->storage->attach($value);
     }

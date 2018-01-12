@@ -50,9 +50,10 @@ class MemoryStorage
      *
      * @param int $id
      *
+     * @return void
      * @throws \OutOfRangeException
      */
-    public function delete(int $id)
+    public function delete(int $id) : void
     {
         $this->validate($id);
 
@@ -64,9 +65,10 @@ class MemoryStorage
      *
      * @param int $id
      *
+     * @return void
      * @throws \OutOfRangeException
      */
-    private function validate(int $id)
+    private function validate(int $id) : void
     {
         if (! isset($this->data[$id])) {
             throw new \OutOfRangeException(sprintf('Data for ID #%d is not found.',

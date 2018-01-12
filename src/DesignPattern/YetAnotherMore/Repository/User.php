@@ -60,7 +60,7 @@ class User
     /**
      * @param int|null $id
      */
-    public function setId(int $id)
+    public function setId(int $id) : void
     {
         $this->id = $id;
     }
@@ -76,7 +76,7 @@ class User
     /**
      * @param string $username
      */
-    public function setUsername(string $username)
+    public function setUsername(string $username) : void
     {
         $this->username = $username;
     }
@@ -92,7 +92,7 @@ class User
     /**
      * @param string $email
      */
-    public function setEmail(string $email)
+    public function setEmail(string $email) : void
     {
         $this->email = $email;
     }

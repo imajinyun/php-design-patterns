@@ -36,9 +36,10 @@ class Product implements \SplSubject
      *
      * @param \SplObserver $observer
      *
+     * @return void
      * @link http://php.net/manual/en/splsubject.attach.php
      */
-    public function attach(\SplObserver $observer)
+    public function attach(\SplObserver $observer) : void
     {
         $this->observers->attach($observer);
     }
@@ -48,9 +49,10 @@ class Product implements \SplSubject
      *
      * @param \SplObserver $observer
      *
+     * @return void
      * @link http://php.net/manual/en/splsubject.detach.php
      */
-    public function detach(\SplObserver $observer)
+    public function detach(\SplObserver $observer) : void
     {
         $this->observers->detach($observer);
     }
@@ -58,9 +60,10 @@ class Product implements \SplSubject
     /**
      * Notify an observer.
      *
+     * @return void
      * @link http://php.net/manual/en/splsubject.notify.php
      */
-    public function notify()
+    public function notify() : void
     {
         /** @var \SplObserver $observer */
         foreach ($this->observers as $observer) {

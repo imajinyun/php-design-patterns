@@ -26,7 +26,7 @@ class Mediator implements MediatorInterface
      *
      * @return $this
      */
-    public function setConsumer(Consumer $consumer)
+    public function setConsumer(Consumer $consumer) : self
     {
         $this->consumer = $consumer;
 
@@ -40,7 +40,7 @@ class Mediator implements MediatorInterface
      *
      * @return $this
      */
-    public function setDatabase(Database $database)
+    public function setDatabase(Database $database) : self
     {
         $this->database = $database;
 
@@ -54,7 +54,7 @@ class Mediator implements MediatorInterface
      *
      * @return $this
      */
-    public function setServer(Server $server)
+    public function setServer(Server $server) : self
     {
         $this->server = $server;
 
@@ -86,9 +86,9 @@ class Mediator implements MediatorInterface
      *
      * @param string $content
      *
-     * @return string
+     * @return void
      */
-    public function sendResponse($content)
+    public function sendResponse($content) : void
     {
         echo $this->consumer->output($content);
     }

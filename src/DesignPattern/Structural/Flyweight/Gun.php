@@ -43,11 +43,13 @@ class Gun
 
     /**
      * @param string $type
+     *
+     * @return void
      */
-    public function reload(string $type)
+    public function reload(string $type) : void
     {
         $count = \count($this->bullets);
-        for ($count; $count < $this->maxBullets; $count++) {
+        for (; $count < $this->maxBullets; $count++) {
             $this->bullets[] = BulletFactory::getInstance($type);
         }
     }

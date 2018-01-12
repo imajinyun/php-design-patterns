@@ -34,12 +34,10 @@ class Subject implements SubjectInterface
      * Attach an SplObserver.
      *
      * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
-     *
-     * @return void
      */
     public function attach(ObserverInterface $observer)
     {
-        if (! in_array($observer, $this->observers, true)) {
+        if (! \in_array($observer, $this->observers, true)) {
             $this->observers[] = $observer;
         }
     }
@@ -48,8 +46,6 @@ class Subject implements SubjectInterface
      * Detach an observer.
      *
      * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
-     *
-     * @return void
      */
     public function detach(ObserverInterface $observer)
     {
@@ -72,6 +68,8 @@ class Subject implements SubjectInterface
 
     /**
      * Report an observer.
+     *
+     * @throws \Exception
      */
     public function doSomethingReport()
     {

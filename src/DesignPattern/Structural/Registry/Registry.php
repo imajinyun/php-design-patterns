@@ -4,7 +4,7 @@ namespace DesignPattern\Structural\Registry;
 
 abstract class Registry
 {
-    const LOGGER = 'logger';
+    public const LOGGER = 'logger';
 
     /**
      * @var array
@@ -31,7 +31,7 @@ abstract class Registry
      *
      * @return void
      */
-    public static function set(string $key, $val)
+    public static function set(string $key, $val) : void
     {
         self::$collection[$key] = $val;
     }

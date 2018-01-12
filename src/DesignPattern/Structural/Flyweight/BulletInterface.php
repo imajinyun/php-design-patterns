@@ -6,8 +6,6 @@ interface BulletInterface
 {
     /**
      * @param int $position
-     *
-     * @return void
      */
     public function setPositionInMagazine(int $position = 0);
 

@@ -19,7 +19,10 @@ class ShutdownCommand implements CommandInterface
         $this->computer = $computer;
     }
 
-    public function execute()
+    /**
+     * @return void
+     */
+    public function execute() : void
     {
         $this->computer->shutdown();
     }

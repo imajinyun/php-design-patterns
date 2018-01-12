@@ -41,8 +41,10 @@ class UserRepository implements RepositoryInterface
 
     /**
      * @param \DesignPattern\YetAnotherMore\Repository\User $user
+     *
+     * @return void
      */
-    public function save(User $user)
+    public function save(User $user) : void
     {
         $id = $this->storage->write([
             'username' => $user->getUsername(),
@@ -55,10 +57,11 @@ class UserRepository implements RepositoryInterface
     /**
      * @param \DesignPattern\YetAnotherMore\Repository\User $user
      *
+     * @return void
      * @throws \OutOfRangeException
      */
-    public function delete(User $user)
+    public function delete(User $user) : void
     {
-        return $this->storage->delete($user->getId());
+        $this->storage->delete($user->getId());
     }
 }

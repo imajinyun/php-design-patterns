@@ -32,7 +32,7 @@ class ItemList implements \Countable
      *
      * @return \DesignPattern\Behavioral\Iterator\Item|null
      */
-    public function getItem(int $id)
+    public function getItem(int $id) : ?Item
     {
         if ($id < $this->count()) {
             return $this->list[$id];
@@ -46,7 +46,7 @@ class ItemList implements \Countable
      */
     public function addItem(Item $item)
     {
-        if (! in_array($item, $this->list, true)) {
+        if (! \in_array($item, $this->list, true)) {
             $this->list[] = $item;
         }
     }
@@ -68,6 +68,6 @@ class ItemList implements \Countable
      */
     public function count() : int
     {
-        return count($this->list);
+        return \count($this->list);
     }
 }

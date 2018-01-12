@@ -19,7 +19,10 @@ class StartupCommand implements CommandInterface
         $this->computer = $computer;
     }
 
-    public function execute()
+    /**
+     * @return void
+     */
+    public function execute() : void
     {
         $this->computer->startup();
     }
