@@ -11,7 +11,6 @@ shallow_clone: true
 platform: Any CPU
 build: false
 skip_tags: true
-
 environment:
   matrix:
     - dependencies: highest
@@ -27,13 +26,11 @@ cache:
   - C:\ProgramData\chocolatey\bin -> .appveyor.yml
   - C:\ProgramData\chocolatey\lib -> .appveyor.yml
   - C:\tools\php -> .appveyor.yml
-
 init:
   - SET PATH=C:\Program Files\OpenSSL;C:\tools\php;%PATH%
   - SET PHP=1
   - SET ANSICON=121x90 (121x90)
   - SET COMPOSER_NO_INTERACTION=1
-
 install:
   - IF EXIST C:\tool\php (SET PHP=0)
 
@@ -56,7 +53,6 @@ install:
   - IF %dependencies%==lowest appveyor-retry composer update --no-suggest --prefer-dist --prefer-lowest
   - IF %dependencies%==highest appveyor-retry composer update --no-suggest --prefer-dist
   - composer show
-
 test_script:
   - cd C:\projects\lumen-api
   - php --version
