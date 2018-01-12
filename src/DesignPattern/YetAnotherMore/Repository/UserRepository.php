@@ -22,10 +22,10 @@ class UserRepository implements RepositoryInterface
     /**
      * Find user by ID.
      *
-     * @param $id
+     * @param int $id
      *
      * @return \DesignPattern\YetAnotherMore\Repository\User
-     * @throws \InvalidArgumentException
+     * @throws \OutOfRangeException|\InvalidArgumentException
      */
     public function find(int $id) : User
     {

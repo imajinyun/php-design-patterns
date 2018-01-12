@@ -20,7 +20,7 @@ class HtmlTemplate extends AbstractTemplate
     /**
      * @return string
      */
-    protected function getHelper()
+    protected function getHelper() : string
     {
         return 'Html template helper.';
     }

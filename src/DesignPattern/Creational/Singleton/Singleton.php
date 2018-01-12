@@ -21,7 +21,7 @@ final class Singleton
      *
      * @return \DesignPattern\Creational\Singleton\Singleton
      */
-    public static function getInstance()
+    public static function getInstance() : Singleton
     {
         if (null === self::$instance) {
             self::$instance = new self();

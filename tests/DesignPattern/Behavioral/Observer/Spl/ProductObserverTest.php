@@ -11,12 +11,12 @@ class ProductObserverTest extends TestCase
     public function testObserverIsUpdated()
     {
         $observer = $this->getMockBuilder(ProductObserver::class)
-            ->setMethods(['update'])
-            ->getMock();
+                         ->setMethods(['update'])
+                         ->getMock();
 
         $observer->expects($this->once())
-            ->method('update')
-            ->with($this->isInstanceOf('SplSubject'));
+                 ->method('update')
+                 ->with($this->isInstanceOf('SplSubject'));
 
         $subject = new Product('My Product');
         $subject->attach($observer);

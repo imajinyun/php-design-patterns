@@ -37,11 +37,11 @@ class SubjectTest extends TestCase
     public function testNotify()
     {
         $mock = $this->getMockBuilder(Subject::class)
-            ->setMethods(['notify'])
-            ->getMock();
+                     ->setMethods(['notify'])
+                     ->getMock();
 
         $mock->expects($this->once())
-            ->method('notify');
+             ->method('notify');
 
         /** @var Subject $mock */
         $mock->setAuthor('Jack');

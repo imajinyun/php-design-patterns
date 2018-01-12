@@ -28,7 +28,8 @@ class ProxyTest extends TestCase
     public function testInterfaceImplementation()
     {
         self::assertInstanceOf(WifiNetwork::class, $this->wifiNetwork);
-        self::assertInstanceOf(WifiNetworkProxy::class, $this->wifiNetworkProxy);
+        self::assertInstanceOf(WifiNetworkProxy::class,
+            $this->wifiNetworkProxy);
     }
 
     public function testWifiNetworkAccess()

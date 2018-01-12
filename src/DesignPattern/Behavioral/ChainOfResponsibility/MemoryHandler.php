@@ -44,7 +44,7 @@ class MemoryHandler extends Handler
             $request->getUri()->getQuery()
         );
 
-        if ($request->getMethod() == 'GET' && isset($this->data[$key])) {
+        if (isset($this->data[$key]) && $request->getMethod() == 'GET') {
             return $this->data[$key];
         }
 

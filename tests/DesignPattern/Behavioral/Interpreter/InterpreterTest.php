@@ -32,7 +32,8 @@ class InterpreterTest extends TestCase
                 $expression .= "$i";
             }
         }
-        self::assertSame(5050, (new Parser($expression))->interpret($secondContext));
+        self::assertSame(5050,
+            (new Parser($expression))->interpret($secondContext));
     }
 
     public function testInterpreterWithEmptyContext()

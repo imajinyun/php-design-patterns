@@ -46,7 +46,7 @@ class MementoTest extends TestCase
     {
         $stub = $this->getMockBuilder(History::class)->getMock();
         $stub->method('popMemento')
-            ->will($this->returnSelf());
+             ->will($this->returnSelf());
 
         self::assertSame($stub, $stub->popMemento());
     }
@@ -55,7 +55,7 @@ class MementoTest extends TestCase
     {
         $stub = $this->getMockBuilder(History::class)->getMock();
         $stub->method('popMemento')
-            ->willReturn(null);
+             ->willReturn(null);
 
         self::assertEquals(null, $stub->popMemento());
     }

@@ -5,24 +5,19 @@ namespace DesignPattern\Test\Creational\FactoryMethod;
 use DesignPattern\Creational\FactoryMethod\FactoryMethod;
 use DesignPattern\Creational\FactoryMethod\FoxconnFactory;
 use DesignPattern\Creational\FactoryMethod\NotebookInterface;
-use DesignPattern\Creational\FactoryMethod\QuantaFactory;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Class FactoryMethodTest
- *
- * @package DesignPattern\Test\Creational\FactoryMethod
- */
 class FactoryMethodTest extends TestCase
 {
     /**
      * @var array
      */
-    protected $type = [
-        FactoryMethod::LOW_CONFIG,
-        FactoryMethod::MEDIUM_CONFIG,
-        FactoryMethod::HIGH_CONFIG,
-    ];
+    protected $type
+        = [
+            FactoryMethod::LOW_CONFIG,
+            FactoryMethod::MEDIUM_CONFIG,
+            FactoryMethod::HIGH_CONFIG,
+        ];
 
     /**
      * @return array

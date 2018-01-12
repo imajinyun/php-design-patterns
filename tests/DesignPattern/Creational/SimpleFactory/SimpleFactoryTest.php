@@ -51,7 +51,8 @@ class SimpleFactoryTest extends TestCase
     {
         $object = $this->factory->create($language);
         $actual = $object->toWriteApplication($language);
-        $expect = 'using ' . ucfirst($language) . ' language to write application.';
+        $expect = 'using ' . ucfirst($language)
+            . ' language to write application.';
 
         self::assertEquals($expect, $actual);
     }

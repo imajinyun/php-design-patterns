@@ -86,7 +86,7 @@ class Mediator implements MediatorInterface
      *
      * @param string $content
      *
-     * @return mixed
+     * @return string
      */
     public function sendResponse($content)
     {

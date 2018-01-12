@@ -21,7 +21,7 @@ class Pool implements \Countable
      */
     public function get() : StringReverseWorker
     {
-        if (count($this->freeWorker) == 0) {
+        if (\count($this->freeWorker) === 0) {
             $worker = new StringReverseWorker();
         } else {
             $worker = array_pop($this->freeWorker);
@@ -54,6 +54,6 @@ class Pool implements \Countable
      */
     public function count() : int
     {
-        return count($this->usedWorker) + count($this->freeWorker);
+        return \count($this->usedWorker) + \count($this->freeWorker);
     }
 }

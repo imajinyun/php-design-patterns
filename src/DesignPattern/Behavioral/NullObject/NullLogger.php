@@ -6,6 +6,5 @@ class NullLogger implements LoggerInterface
 {
     public function log(string $string)
     {
-        unset($string);
     }
 }

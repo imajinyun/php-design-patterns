@@ -13,7 +13,8 @@ class EntityAttributeValueTest extends TestCase
     {
         $attribute = new Attribute('attribute');
 
-        self::assertInstanceOf(\SplObjectStorage::class, $attribute->getValue());
+        self::assertInstanceOf(\SplObjectStorage::class,
+            $attribute->getValue());
     }
 
     public function testValue()

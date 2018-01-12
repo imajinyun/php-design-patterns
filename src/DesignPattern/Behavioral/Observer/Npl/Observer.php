@@ -23,7 +23,7 @@ class Observer implements ObserverInterface
      * @param string                                                  $message
      * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
      *
-     * @return null
+     * @return mixed|void
      */
     public function report(
         int $code,

@@ -2,19 +2,11 @@
 
 namespace DesignPattern\Test\Behavioral\Specification;
 
-use DesignPattern\Behavioral\Specification\AndSpecification;
 use DesignPattern\Behavioral\Specification\Item;
 use DesignPattern\Behavioral\Specification\LogicalSpecification;
-use DesignPattern\Behavioral\Specification\NotSpecification;
-use DesignPattern\Behavioral\Specification\OrSpecification;
 use DesignPattern\Behavioral\Specification\RangeSpecification;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Class SpecificationTest
- *
- * @package DesignPattern\Test\Behavioral\Specification
- */
 class SpecificationTest extends TestCase
 {
     /**

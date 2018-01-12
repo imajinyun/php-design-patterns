@@ -6,7 +6,6 @@ use DesignPattern\Behavioral\Visitor\Group;
 use DesignPattern\Behavioral\Visitor\RoleInterface;
 use DesignPattern\Behavioral\Visitor\RoleVisitor;
 use DesignPattern\Behavioral\Visitor\User;
-use DesignPattern\Structural\Adapter\UserInterface;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase

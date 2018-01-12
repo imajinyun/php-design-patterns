@@ -46,16 +46,16 @@ class Form implements RenderableInterface
         static $i = 0;
         $form = '';
 
-        if ($i == 0) {
+        if ($i === 0) {
             $form .= '<form action="%s" name="%s">';
         }
 
-        foreach ($this->elements as $element) {
+        foreach ((array)$this->elements as $element) {
             $form .= $element->render();
             ++$i;
         }
 
-        if ($i == self::$elementNumber) {
+        if ($i === self::$elementNumber) {
             $form .= '</form>';
         }
 

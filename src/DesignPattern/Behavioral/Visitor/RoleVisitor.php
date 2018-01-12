@@ -12,7 +12,7 @@ class RoleVisitor implements VisitorInterface
     /**
      * @param \DesignPattern\Behavioral\Visitor\User $user
      *
-     * @return null
+     * @return mixed|void
      */
     public function visitUser(User $user)
     {
@@ -22,7 +22,7 @@ class RoleVisitor implements VisitorInterface
     /**
      * @param \DesignPattern\Behavioral\Visitor\Group $group
      *
-     * @return null
+     * @return mixed|void
      */
     public function visitGroup(Group $group)
     {

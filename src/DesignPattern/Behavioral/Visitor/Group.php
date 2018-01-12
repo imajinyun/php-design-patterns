@@ -32,7 +32,7 @@ class Group implements RoleInterface
     /**
      * @param \DesignPattern\Behavioral\Visitor\VisitorInterface $visitor
      *
-     * @return null
+     * @return mixed|void
      */
     public function allow(VisitorInterface $visitor)
     {

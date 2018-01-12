@@ -60,7 +60,7 @@ class State
      */
     private static function isValidState(int $state)
     {
-        if (! in_array($state, self::$validStates, true)) {
+        if (! \in_array($state, self::$validStates, true)) {
             throw new \InvalidArgumentException('Invalid state given.');
         }
     }

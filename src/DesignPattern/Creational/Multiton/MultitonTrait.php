@@ -20,7 +20,7 @@ trait MultitonTrait
     public static function getInstance(string $identifier) : Multiton
     {
         $class = static::class;
-        $parameter = array_slice(func_get_args(), 1);
+        $parameter = \array_slice(\func_get_args(), 1);
 
         if (! isset(static::$instances[$identifier])) {
             $reflection = new \ReflectionClass($class);

@@ -31,10 +31,10 @@ class ProductTest extends TestCase
     public function testNotify()
     {
         $observer = $this->getMockBuilder(Product::class)
-            ->setMethods(['notify'])
-            ->getMock();
+                         ->setMethods(['notify'])
+                         ->getMock();
         $observer->expects($this->once())
-            ->method('notify');
+                 ->method('notify');
 
         $observer->setPrice(100);
     }

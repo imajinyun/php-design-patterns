@@ -2,10 +2,8 @@
 
 namespace DesignPattern\Test\Structural\Facade;
 
-use DesignPattern\Structural\Facade\Bios;
 use DesignPattern\Structural\Facade\BiosInterface;
 use DesignPattern\Structural\Facade\Facade;
-use DesignPattern\Structural\Facade\MacOS;
 use DesignPattern\Structural\Facade\MacOSInterface;
 use PHPUnit\Framework\TestCase;
 
@@ -17,8 +15,8 @@ class FacadeTest extends TestCase
         $bios = $this->getBiosMock();
 
         $bios->expects($this->once())
-            ->method('launch')
-            ->with($macOS);
+             ->method('launch')
+             ->with($macOS);
 
         $facade = new Facade($bios, $macOS);
         $facade->turnOn();
@@ -31,7 +29,7 @@ class FacadeTest extends TestCase
     {
         $macOS = $this->createMock(MacOSInterface::class);
         $macOS->method('getName')
-            ->will($this->returnValue('Mac Pro'));
+              ->will($this->returnValue('Mac Pro'));
 
         return $macOS;
     }
@@ -39,15 +37,15 @@ class FacadeTest extends TestCase
     protected function getBiosMock()
     {
         $bios = $this->getMockBuilder(BiosInterface::class)
-            ->setMethods([
-                'launch',
-                'execute',
-                'waitingForPressAnyKey',
-                'powerOn',
-                'powerOff',
-            ])
-            ->disableAutoload()
-            ->getMock();
+                     ->setMethods([
+                         'launch',
+                         'execute',
+                         'waitingForPressAnyKey',
+                         'powerOn',
+                         'powerOff',
+                     ])
+                     ->disableAutoload()
+                     ->getMock();
 
         return $bios;
     }

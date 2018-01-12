@@ -5,9 +5,9 @@ namespace DesignPattern\YetAnotherMore\Delegation;
 class Controller
 {
     /**
-     * @var \DesignPattern\YetAnotherMore\Delegation\Component|null
+     * @var \DesignPattern\YetAnotherMore\Delegation\Component
      */
-    private $component = null;
+    private $component;
 
     /**
      * Controller constructor.

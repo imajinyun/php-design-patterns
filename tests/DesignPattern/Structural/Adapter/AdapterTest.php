@@ -22,7 +22,10 @@ class AdapterTest extends TestCase
     public function testCanLoginMemberNumberOnWeibo()
     {
         $appId = ['xXLa2CRTs7PWY4Bc', 'Ta9Z42qbFeHNBGfn'];
-        $appSecret = ['2ABnIxeZH0SKpqrXFylcCfmO1uvUT9ML', '2D19WBJmC3TinqFkjRtfXaeAPYsOHUNG'];
+        $appSecret = [
+            '2ABnIxeZH0SKpqrXFylcCfmO1uvUT9ML',
+            '2D19WBJmC3TinqFkjRtfXaeAPYsOHUNG',
+        ];
 
         $adapter = new UserAdapter(new Weibo());
         $adapter->login($appId[0], $appSecret[0]);

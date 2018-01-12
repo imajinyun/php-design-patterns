@@ -23,8 +23,7 @@ class ServiceLocatorTest extends TestCase
     {
         $this->serviceLocator->addInstance(
             RequestService::class,
-            RequestService::class,
-            true
+            RequestService::class
         );
         $request = $this->serviceLocator->get(RequestService::class);
         self::assertNotInstanceOf(RequestService::class, $request);

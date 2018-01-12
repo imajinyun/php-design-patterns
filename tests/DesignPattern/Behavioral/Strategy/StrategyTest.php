@@ -28,11 +28,19 @@ class StrategyTest extends TestCase
     {
         return [
             [
-                [['date' => '2018-03-03'], ['date' => '2019-12-12'], ['date' => '2017-08-01']],
+                [
+                    ['date' => '2018-03-03'],
+                    ['date' => '2019-12-12'],
+                    ['date' => '2017-08-01'],
+                ],
                 ['date' => '2017-08-01'],
             ],
             [
-                [['date' => '2100-11-11'], ['date' => '2020-06-17'], ['date' => '2050-04-12']],
+                [
+                    ['date' => '2100-11-11'],
+                    ['date' => '2020-06-17'],
+                    ['date' => '2050-04-12'],
+                ],
                 ['date' => '2020-06-17'],
             ],
         ];
@@ -65,8 +73,8 @@ class StrategyTest extends TestCase
     /**
      * Get compare element.
      *
-     * @param               array $collection
-     * @param ComparatorInterface $comparator
+     * @param                                                        $collection
+     * @param \DesignPattern\Behavioral\Strategy\ComparatorInterface $comparator
      *
      * @return mixed
      */
@@ -75,8 +83,7 @@ class StrategyTest extends TestCase
         $object = new Collection($collection);
         $object->setComparator($comparator);
         $elements = $object->sort();
-        $element = array_shift($elements);
 
-        return $element;
+        return array_shift($elements);
     }
 }

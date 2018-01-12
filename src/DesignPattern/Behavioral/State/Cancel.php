@@ -16,7 +16,7 @@ class Cancel extends AbstractState
      */
     public function toCancel(Order $order)
     {
-        throw new \LogicException('Already cancelled.', Cancel::ORDER_CANCEL);
+        throw new \LogicException('Already cancelled.', self::ORDER_CANCEL);
     }
 
     /**
@@ -27,7 +27,7 @@ class Cancel extends AbstractState
      */
     public function toPay(Order $order)
     {
-        throw new \LogicException('Order cancelled.', Cancel::ORDER_PAY);
+        throw new \LogicException('Order cancelled.', self::ORDER_PAY);
     }
 
     /**
@@ -38,6 +38,6 @@ class Cancel extends AbstractState
      */
     public function toDispatch(Order $order)
     {
-        throw new \LogicException('Order cancelled.', Cancel::ORDER_DISPATCH);
+        throw new \LogicException('Order cancelled.', self::ORDER_DISPATCH);
     }
 }

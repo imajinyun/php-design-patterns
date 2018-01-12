@@ -5,7 +5,6 @@ namespace DesignPattern\Test\Structural\Composite;
 use DesignPattern\Structural\Composite\Form;
 use DesignPattern\Structural\Composite\InputElement;
 use DesignPattern\Structural\Composite\LabelElement;
-use DesignPattern\Structural\Composite\TextElement;
 use PHPUnit\Framework\TestCase;
 
 class CompositeTest extends TestCase

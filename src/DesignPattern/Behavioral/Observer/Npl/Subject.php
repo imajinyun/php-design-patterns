@@ -77,7 +77,7 @@ class Subject implements SubjectInterface
     {
         /** @var \DesignPattern\Behavioral\Observer\Npl\Observer $observer */
         foreach ($this->observers as $observer) {
-            $observer->report(mt_rand(20, 29), 'Something happened.', $this);
+            $observer->report(random_int(20, 29), 'Something happened.', $this);
         }
     }
 

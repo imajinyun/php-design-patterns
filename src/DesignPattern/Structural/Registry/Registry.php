@@ -29,7 +29,7 @@ abstract class Registry
      * @param string $key
      * @param mixed  $val
      *
-     * @return mixed
+     * @return void
      */
     public static function set(string $key, $val)
     {

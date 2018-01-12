@@ -20,8 +20,8 @@ class ObserverTest extends TestCase
     {
         $mock = $this->createMock(Observer::class);
         $mock->expects($this->once())
-            ->method('update')
-            ->with(self::isInstanceOf(SubjectInterface::class));
+             ->method('update')
+             ->with(self::isInstanceOf(SubjectInterface::class));
 
         $subject = new Subject('My Subject');
         $subject->attach($mock);
@@ -31,19 +31,19 @@ class ObserverTest extends TestCase
     public function testObserverReported()
     {
         $observer = $this->getMockBuilder(Observer::class)
-            ->setMethods(['report'])
-            ->getMock();
+                         ->setMethods(['report'])
+                         ->getMock();
 
         $observer->expects($this->once())
-            ->method('report')
-            ->with(
-                self::greaterThan(0),
-                self::stringContains('something'),
-                self::callback(function ($subject) {
-                    return is_callable([$subject, 'getName']) &&
-                        $subject->getName() == 'My Subject';
-                })
-            );
+                 ->method('report')
+                 ->with(
+                     self::greaterThan(0),
+                     self::stringContains('something'),
+                     self::callback(function ($subject) {
+                         return \is_callable([$subject, 'getName'])
+                             && $subject->getName() == 'My Subject';
+                     })
+                 );
 
         $subject = new Subject('My Subject');
         $subject->attach($observer);

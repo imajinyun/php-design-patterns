@@ -72,7 +72,9 @@ class StateTest extends TestCase
         self::assertInstanceOf(Cancel::class, $this->order->getState());
 
         $this->order->setState(new Dispatch());
-        self::expectExceptionMessage('Already paid.');
+
+        /** @noinspection DynamicInvocationViaScopeResolutionInspection */
+        $this->expectExceptionMessage('Already paid.');
         $this->order->pay();
     }
 

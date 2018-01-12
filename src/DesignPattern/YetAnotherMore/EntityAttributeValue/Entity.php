@@ -41,6 +41,6 @@ class Entity
             $array[] = $item;
         }
 
-        return join(', ', $array);
+        return implode(', ', $array);
     }
 }
