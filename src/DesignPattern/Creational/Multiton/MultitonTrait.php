@@ -40,7 +40,7 @@ trait MultitonTrait
     /**
      * Set multiton instance.
      *
-     * @param string $identifier
+     * @param string                                      $identifier
      * @param \DesignPattern\Creational\Multiton\Multiton $instance
      *
      * @return void
