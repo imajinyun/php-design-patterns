@@ -20,7 +20,7 @@ class NotebookBuilder implements BuilderInterface
     /**
      * Create notebook computer.
      */
-    public function createComputer() : void
+    public function createComputer(): void
     {
         $this->notebook = new Notebook();
     }
@@ -28,38 +28,38 @@ class NotebookBuilder implements BuilderInterface
     /**
      * @return \DesignPattern\Creational\Builder\Component\Notebook
      */
-    public function getComputer() : Notebook
+    public function getComputer(): Notebook
     {
         return $this->notebook;
     }
 
-    public function addCPU() : void
+    public function addCPU(): void
     {
         $this->notebook->setComponent('Intel', new CPU());
     }
 
-    public function addStorage() : void
+    public function addStorage(): void
     {
         $this->notebook->setComponent('Kingston', new Storage());
         $this->notebook->setComponent('Seagate', new Storage());
     }
 
-    public function addInput() : void
+    public function addInput(): void
     {
         $this->notebook->setComponent('Logitech', new Input());
     }
 
-    public function addOutput() : void
+    public function addOutput(): void
     {
         $this->notebook->setComponent('Samsung', new Output());
     }
 
-    public function addChassis() : void
+    public function addChassis(): void
     {
         $this->notebook->setComponent('Aigo', new Chassis());
     }
 
-    public function addBrand() : void
+    public function addBrand(): void
     {
         $this->notebook->setComponent('Lenovo', new Brand());
     }

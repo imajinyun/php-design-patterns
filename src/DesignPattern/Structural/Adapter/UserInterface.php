@@ -12,12 +12,12 @@ interface UserInterface
      *
      * @return bool
      */
-    public function login(string $username, string $password) : bool;
+    public function login(string $username, string $password): bool;
 
     /**
      * Get login user number.
      *
      * @return int
      */
-    public function getLoginUserNumber() : int;
+    public function getLoginUserNumber(): int;
 }

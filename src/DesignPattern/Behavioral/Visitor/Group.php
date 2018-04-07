@@ -24,7 +24,7 @@ class Group implements RoleInterface
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return sprintf('Group: %s', $this->name);
     }

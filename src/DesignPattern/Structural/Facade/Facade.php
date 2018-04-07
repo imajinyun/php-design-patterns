@@ -26,7 +26,7 @@ class Facade
         $this->macOS = $macOS;
     }
 
-    public function turnOn() : void
+    public function turnOn(): void
     {
         $this->bios->powerOn();
         $this->bios->execute();
@@ -34,7 +34,7 @@ class Facade
         $this->bios->launch($this->macOS);
     }
 
-    public function turnOff() : void
+    public function turnOff(): void
     {
         $this->macOS->shutdown();
         $this->bios->powerOff();

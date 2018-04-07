@@ -12,7 +12,7 @@ class DateComparator implements ComparatorInterface
      *
      * @return int
      */
-    public function compare($left, $right) : int
+    public function compare($left, $right): int
     {
         $left = new \DateTime($left['date']);
         $right = new \DateTime($right['date']);

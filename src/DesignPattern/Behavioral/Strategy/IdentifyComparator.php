@@ -12,7 +12,7 @@ class IdentifyComparator implements ComparatorInterface
      *
      * @return int
      */
-    public function compare($left, $right) : int
+    public function compare($left, $right): int
     {
         return $left['id'] <=> $right['id'];
     }

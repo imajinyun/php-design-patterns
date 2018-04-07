@@ -20,7 +20,7 @@ abstract class AbstractTemplate
      *
      * @return void
      */
-    final public function run() : void
+    final public function run(): void
     {
         $this->toDoThings[] = $this->toPrepare();
         $this->toDoThings[] = $this->toExecute();
@@ -36,7 +36,7 @@ abstract class AbstractTemplate
     /**
      * @return array
      */
-    public function getToDoThings() : array
+    public function getToDoThings(): array
     {
         return $this->toDoThings;
     }
@@ -49,7 +49,7 @@ abstract class AbstractTemplate
     /**
      * @return string
      */
-    private function toPrepare() : string
+    private function toPrepare(): string
     {
         return 'Are you ready?';
     }
@@ -57,7 +57,7 @@ abstract class AbstractTemplate
     /**
      * @return string
      */
-    private function toExecute() : string
+    private function toExecute(): string
     {
         return 'The task is executing...';
     }
@@ -67,5 +67,5 @@ abstract class AbstractTemplate
      *
      * @return string
      */
-    abstract protected function doSomething() : string;
+    abstract protected function doSomething(): string;
 }

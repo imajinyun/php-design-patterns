@@ -11,7 +11,7 @@ class DateFormatter implements FormatterInterface
      *
      * @return false|string
      */
-    public function format(string $string) : string
+    public function format(string $string): string
     {
         return date('Y-m-d', (int)$string);
     }

@@ -31,7 +31,7 @@ abstract class Registry
      *
      * @return void
      */
-    public static function set(string $key, $val) : void
+    public static function set(string $key, $val): void
     {
         self::$collection[$key] = $val;
     }

@@ -31,7 +31,7 @@ class LabelElement implements RenderableInterface
      *
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         $format = '<label for="%s">%s</label>';
 

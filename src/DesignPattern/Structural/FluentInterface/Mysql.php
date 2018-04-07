@@ -39,7 +39,7 @@ class Mysql implements FluentInterface
      *
      * @return \DesignPattern\Structural\FluentInterface\Mysql
      */
-    public function select(array $fields) : self
+    public function select(array $fields): self
     {
         $this->fields = $fields;
 
@@ -54,7 +54,7 @@ class Mysql implements FluentInterface
      *
      * @return \DesignPattern\Structural\FluentInterface\Mysql
      */
-    public function from(string $table, string $alias = '') : self
+    public function from(string $table, string $alias = ''): self
     {
         $this->table[] = $alias ? sprintf('%s AS %s', $table, $alias) : $table;
 
@@ -68,7 +68,7 @@ class Mysql implements FluentInterface
      *
      * @return $this
      */
-    public function where(string $conditions) : self
+    public function where(string $conditions): self
     {
         $this->conditions[] = $conditions;
 

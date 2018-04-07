@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\Delegation;
+namespace DesignPattern\More\Delegation;
 
 class Component
 {
@@ -11,7 +11,7 @@ class Component
      *
      * @return array
      */
-    public function stringToArray(string $string) : array
+    public function stringToArray(string $string): array
     {
         $array = explode(',', $string);
 

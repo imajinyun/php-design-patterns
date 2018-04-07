@@ -11,7 +11,7 @@ class Image extends BaseImage
      *
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         return json_encode(['src' => $this->path, 'title' => $this->title]);
     }

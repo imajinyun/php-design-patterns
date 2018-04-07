@@ -26,7 +26,7 @@ class WifiNetwork implements WifiNetworkInterface
      *
      * @return bool
      */
-    public function grantAccess(Employee $employee) : bool
+    public function grantAccess(Employee $employee): bool
     {
         return true;
     }

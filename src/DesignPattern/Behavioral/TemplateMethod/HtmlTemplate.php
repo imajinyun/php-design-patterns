@@ -12,7 +12,7 @@ class HtmlTemplate extends AbstractTemplate
     /**
      * @return string
      */
-    protected function doSomething() : string
+    protected function doSomething(): string
     {
         return sprintf('<p>%s</p>', __METHOD__);
     }
@@ -20,7 +20,7 @@ class HtmlTemplate extends AbstractTemplate
     /**
      * @return string
      */
-    protected function getHelper() : string
+    protected function getHelper(): string
     {
         return 'Html template helper.';
     }

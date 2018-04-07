@@ -24,7 +24,7 @@ class User implements RoleInterface
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return sprintf('User: %s', $this->name);
     }

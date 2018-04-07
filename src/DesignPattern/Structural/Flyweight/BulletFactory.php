@@ -16,7 +16,7 @@ class BulletFactory
      *
      * @return \DesignPattern\Structural\Flyweight\BulletInterface
      */
-    public static function getInstance(string $type) : BulletInterface
+    public static function getInstance(string $type): BulletInterface
     {
         if (! array_key_exists($type, self::$bullets)) {
             if ($type === 'EmptyBullet') {
@@ -32,7 +32,7 @@ class BulletFactory
     /**
      * @return int
      */
-    public static function getBulletCount() : int
+    public static function getBulletCount(): int
     {
         return \count(self::$bullets);
     }

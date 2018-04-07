@@ -1,15 +1,15 @@
 <?php
 
-namespace DesignPattern\Test\YetAnotherMore\Delegation;
+namespace DesignPattern\Test\More\Delegation;
 
-use DesignPattern\YetAnotherMore\Delegation\Component;
-use DesignPattern\YetAnotherMore\Delegation\Controller;
+use DesignPattern\More\Delegation\Component;
+use DesignPattern\More\Delegation\Controller;
 use PHPUnit\Framework\TestCase;
 
 class DelegationTest extends TestCase
 {
     /**
-     * @var \DesignPattern\YetAnotherMore\Delegation\Controller
+     * @var \DesignPattern\More\Delegation\Controller
      */
     private $controller;
 

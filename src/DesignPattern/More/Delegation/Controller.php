@@ -1,18 +1,18 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\Delegation;
+namespace DesignPattern\More\Delegation;
 
 class Controller
 {
     /**
-     * @var \DesignPattern\YetAnotherMore\Delegation\Component
+     * @var \DesignPattern\More\Delegation\Component
      */
     private $component;
 
     /**
      * Controller constructor.
      *
-     * @param \DesignPattern\YetAnotherMore\Delegation\Component $component
+     * @param \DesignPattern\More\Delegation\Component $component
      */
     public function __construct(Component $component)
     {
@@ -26,7 +26,7 @@ class Controller
      *
      * @return array
      */
-    public function toArray(string $string) : array
+    public function toArray(string $string): array
     {
         return $this->component->stringToArray($string);
     }

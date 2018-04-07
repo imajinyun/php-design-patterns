@@ -51,7 +51,7 @@ class Employee
      *
      * @return int
      */
-    public function getAccessLevel() : int
+    public function getAccessLevel(): int
     {
         return $this->accessLevel;
     }

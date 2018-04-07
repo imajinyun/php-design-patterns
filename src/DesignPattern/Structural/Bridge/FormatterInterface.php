@@ -11,5 +11,5 @@ interface FormatterInterface
      *
      * @return string
      */
-    public function format(string $string) : string;
+    public function format(string $string): string;
 }

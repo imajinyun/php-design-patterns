@@ -24,7 +24,7 @@ class Service
      *
      * @return void
      */
-    public function error() : void
+    public function error(): void
     {
         $log = '[ ' . date('Y-m-d H:i:s') . ' ] - Error: ' . __CLASS__;
         $this->logger->log($log);

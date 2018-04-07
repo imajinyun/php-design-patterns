@@ -27,7 +27,7 @@ class DepartmentStore
      * @return string
      * @throws \InvalidArgumentException
      */
-    public function getStoreCoordinate(string $address) : string
+    public function getStoreCoordinate(string $address): string
     {
         if (empty($address)) {
             throw new \InvalidArgumentException('Please enter the address.');

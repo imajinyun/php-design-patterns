@@ -32,7 +32,7 @@ class UserAdapter implements UserInterface
      *
      * @return bool
      */
-    public function login(string $appId, string $appSecret) : bool
+    public function login(string $appId, string $appSecret): bool
     {
         $this->member->getMemberToken($appId, $appSecret);
 
@@ -44,7 +44,7 @@ class UserAdapter implements UserInterface
      *
      * @return int
      */
-    public function getLoginUserNumber() : int
+    public function getLoginUserNumber(): int
     {
         return $this->member->getLoginMemberNumber();
     }

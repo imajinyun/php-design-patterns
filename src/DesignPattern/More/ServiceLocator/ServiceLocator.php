@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\ServiceLocator;
+namespace DesignPattern\More\ServiceLocator;
 
 class ServiceLocator
 {
@@ -23,9 +23,8 @@ class ServiceLocator
      * Add instance.
      *
      * @param string $class
-     * @param \DesignPattern\YetAnotherMore\ServiceLocator\RequestService|
-     *        \DesignPattern\YetAnotherMore\ServiceLocator\ResponseService
-     *        $service
+     * @param \DesignPattern\More\ServiceLocator\RequestService|
+     *        \DesignPattern\More\ServiceLocator\ResponseService $service
      * @param bool   $isShare
      *
      * @return void
@@ -34,7 +33,7 @@ class ServiceLocator
         string $class,
         $service,
         bool $isShare = true
-    ) : void {
+    ): void {
         $this->services[$class] = $service;
         $this->instantiated[$class] = $service;
         $this->shared[$class] = $isShare;
@@ -53,7 +52,7 @@ class ServiceLocator
         string $class,
         array $parameter,
         bool $isShare = false
-    ) : void {
+    ): void {
         $this->services[$class] = $parameter;
         $this->shared[$class] = $isShare;
     }
@@ -63,10 +62,9 @@ class ServiceLocator
      *
      * @return bool
      */
-    public function has(string $class) : bool
+    public function has(string $class): bool
     {
-        return isset($this->services[$class])
-            || isset($this->instantiated[$class]);
+        return isset($this->services[$class]) || isset($this->instantiated[$class]);
     }
 
     /**
@@ -100,7 +98,7 @@ class ServiceLocator
      * @return \DesignPattern\YetAnotherMore\ServiceLocator\ServiceInterface
      * @throws \OutOfRangeException
      */
-    private function getInstance(string $class) : ServiceInterface
+    private function getInstance(string $class): ServiceInterface
     {
         $args = $this->services[$class];
         switch (\count($args)) {

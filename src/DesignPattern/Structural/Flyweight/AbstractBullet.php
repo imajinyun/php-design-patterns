@@ -18,7 +18,7 @@ abstract class AbstractBullet implements BulletInterface
      *
      * @return void
      */
-    public function setPositionInMagazine(int $positionInMagazine = 0) : void
+    public function setPositionInMagazine(int $positionInMagazine = 0): void
     {
         $this->positionInMagazine = $positionInMagazine;
     }
@@ -26,7 +26,7 @@ abstract class AbstractBullet implements BulletInterface
     /**
      * @return int
      */
-    public function getPositionInMagazine() : int
+    public function getPositionInMagazine(): int
     {
         return $this->positionInMagazine;
     }

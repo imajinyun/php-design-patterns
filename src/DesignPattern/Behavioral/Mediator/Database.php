@@ -9,7 +9,7 @@ class Database extends AbstractColleague
      *
      * @return string
      */
-    public function query() : string
+    public function query(): string
     {
         return 'World!';
     }

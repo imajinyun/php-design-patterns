@@ -37,7 +37,7 @@ class Parser
      *
      * @return array
      */
-    private function toDecompose(string $expression) : array
+    private function toDecompose(string $expression): array
     {
         $stack = [];
         foreach (explode(' ', $expression) as $item) {
@@ -66,7 +66,7 @@ class Parser
      *
      * @return \DesignPattern\Behavioral\Interpreter\Operation
      */
-    private function arithmetic(array $array, string $item) : Operation
+    private function arithmetic(array $array, string $item): Operation
     {
         $right = array_pop($array);
         $left = array_pop($array);

@@ -11,5 +11,5 @@ interface GeolocationServiceInterface
      *
      * @return string
      */
-    public function getCoordinateFromAddress(string $address) : string;
+    public function getCoordinateFromAddress(string $address): string;
 }

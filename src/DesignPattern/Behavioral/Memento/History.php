@@ -44,7 +44,7 @@ class History implements \Countable
     /**
      * @return int
      */
-    public function count() : int
+    public function count(): int
     {
         return \count($this->mementos);
     }

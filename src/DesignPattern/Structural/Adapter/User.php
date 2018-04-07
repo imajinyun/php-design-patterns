@@ -17,7 +17,7 @@ class User implements UserInterface
      *
      * @return bool
      */
-    public function login(string $username, string $password) : bool
+    public function login(string $username, string $password): bool
     {
         $data = ['username' => $username, 'password' => $password];
         ksort($data);
@@ -31,7 +31,7 @@ class User implements UserInterface
      *
      * @return int
      */
-    public function getLoginUserNumber() : int
+    public function getLoginUserNumber(): int
     {
         return $this->number;
     }

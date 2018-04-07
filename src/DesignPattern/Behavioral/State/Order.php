@@ -27,7 +27,7 @@ class Order
     /**
      * @return \DesignPattern\Behavioral\State\StateInterface|null
      */
-    public function getState() : StateInterface
+    public function getState(): StateInterface
     {
         return $this->state;
     }
@@ -37,7 +37,7 @@ class Order
      *
      * @return void
      */
-    public function setState(StateInterface $state) : void
+    public function setState(StateInterface $state): void
     {
         $this->state = $state;
     }

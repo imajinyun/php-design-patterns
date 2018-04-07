@@ -19,7 +19,7 @@ class Pool implements \Countable
      *
      * @return \DesignPattern\Creational\Pool\StringReverseWorker
      */
-    public function get() : StringReverseWorker
+    public function get(): StringReverseWorker
     {
         if (\count($this->freeWorker) === 0) {
             $worker = new StringReverseWorker();
@@ -50,7 +50,7 @@ class Pool implements \Countable
     /**
      * @return int
      */
-    public function count() : int
+    public function count(): int
     {
         return \count($this->usedWorker) + \count($this->freeWorker);
     }

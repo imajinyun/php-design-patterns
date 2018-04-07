@@ -38,7 +38,7 @@ class Form implements RenderableInterface
      *
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         static $i = 0;
         $form = '';

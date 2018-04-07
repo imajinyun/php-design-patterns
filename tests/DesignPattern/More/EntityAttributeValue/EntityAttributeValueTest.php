@@ -1,10 +1,10 @@
 <?php
 
-namespace DesignPattern\Test\YetAnotherMore\EntityAttributeValue;
+namespace DesignPattern\Test\More\EntityAttributeValue;
 
-use DesignPattern\YetAnotherMore\EntityAttributeValue\Attribute;
-use DesignPattern\YetAnotherMore\EntityAttributeValue\Entity;
-use DesignPattern\YetAnotherMore\EntityAttributeValue\Value;
+use DesignPattern\More\EntityAttributeValue\Attribute;
+use DesignPattern\More\EntityAttributeValue\Entity;
+use DesignPattern\More\EntityAttributeValue\Value;
 use PHPUnit\Framework\TestCase;
 
 class EntityAttributeValueTest extends TestCase
@@ -13,8 +13,7 @@ class EntityAttributeValueTest extends TestCase
     {
         $attribute = new Attribute('attribute');
 
-        self::assertInstanceOf(\SplObjectStorage::class,
-            $attribute->getValue());
+        self::assertInstanceOf(\SplObjectStorage::class, $attribute->getValue());
     }
 
     public function testValue()

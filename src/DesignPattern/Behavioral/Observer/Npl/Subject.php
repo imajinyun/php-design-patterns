@@ -84,7 +84,7 @@ class Subject implements SubjectInterface
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -94,7 +94,7 @@ class Subject implements SubjectInterface
      *
      * @return string
      */
-    public function getAuthor() : string
+    public function getAuthor(): string
     {
         return $this->author;
     }
@@ -117,7 +117,7 @@ class Subject implements SubjectInterface
      *
      * @return array
      */
-    public function &getObservers() : array
+    public function &getObservers(): array
     {
         return $this->observers;
     }

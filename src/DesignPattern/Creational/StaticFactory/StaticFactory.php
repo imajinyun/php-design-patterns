@@ -12,7 +12,7 @@ final class StaticFactory
      * @return \DesignPattern\Creational\StaticFactory\FormatterInterface
      * @throws \InvalidArgumentException
      */
-    public static function factory(string $type) : FormatterInterface
+    public static function factory(string $type): FormatterInterface
     {
         $class = __NAMESPACE__ . '\Formatter' . ucfirst($type);
 

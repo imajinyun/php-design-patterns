@@ -9,7 +9,7 @@ class StringService extends Service
      *
      * @return string
      */
-    public function get() : string
+    public function get(): string
     {
         return $this->formatter->format(time());
     }

@@ -22,7 +22,7 @@ class Webservice implements RenderableInterface
     /**
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         return $this->data;
     }

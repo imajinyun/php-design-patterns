@@ -45,7 +45,7 @@ class UserMapper
      *
      * @return \DesignPattern\Structural\DataMapper\User
      */
-    private function mapRowToUser(array $row) : User
+    private function mapRowToUser(array $row): User
     {
         return User::fromState($row);
     }

@@ -32,7 +32,7 @@ class RoleVisitor implements VisitorInterface
     /**
      * @return \DesignPattern\Behavioral\Visitor\RoleInterface[]
      */
-    public function getRole() : array
+    public function getRole(): array
     {
         return $this->roles;
     }

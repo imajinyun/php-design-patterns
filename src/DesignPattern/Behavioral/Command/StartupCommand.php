@@ -22,7 +22,7 @@ class StartupCommand implements CommandInterface
     /**
      * @return void
      */
-    public function execute() : void
+    public function execute(): void
     {
         $this->computer->startup();
     }

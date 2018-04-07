@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\ServiceLocator;
+namespace DesignPattern\More\ServiceLocator;
 
 class RequestService implements ServiceInterface
 {

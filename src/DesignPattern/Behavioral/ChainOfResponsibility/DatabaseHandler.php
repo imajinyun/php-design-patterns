@@ -18,7 +18,7 @@ class DatabaseHandler extends Handler
      *
      * @return string
      */
-    protected function process(RequestInterface $request) : string
+    protected function process(RequestInterface $request): string
     {
         // Generally, the database should be used here.
         return 'Storage data in Database.';

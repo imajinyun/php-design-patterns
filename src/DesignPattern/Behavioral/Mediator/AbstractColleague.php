@@ -24,7 +24,7 @@ abstract class AbstractColleague
      *
      * @return \DesignPattern\Behavioral\Mediator\MediatorInterface
      */
-    protected function getMediator() : MediatorInterface
+    protected function getMediator(): MediatorInterface
     {
         return $this->mediator;
     }

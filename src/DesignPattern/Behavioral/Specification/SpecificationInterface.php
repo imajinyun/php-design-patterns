@@ -9,5 +9,5 @@ interface SpecificationInterface
      *
      * @return bool
      */
-    public function isSatisfiedBy(Item $item) : bool;
+    public function isSatisfiedBy(Item $item): bool;
 }

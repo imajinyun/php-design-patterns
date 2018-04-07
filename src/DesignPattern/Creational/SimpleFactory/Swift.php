@@ -11,7 +11,7 @@ class Swift implements LanguageInterface
      *
      * @return string
      */
-    public function toWriteApplication(string $language) : string
+    public function toWriteApplication(string $language): string
     {
         $language = ucfirst($language);
 

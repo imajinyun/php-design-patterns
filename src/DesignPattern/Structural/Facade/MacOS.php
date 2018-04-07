@@ -14,12 +14,12 @@ class MacOS implements MacOSInterface
      */
     private $name;
 
-    public function restart() : bool
+    public function restart(): bool
     {
         return $this->execute('restart');
     }
 
-    public function shutdown() : bool
+    public function shutdown(): bool
     {
         return $this->execute('shutdown');
     }
@@ -27,7 +27,7 @@ class MacOS implements MacOSInterface
     /**
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -35,7 +35,7 @@ class MacOS implements MacOSInterface
     /**
      * @return string
      */
-    public function launch() : string
+    public function launch(): string
     {
         return 'The operating system is starting...';
     }

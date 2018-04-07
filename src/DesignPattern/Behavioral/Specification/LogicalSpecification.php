@@ -38,7 +38,7 @@ class LogicalSpecification extends AbstractSpecification
      *
      * @return bool
      */
-    public function isSatisfiedBy(Item $item) : bool
+    public function isSatisfiedBy(Item $item): bool
     {
         $type = $this->type;
 

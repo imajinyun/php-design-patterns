@@ -24,7 +24,7 @@ class StringReverseWorker
      *
      * @return string
      */
-    public function run(string $text) : string
+    public function run(string $text): string
     {
         return strrev($text);
     }

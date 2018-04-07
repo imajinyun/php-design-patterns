@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\Repository;
+namespace DesignPattern\More\Repository;
 
 class User
 {
@@ -40,7 +40,7 @@ class User
      *
      * @return User
      */
-    public static function arrayToObject(array $array) : User
+    public static function arrayToObject(array $array): User
     {
         return new self(
             $array['id'],
@@ -52,7 +52,7 @@ class User
     /**
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -60,7 +60,7 @@ class User
     /**
      * @param int|null $id
      */
-    public function setId(int $id) : void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -68,7 +68,7 @@ class User
     /**
      * @return string
      */
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -76,7 +76,7 @@ class User
     /**
      * @param string $username
      */
-    public function setUsername(string $username) : void
+    public function setUsername(string $username): void
     {
         $this->username = $username;
     }
@@ -84,7 +84,7 @@ class User
     /**
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -92,7 +92,7 @@ class User
     /**
      * @param string $email
      */
-    public function setEmail(string $email) : void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }

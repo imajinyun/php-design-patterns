@@ -7,7 +7,7 @@ class Computer
     /**
      * @return void
      */
-    public function startup() : void
+    public function startup(): void
     {
         echo 'System is starting up...';
     }
@@ -15,7 +15,7 @@ class Computer
     /**
      * @return void
      */
-    public function shutdown() : void
+    public function shutdown(): void
     {
         echo 'System is shutting down...';
     }

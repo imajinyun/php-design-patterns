@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\Repository;
+namespace DesignPattern\More\Repository;
 
 class MemoryStorage
 {
@@ -22,7 +22,7 @@ class MemoryStorage
      * @return array
      * @throws \OutOfRangeException
      */
-    public function read(int $id) : array
+    public function read(int $id): array
     {
         $this->validate($id);
 
@@ -36,7 +36,7 @@ class MemoryStorage
      *
      * @return int
      */
-    public function write(array $data) : int
+    public function write(array $data): int
     {
         $this->lastIndex++;
         $data['id'] = $this->lastIndex;
@@ -53,7 +53,7 @@ class MemoryStorage
      * @return void
      * @throws \OutOfRangeException
      */
-    public function delete(int $id) : void
+    public function delete(int $id): void
     {
         $this->validate($id);
 
@@ -68,7 +68,7 @@ class MemoryStorage
      * @return void
      * @throws \OutOfRangeException
      */
-    private function validate(int $id) : void
+    private function validate(int $id): void
     {
         if (! isset($this->data[$id])) {
             throw new \OutOfRangeException(sprintf('Data for ID #%d is not found.',

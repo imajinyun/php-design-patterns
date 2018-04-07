@@ -17,7 +17,7 @@ class Weibo implements MemberInterface
      *
      * @return bool
      */
-    public function getMemberToken(string $appId, string $appSecret) : bool
+    public function getMemberToken(string $appId, string $appSecret): bool
     {
         $data = ['appId' => $appId, 'appSecret' => $appSecret];
         ksort($data);
@@ -31,7 +31,7 @@ class Weibo implements MemberInterface
      *
      * @return int
      */
-    public function getLoginMemberNumber() : int
+    public function getLoginMemberNumber(): int
     {
         return $this->number;
     }

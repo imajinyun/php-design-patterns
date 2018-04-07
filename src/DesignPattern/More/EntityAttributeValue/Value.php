@@ -1,11 +1,11 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\EntityAttributeValue;
+namespace DesignPattern\More\EntityAttributeValue;
 
 class Value
 {
     /**
-     * @var \DesignPattern\YetAnotherMore\EntityAttributeValue\Attribute
+     * @var \DesignPattern\More\EntityAttributeValue\Attribute
      */
     private $attribute;
 
@@ -17,8 +17,8 @@ class Value
     /**
      * Value constructor.
      *
-     * @param \DesignPattern\YetAnotherMore\EntityAttributeValue\Attribute $attribute
-     * @param string                                                       $name
+     * @param \DesignPattern\More\EntityAttributeValue\Attribute $attribute
+     * @param string                                             $name
      */
     public function __construct(Attribute $attribute, string $name)
     {

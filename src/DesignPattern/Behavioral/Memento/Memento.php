@@ -24,7 +24,7 @@ class Memento
      *
      * @return \DesignPattern\Behavioral\Memento\State
      */
-    public function getState() : State
+    public function getState(): State
     {
         return $this->state;
     }

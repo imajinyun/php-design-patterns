@@ -15,7 +15,7 @@ abstract class AbstractFactory
     abstract public function createImage(
         string $src,
         string $title = ''
-    ) : Image;
+    ): Image;
 
     /**
      * Create a Text component.
@@ -24,5 +24,5 @@ abstract class AbstractFactory
      *
      * @return \DesignPattern\Creational\AbstractFactory\Text
      */
-    abstract public function createText(string $text) : Text;
+    abstract public function createText(string $text): Text;
 }

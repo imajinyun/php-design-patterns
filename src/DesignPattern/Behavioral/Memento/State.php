@@ -59,7 +59,7 @@ class State
      * @return void
      * @throws \InvalidArgumentException When state is not set.
      */
-    private static function isValidState(int $state) : void
+    private static function isValidState(int $state): void
     {
         if (! \in_array($state, self::$validStates, true)) {
             throw new \InvalidArgumentException('Invalid state given.');

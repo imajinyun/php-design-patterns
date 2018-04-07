@@ -15,7 +15,7 @@ class HtmlFactory extends AbstractFactory
      *
      * @return \DesignPattern\Creational\AbstractFactory\Image
      */
-    public function createImage(string $src, string $title = '') : Image
+    public function createImage(string $src, string $title = ''): Image
     {
         return new HtmlImage($src, $title);
     }
@@ -27,7 +27,7 @@ class HtmlFactory extends AbstractFactory
      *
      * @return \DesignPattern\Creational\AbstractFactory\Text
      */
-    public function createText(string $text) : Text
+    public function createText(string $text): Text
     {
         return new HtmlText($text);
     }

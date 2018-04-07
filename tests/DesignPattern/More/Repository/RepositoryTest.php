@@ -1,20 +1,15 @@
 <?php
 
-namespace DesignPattern\Test\YetAnotherMore\Repository;
+namespace DesignPattern\Test\More\Repository;
 
-use DesignPattern\YetAnotherMore\Repository\MemoryStorage;
-use DesignPattern\YetAnotherMore\Repository\User;
-use DesignPattern\YetAnotherMore\Repository\UserRepository;
+use DesignPattern\More\Repository\MemoryStorage;
+use DesignPattern\More\Repository\User;
+use DesignPattern\More\Repository\UserRepository;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Repository Test.
- *
- * @package DesignPattern\Test\YetAnotherMore\Repository
- */
 class RepositoryTest extends TestCase
 {
-    public function testUserRepository()
+    public function testUserRepository(): void
     {
         $repository = new UserRepository(new MemoryStorage());
         $user1 = new User(0, 'Jack Ma', 'abc@163.com');

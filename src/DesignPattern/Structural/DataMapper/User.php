@@ -33,7 +33,7 @@ class User
      *
      * @return \DesignPattern\Structural\DataMapper\User
      */
-    public static function fromState(array $state) : User
+    public static function fromState(array $state): User
     {
         return new self($state['username'], $state['email']);
     }
@@ -43,7 +43,7 @@ class User
      *
      * @return string
      */
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -53,7 +53,7 @@ class User
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }

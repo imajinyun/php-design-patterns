@@ -30,7 +30,7 @@ class ItemIterator implements \Iterator
      *
      * @return \DesignPattern\Behavioral\Iterator\Item
      */
-    public function current() : Item
+    public function current(): Item
     {
         return $this->list->getItem($this->index);
     }
@@ -40,7 +40,7 @@ class ItemIterator implements \Iterator
      *
      * @return int
      */
-    public function key() : int
+    public function key(): int
     {
         return $this->index;
     }
@@ -50,7 +50,7 @@ class ItemIterator implements \Iterator
      *
      * @return int
      */
-    public function next() : int
+    public function next(): int
     {
         return $this->index++;
     }
@@ -60,7 +60,7 @@ class ItemIterator implements \Iterator
      *
      * @return int
      */
-    public function rewind() : int
+    public function rewind(): int
     {
         return $this->index = 0;
     }
@@ -70,7 +70,7 @@ class ItemIterator implements \Iterator
      *
      * @return bool
      */
-    public function valid() : bool
+    public function valid(): bool
     {
         return null !== $this->list->getItem($this->index);
     }

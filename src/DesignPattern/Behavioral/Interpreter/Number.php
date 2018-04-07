@@ -24,7 +24,7 @@ class Number implements ExpressionInterface
      *
      * @return int
      */
-    public function interpret(array $context) : int
+    public function interpret(array $context): int
     {
         return $this->value;
     }

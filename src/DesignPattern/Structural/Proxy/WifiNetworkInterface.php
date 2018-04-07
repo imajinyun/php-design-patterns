@@ -11,5 +11,5 @@ interface WifiNetworkInterface
      *
      * @return bool
      */
-    public function grantAccess(Employee $employee) : bool;
+    public function grantAccess(Employee $employee): bool;
 }

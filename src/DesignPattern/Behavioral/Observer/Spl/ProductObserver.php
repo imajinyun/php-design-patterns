@@ -11,7 +11,7 @@ class ProductObserver implements \SplObserver
      *
      * @return void
      */
-    public function update(\SplSubject $subject) : void
+    public function update(\SplSubject $subject): void
     {
         /** @var \DesignPattern\Behavioral\Observer\Spl\Product $subject */
         echo sprintf('Product has a new price: %d$.', $subject->getPrice());

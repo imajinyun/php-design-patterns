@@ -31,7 +31,7 @@ class RangeSpecification extends AbstractSpecification
      *
      * @return bool
      */
-    public function isSatisfiedBy(Item $item) : bool
+    public function isSatisfiedBy(Item $item): bool
     {
         $value = $item->getValue();
         if ($this->max !== null && $value > $this->max) {

@@ -1,16 +1,16 @@
 <?php
 
-namespace DesignPattern\Test\YetAnotherMore\ServiceLocator;
+namespace DesignPattern\Test\More\ServiceLocator;
 
-use DesignPattern\YetAnotherMore\ServiceLocator\RequestService;
-use DesignPattern\YetAnotherMore\ServiceLocator\ResponseService;
-use DesignPattern\YetAnotherMore\ServiceLocator\ServiceLocator;
+use DesignPattern\More\ServiceLocator\RequestService;
+use DesignPattern\More\ServiceLocator\ResponseService;
+use DesignPattern\More\ServiceLocator\ServiceLocator;
 use PHPUnit\Framework\TestCase;
 
 class ServiceLocatorTest extends TestCase
 {
     /**
-     * @var \DesignPattern\YetAnotherMore\ServiceLocator\ServiceLocator
+     * @var \DesignPattern\More\ServiceLocator\ServiceLocator
      */
     private $serviceLocator;
 
@@ -19,7 +19,7 @@ class ServiceLocatorTest extends TestCase
         $this->serviceLocator = new ServiceLocator();
     }
 
-    public function testHasServices()
+    public function testHasServices(): void
     {
         $this->serviceLocator->addInstance(
             RequestService::class,

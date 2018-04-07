@@ -30,7 +30,7 @@ class Collection
      * @return array
      * @throws \LogicException
      */
-    public function sort() : array
+    public function sort(): array
     {
         if (! $this->comparator) {
             throw new \LogicException('Comparator is not set.');
@@ -46,7 +46,7 @@ class Collection
      *
      * @return void
      */
-    public function setComparator(ComparatorInterface $comparator) : void
+    public function setComparator(ComparatorInterface $comparator): void
     {
         $this->comparator = $comparator;
     }

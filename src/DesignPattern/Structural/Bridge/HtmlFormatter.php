@@ -11,7 +11,7 @@ class HtmlFormatter implements FormatterInterface
      *
      * @return string
      */
-    public function format(string $string) : string
+    public function format(string $string): string
     {
         return sprintf('<p>%s</p>', $string);
     }

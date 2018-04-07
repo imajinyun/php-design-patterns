@@ -16,7 +16,7 @@ trait MultitonTrait
      *
      * @return \DesignPattern\Creational\Multiton\Multiton
      */
-    public static function getInstance(string $identifier) : Multiton
+    public static function getInstance(string $identifier): Multiton
     {
         $class = static::class;
         $parameter = \array_slice(\func_get_args(), 1);
@@ -48,7 +48,7 @@ trait MultitonTrait
     public static function setInstance(
         string $identifier,
         Multiton $instance
-    ) : void {
+    ): void {
         static::$instances[$identifier] = $instance;
     }
 

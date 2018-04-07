@@ -11,7 +11,7 @@ abstract class AbstractMap implements GeolocationServiceInterface
      *
      * @return string
      */
-    public function getCoordinateFromAddress(string $address) : string
+    public function getCoordinateFromAddress(string $address): string
     {
         $data = [
             'longtitude' => 120.19,

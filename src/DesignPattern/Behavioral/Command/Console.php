@@ -24,7 +24,7 @@ class Console
      *
      * @return \DesignPattern\Behavioral\Command\CommandInterface
      */
-    public function getCommand() : CommandInterface
+    public function getCommand(): CommandInterface
     {
         return $this->command;
     }
@@ -36,7 +36,7 @@ class Console
      *
      * @return void
      */
-    public function setCommand(CommandInterface $command) : void
+    public function setCommand(CommandInterface $command): void
     {
         $this->command = $command;
     }
@@ -46,7 +46,7 @@ class Console
      *
      * @return void
      */
-    public function invoke() : void
+    public function invoke(): void
     {
         $this->command->execute();
     }

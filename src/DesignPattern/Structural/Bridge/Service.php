@@ -24,7 +24,7 @@ abstract class Service
      *
      * @return void
      */
-    public function setFormatter(FormatterInterface $formatter) : void
+    public function setFormatter(FormatterInterface $formatter): void
     {
         $this->formatter = $formatter;
     }
@@ -32,5 +32,5 @@ abstract class Service
     /**
      * @return string
      */
-    abstract public function get() : string;
+    abstract public function get(): string;
 }

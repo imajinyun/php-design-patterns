@@ -11,5 +11,5 @@ interface LanguageInterface
      *
      * @return string
      */
-    public function toWriteApplication(string $language) : string;
+    public function toWriteApplication(string $language): string;
 }

@@ -7,7 +7,7 @@ class Bios implements BiosInterface
     /**
      * @return string
      */
-    public function execute() : string
+    public function execute(): string
     {
         return 'Command is executing...';
     }
@@ -25,7 +25,7 @@ class Bios implements BiosInterface
     /**
      * @return bool
      */
-    public function waitingForPressAnyKey() : bool
+    public function waitingForPressAnyKey(): bool
     {
         return true;
     }
@@ -33,7 +33,7 @@ class Bios implements BiosInterface
     /**
      * @return bool
      */
-    public function powerOn() : bool
+    public function powerOn(): bool
     {
         return true;
     }
@@ -41,7 +41,7 @@ class Bios implements BiosInterface
     /**
      * @return bool
      */
-    public function powerOff() : bool
+    public function powerOff(): bool
     {
         return true;
     }

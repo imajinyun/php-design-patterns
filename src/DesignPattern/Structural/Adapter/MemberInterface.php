@@ -12,12 +12,12 @@ interface MemberInterface
      *
      * @return bool
      */
-    public function getMemberToken(string $appId, string $appSecret) : bool;
+    public function getMemberToken(string $appId, string $appSecret): bool;
 
     /**
      * Get login user number.
      *
      * @return int
      */
-    public function getLoginMemberNumber() : int;
+    public function getLoginMemberNumber(): int;
 }

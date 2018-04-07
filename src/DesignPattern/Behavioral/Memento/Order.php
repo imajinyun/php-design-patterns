@@ -24,7 +24,7 @@ class Order
      *
      * @return \DesignPattern\Behavioral\Memento\Memento
      */
-    public function saveStateToMemento() : Memento
+    public function saveStateToMemento(): Memento
     {
         return new Memento(clone $this->state);
     }
@@ -36,7 +36,7 @@ class Order
      *
      * @return void
      */
-    public function restoreStateFromMemento(Memento $memento = null) : void
+    public function restoreStateFromMemento(Memento $memento = null): void
     {
         $this->state = $memento !== null ? $memento->getState() : null;
     }
@@ -46,7 +46,7 @@ class Order
      *
      * @return \DesignPattern\Behavioral\Memento\State
      */
-    public function getState() : State
+    public function getState(): State
     {
         return $this->state;
     }
@@ -58,7 +58,7 @@ class Order
      *
      * @return void
      */
-    public function setState(State $state) : void
+    public function setState(State $state): void
     {
         $this->state = $state;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\Repository;
+namespace DesignPattern\More\Repository;
 
 interface RepositoryInterface
 {

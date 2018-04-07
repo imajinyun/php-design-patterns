@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\EntityAttributeValue;
+namespace DesignPattern\More\EntityAttributeValue;
 
 class Entity
 {

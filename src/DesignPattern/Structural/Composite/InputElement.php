@@ -31,7 +31,7 @@ class InputElement implements RenderableInterface
      *
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         $format = '<input type="%s" name="%s">';
 

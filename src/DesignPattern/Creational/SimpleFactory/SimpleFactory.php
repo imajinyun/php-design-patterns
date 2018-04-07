@@ -28,7 +28,7 @@ class SimpleFactory
      * @return mixed
      * @throws \InvalidArgumentException
      */
-    public function create(string $language) : LanguageInterface
+    public function create(string $language): LanguageInterface
     {
         if (! array_key_exists($language, $this->language)) {
             throw new \InvalidArgumentException("$language is not valid programming language.");

@@ -28,7 +28,7 @@ class Gun
     /**
      * @return array|BulletInterface[]
      */
-    public function getBullets() : array
+    public function getBullets(): array
     {
         return $this->bullets;
     }
@@ -36,7 +36,7 @@ class Gun
     /**
      * @return int
      */
-    public function getMaxBullets() : int
+    public function getMaxBullets(): int
     {
         return $this->maxBullets;
     }
@@ -46,7 +46,7 @@ class Gun
      *
      * @return void
      */
-    public function reload(string $type) : void
+    public function reload(string $type): void
     {
         $count = \count($this->bullets);
         for (; $count < $this->maxBullets; $count++) {
@@ -57,7 +57,7 @@ class Gun
     /**
      * @return string
      */
-    public function fire() : string
+    public function fire(): string
     {
         if ($count = \count($this->bullets)) {
             $bullet = \array_shift($this->bullets);

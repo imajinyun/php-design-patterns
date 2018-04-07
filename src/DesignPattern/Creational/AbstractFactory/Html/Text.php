@@ -11,7 +11,7 @@ class Text extends BaseText
      *
      * @return string
      */
-    public function render() : string
+    public function render(): string
     {
         return sprintf('<div>%s</div>', htmlspecialchars($this->text));
     }

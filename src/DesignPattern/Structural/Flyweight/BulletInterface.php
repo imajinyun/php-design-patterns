@@ -12,5 +12,5 @@ interface BulletInterface
     /**
      * @return int
      */
-    public function getPositionInMagazine() : int;
+    public function getPositionInMagazine(): int;
 }

@@ -11,7 +11,7 @@ class FormatterString implements FormatterInterface
      *
      * @return string
      */
-    public function format($value) : string
+    public function format($value): string
     {
         return (string)trim($value);
     }

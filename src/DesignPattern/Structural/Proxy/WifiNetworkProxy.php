@@ -26,7 +26,7 @@ class WifiNetworkProxy implements WifiNetworkInterface
      *
      * @return bool
      */
-    public function grantAccess(Employee $employee) : bool
+    public function grantAccess(Employee $employee): bool
     {
         if ($employee->getAccessLevel() === Employee::ACCESS_LEVEL_ALLOW) {
             return $this->wifiNetwork->grantAccess($employee);

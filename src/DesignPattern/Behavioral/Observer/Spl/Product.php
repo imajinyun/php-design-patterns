@@ -39,7 +39,7 @@ class Product implements \SplSubject
      * @return void
      * @link http://php.net/manual/en/splsubject.attach.php
      */
-    public function attach(\SplObserver $observer) : void
+    public function attach(\SplObserver $observer): void
     {
         $this->observers->attach($observer);
     }
@@ -52,7 +52,7 @@ class Product implements \SplSubject
      * @return void
      * @link http://php.net/manual/en/splsubject.detach.php
      */
-    public function detach(\SplObserver $observer) : void
+    public function detach(\SplObserver $observer): void
     {
         $this->observers->detach($observer);
     }
@@ -63,7 +63,7 @@ class Product implements \SplSubject
      * @return void
      * @link http://php.net/manual/en/splsubject.notify.php
      */
-    public function notify() : void
+    public function notify(): void
     {
         /** @var \SplObserver $observer */
         foreach ($this->observers as $observer) {
@@ -76,7 +76,7 @@ class Product implements \SplSubject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -86,7 +86,7 @@ class Product implements \SplSubject
      *
      * @return int
      */
-    public function getPrice() : int
+    public function getPrice(): int
     {
         return $this->price;
     }
@@ -107,7 +107,7 @@ class Product implements \SplSubject
     /**
      * @return \SplObjectStorage
      */
-    public function getObservers() : \SplObjectStorage
+    public function getObservers(): \SplObjectStorage
     {
         return $this->observers;
     }

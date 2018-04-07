@@ -12,7 +12,7 @@ class JsonTemplate extends AbstractTemplate
     /**
      * @return string
      */
-    protected function doSomething() : string
+    protected function doSomething(): string
     {
         $stdClass = new \stdClass();
         $stdClass->method = __METHOD__;
@@ -20,7 +20,7 @@ class JsonTemplate extends AbstractTemplate
         return json_encode($stdClass);
     }
 
-    protected function getHelper() : void
+    protected function getHelper(): void
     {
     }
 }

@@ -9,7 +9,7 @@ class Pay extends AbstractState
      *
      * @return bool
      */
-    public function toPay(Order $order) : bool
+    public function toPay(Order $order): bool
     {
         $order->setState(new Dispatch());
 

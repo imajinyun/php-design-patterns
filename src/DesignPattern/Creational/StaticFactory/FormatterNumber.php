@@ -11,7 +11,7 @@ class FormatterNumber implements FormatterInterface
      *
      * @return int
      */
-    public function format($value) : int
+    public function format($value): int
     {
         return (int)$value;
     }

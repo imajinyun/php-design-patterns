@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPattern\YetAnotherMore\EntityAttributeValue;
+namespace DesignPattern\More\EntityAttributeValue;
 
 class Attribute
 {
@@ -26,11 +26,11 @@ class Attribute
     }
 
     /**
-     * @param \DesignPattern\YetAnotherMore\EntityAttributeValue\Value $value
+     * @param \DesignPattern\More\EntityAttributeValue\Value $value
      *
      * @return void
      */
-    public function addValue(Value $value) : void
+    public function addValue(Value $value): void
     {
         $this->storage->attach($value);
     }
@@ -38,7 +38,7 @@ class Attribute
     /**
      * @return \SplObjectStorage
      */
-    public function getValue() : \SplObjectStorage
+    public function getValue(): \SplObjectStorage
     {
         return $this->storage;
     }
