@@ -10,8 +10,8 @@ class FluentInterfaceTest extends TestCase
     public function testQueryBuilder()
     {
         $query = (new Mysql())->select(['email', 'nickname', 'age'])
-                              ->from('user', 'u')
-                              ->where('u.email = ?');
+            ->from('user', 'u')
+            ->where('u.email = ?');
 
         $expected
             = 'SELECT email,nickname,age FROM user AS u WHERE u.email = ?';

@@ -37,7 +37,7 @@ class Subject implements SubjectInterface
      */
     public function attach(ObserverInterface $observer)
     {
-        if (! \in_array($observer, $this->observers, true)) {
+        if (!\in_array($observer, $this->observers, true)) {
             $this->observers[] = $observer;
         }
     }

@@ -21,7 +21,7 @@ abstract class Prototype
 
     /**
      * @param string $property
-     * @param mixed  $value
+     * @param mixed $value
      */
     public function __set(string $property, $value)
     {

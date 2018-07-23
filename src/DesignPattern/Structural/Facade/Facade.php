@@ -17,7 +17,7 @@ class Facade
     /**
      * Facade constructor.
      *
-     * @param \DesignPattern\Structural\Facade\BiosInterface  $bios
+     * @param \DesignPattern\Structural\Facade\BiosInterface $bios
      * @param \DesignPattern\Structural\Facade\MacOSInterface $macOS
      */
     public function __construct(BiosInterface $bios, MacOSInterface $macOS)

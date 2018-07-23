@@ -4,11 +4,6 @@ namespace DesignPattern\Behavioral\ChainOfResponsibility;
 
 use Psr\Http\Message\RequestInterface;
 
-/**
- * Class MemoryHandler
- *
- * @package DesignPattern\Behavioral\ChainOfResponsibility
- */
 class MemoryHandler extends Handler
 {
     /**
@@ -19,7 +14,7 @@ class MemoryHandler extends Handler
     /**
      * MemoryHandler constructor.
      *
-     * @param array                                                        $data
+     * @param array $data
      * @param \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null $handler
      */
     public function __construct(array $data, Handler $handler = null)

@@ -23,7 +23,7 @@ class VisitorTest extends TestCase
     /**
      * @return array
      */
-    public function getRoles() : array
+    public function getRoles(): array
     {
         return [
             [new User('Admin')],

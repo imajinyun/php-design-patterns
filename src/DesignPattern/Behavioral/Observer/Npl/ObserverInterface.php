@@ -14,8 +14,8 @@ interface ObserverInterface
     public function update(SubjectInterface $subject);
 
     /**
-     * @param int                                                     $code
-     * @param string                                                  $message
+     * @param int $code
+     * @param string $message
      * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
      *
      * @return mixed

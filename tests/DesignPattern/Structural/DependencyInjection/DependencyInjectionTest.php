@@ -13,7 +13,7 @@ class DependencyInjectionTest extends TestCase
     /**
      * @return array
      */
-    public function getMaps() : array
+    public function getMaps(): array
     {
         return [
             [new BaiduMap()],
@@ -32,8 +32,8 @@ class DependencyInjectionTest extends TestCase
         $address = '中关村大厦';
         $google = [
             'longitude' => 120.19,
-            'latitude'  => 48.75,
-            'address'   => $address,
+            'latitude' => 48.75,
+            'address' => $address,
         ];
         sort($google);
         $expected = json_encode($google);

@@ -4,11 +4,6 @@ namespace DesignPattern\Behavioral\ChainOfResponsibility;
 
 use Psr\Http\Message\RequestInterface;
 
-/**
- * Class DatabaseHandler
- *
- * @package DesignPattern\Behavioral\ChainOfResponsibility
- */
 class DatabaseHandler extends Handler
 {
     /**

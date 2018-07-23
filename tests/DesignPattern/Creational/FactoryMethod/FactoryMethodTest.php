@@ -22,7 +22,7 @@ class FactoryMethodTest extends TestCase
     /**
      * @return array
      */
-    public function getFactories() : array
+    public function getFactories(): array
     {
         return [
             [new FoxconnFactory()],

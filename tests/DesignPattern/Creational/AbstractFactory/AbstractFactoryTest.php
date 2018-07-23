@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace DesignPattern\Test\Creational\AbstractFactory;
 
@@ -14,7 +14,7 @@ class AbstractFactoryTest extends TestCase
     /**
      * @return array
      */
-    public function getFactories() : array
+    public function getFactories(): array
     {
         return [
             [new HtmlFactory()],

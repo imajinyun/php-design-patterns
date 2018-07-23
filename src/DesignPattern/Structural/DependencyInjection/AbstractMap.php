@@ -15,8 +15,8 @@ abstract class AbstractMap implements GeolocationServiceInterface
     {
         $data = [
             'longtitude' => 120.19,
-            'latitude'   => 48.75,
-            'address'    => $address,
+            'latitude' => 48.75,
+            'address' => $address,
         ];
         sort($data);
 

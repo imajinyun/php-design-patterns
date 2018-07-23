@@ -32,7 +32,7 @@ class Collection
      */
     public function sort(): array
     {
-        if (! $this->comparator) {
+        if (!$this->comparator) {
             throw new \LogicException('Comparator is not set.');
         }
 

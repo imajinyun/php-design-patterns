@@ -22,7 +22,7 @@ class SimpleFactoryTest extends TestCase
     /**
      * @return array
      */
-    public function getLanguage() : array
+    public function getLanguage(): array
     {
         return [
             ['java'],

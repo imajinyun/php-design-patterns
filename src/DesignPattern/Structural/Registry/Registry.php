@@ -27,7 +27,7 @@ abstract class Registry
      * Sets a value.
      *
      * @param string $key
-     * @param mixed  $val
+     * @param mixed $val
      *
      * @return void
      */

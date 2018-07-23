@@ -21,8 +21,8 @@ class MediatorTest extends TestCase
         $this->consumer = new Consumer($mediator);
 
         $mediator->setConsumer($this->consumer)
-                 ->setServer(new Server($mediator))
-                 ->setDatabase(new Database($mediator));
+            ->setServer(new Server($mediator))
+            ->setDatabase(new Database($mediator));
     }
 
     public function testConsumerRequest()

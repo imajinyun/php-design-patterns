@@ -17,7 +17,7 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * LogicalSpecification constructor.
      *
-     * @param string                   $type
+     * @param string $type
      * @param SpecificationInterface[] ...$specification
      *
      * @throws \InvalidArgumentException
@@ -25,7 +25,8 @@ class LogicalSpecification extends AbstractSpecification
     public function __construct(
         string $type,
         SpecificationInterface ...$specification
-    ) {
+    )
+    {
         $this->type = strtolower(trim($type));
         self::checkType($this->type);
         $this->specifications = $specification;
@@ -43,14 +44,14 @@ class LogicalSpecification extends AbstractSpecification
         $type = $this->type;
 
         if ($type === 'not') {
-            return ! $this->specifications[0]->isSatisfiedBy($item);
+            return !$this->specifications[0]->isSatisfiedBy($item);
         }
 
         $flag = $type === 'and';
         foreach ($this->specifications as $specification) {
-            if ($flag && ! $specification->isSatisfiedBy($item)) {
+            if ($flag && !$specification->isSatisfiedBy($item)) {
                 return false;
-            } elseif (! $flag && $specification->isSatisfiedBy($item)) {
+            } elseif (!$flag && $specification->isSatisfiedBy($item)) {
                 return true;
             }
         }
@@ -67,7 +68,7 @@ class LogicalSpecification extends AbstractSpecification
      */
     private static function checkType(string $type)
     {
-        if (! \in_array($type, ['not', 'and', 'or'], true)) {
+        if (!\in_array($type, ['not', 'and', 'or'], true)) {
             throw new \InvalidArgumentException('Logical type parameter error.');
         }
     }

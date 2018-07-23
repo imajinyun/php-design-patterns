@@ -22,7 +22,7 @@ class User
     /**
      * User constructor.
      *
-     * @param int    $id
+     * @param int $id
      * @param string $username
      * @param string $email
      */

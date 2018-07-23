@@ -49,7 +49,7 @@ class UserRepository implements RepositoryInterface
     {
         $id = $this->storage->write([
             'username' => $user->getUsername(),
-            'email'    => $user->getEmail(),
+            'email' => $user->getEmail(),
         ]);
 
         $user->setId($id);

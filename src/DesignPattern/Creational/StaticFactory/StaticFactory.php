@@ -16,7 +16,7 @@ final class StaticFactory
     {
         $class = __NAMESPACE__ . '\Formatter' . ucfirst($type);
 
-        if (! class_exists($class)) {
+        if (!class_exists($class)) {
             throw new \InvalidArgumentException("$class is not found.");
         }
 
