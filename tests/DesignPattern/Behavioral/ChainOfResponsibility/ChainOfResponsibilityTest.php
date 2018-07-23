@@ -23,21 +23,23 @@ class ChainOfResponsibilityTest extends TestCase
         );
     }
 
-    public function testCanRequestKeyInFastStorage()
+    public function testCanRequestKeyInFastStorage(): void
     {
         $request = $this->getRequest('page=1');
         $expected = 'Storage data in Memory.';
+
         self::assertEquals($expected, $this->chain->handle($request));
     }
 
-    public function testCanRequestKeyInSlowStorage()
+    public function testCanRequestKeyInSlowStorage(): void
     {
         $request = $this->getRequest();
         $expected = 'Storage data in Database.';
+
         self::assertEquals($expected, $this->chain->handle($request));
     }
 
-    protected function getRequest(string $query = '') : RequestInterface
+    protected function getRequest(string $query = ''): RequestInterface
     {
         $uri = $this->createMock(UriInterface::class);
         $uri->method('getPath')->willReturn('/foo/bar');
