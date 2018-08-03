@@ -24,14 +24,13 @@ class Operation implements ExpressionInterface
      *
      * @param \DesignPattern\Behavioral\Interpreter\ExpressionInterface $left
      * @param \DesignPattern\Behavioral\Interpreter\ExpressionInterface $right
-     * @param string $operator
+     * @param string                                                    $operator
      */
     public function __construct(
         ExpressionInterface $left,
         ExpressionInterface $right,
         string $operator = ''
-    )
-    {
+    ) {
         $this->left = $left;
         $this->right = $right;
         $this->operator = $operator;

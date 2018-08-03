@@ -6,11 +6,6 @@ use DesignPattern\Behavioral\Interpreter\Number;
 use DesignPattern\Behavioral\Interpreter\Parser;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Interpreter Test.
- *
- * @package DesignPattern\Test\Behavioral\Interpreter
- */
 class InterpreterTest extends TestCase
 {
     public function testInterpreterWithContext()
@@ -19,7 +14,8 @@ class InterpreterTest extends TestCase
             'x' => new Number(100),
             'y' => new Number(200),
         ];
-        $actual = (new Parser('5 x * y + 100 - 2 /'))->interpret($firstContext);
+        $expression = '5 x * y + 100 - 2 /';
+        $actual = (new Parser($expression))->interpret($firstContext);
         self::assertSame(300, $actual);
 
         $secondContext = [];
@@ -32,8 +28,10 @@ class InterpreterTest extends TestCase
                 $expression .= "$i";
             }
         }
-        self::assertSame(5050,
-            (new Parser($expression))->interpret($secondContext));
+        self::assertSame(
+            5050,
+            (new Parser($expression))->interpret($secondContext)
+        );
     }
 
     public function testInterpreterWithEmptyContext()

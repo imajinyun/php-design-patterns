@@ -23,6 +23,7 @@ class Variable implements ExpressionInterface
      * @param array $context
      *
      * @return mixed
+     *
      * @throws \InvalidArgumentException
      */
     public function interpret(array $context)

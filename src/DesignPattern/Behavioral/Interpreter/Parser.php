@@ -61,8 +61,8 @@ class Parser
     }
 
     /**
-     * @param array $array
-     * @param       $item
+     * @param array  $array
+     * @param string $item
      *
      * @return \DesignPattern\Behavioral\Interpreter\Operation
      */
