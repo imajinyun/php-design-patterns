@@ -20,6 +20,8 @@ class ShutdownCommand implements CommandInterface
     }
 
     /**
+     * Execute a command.
+     *
      * @return void
      */
     public function execute(): void

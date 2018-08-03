@@ -17,18 +17,18 @@ class CommandTest extends TestCase
         $this->computer = new Computer();
     }
 
-    public function testGetSetCommand()
+    public function testGetSetCommand(): void
     {
         $console = new Console(new StartupCommand($this->computer));
         $command = $console->getCommand();
-        self::assertEquals(StartupCommand::class, get_class($command));
+        self::assertEquals(StartupCommand::class, \get_class($command));
 
         $console->setCommand(new ShutdownCommand($this->computer));
         $command = $console->getCommand();
-        self::assertEquals(ShutdownCommand::class, get_class($command));
+        self::assertEquals(ShutdownCommand::class, \get_class($command));
     }
 
-    public function testStartupCommand()
+    public function testStartupCommand(): void
     {
         $console = new Console(new StartupCommand($this->computer));
 
@@ -36,7 +36,7 @@ class CommandTest extends TestCase
         $console->invoke();
     }
 
-    public function testShutdownCommand()
+    public function testShutdownCommand(): void
     {
         $console = new Console(new ShutdownCommand($this->computer));
 
