@@ -1,7 +1,7 @@
 version: 0.0.{build}
 image: Visual Studio 2015
 clone_depth: 50
-clone_folder: C:\projects\php-study-codes
+clone_folder: c:\projects\php-study-codes
 branches:
   only:
     - master
@@ -48,7 +48,7 @@ install:
 
   # Install composer and update per matrix
   - appveyor-retry appveyor DownloadFile https://getcomposer.org/composer.phar
-  - cd C:\projects\lumen-api
+  - cd C:\projects\php-design-pattern
   - IF %dependencies%==lowest appveyor-retry composer update --no-suggest --prefer-dist --prefer-lowest
   - IF %dependencies%==highest appveyor-retry composer update --no-suggest --prefer-dist
   - composer show
