@@ -16,12 +16,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "DesignPattern\\": "src/DesignPattern"
+            "DesignPattern\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DesignPattern\\Test\\": "tests/DesignPattern"
+            "DesignPattern\\Test\\": "tests/"
         }
     },
     "minimum-stability": "stable"
