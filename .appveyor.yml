@@ -55,5 +55,4 @@ test_script:
   - cd c:\projects\php-design-pattern
   - php --version
   - composer --version
-  - mysql --version
   - vendor/bin/phpunit -c phpunit.xml.dist
