@@ -19,8 +19,8 @@ class Observer implements ObserverInterface
     /**
      * Report something.
      *
-     * @param int $code
-     * @param string $message
+     * @param int                                                     $code
+     * @param string                                                  $message
      * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
      *
      * @return mixed|void
@@ -29,8 +29,7 @@ class Observer implements ObserverInterface
         int $code,
         string $message,
         SubjectInterface $subject
-    )
-    {
+    ) {
         // TODO: Implement report() method.
     }
 }

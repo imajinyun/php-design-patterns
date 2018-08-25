@@ -15,13 +15,15 @@ trait MultitonTrait
      * @param string $identifier
      *
      * @return \DesignPattern\Creational\Multiton\Multiton
+     *
+     * @throws \ReflectionException
      */
     public static function getInstance(string $identifier): Multiton
     {
         $class = static::class;
         $parameter = \array_slice(\func_get_args(), 1);
 
-        if (!isset(static::$instances[$identifier])) {
+        if (! isset(static::$instances[$identifier])) {
             $reflection = new \ReflectionClass($class);
             $constructor = $reflection->getConstructor();
             $object = $reflection->newInstanceWithoutConstructor();
@@ -40,7 +42,7 @@ trait MultitonTrait
     /**
      * Set multiton instance.
      *
-     * @param string $identifier
+     * @param string                                      $identifier
      * @param \DesignPattern\Creational\Multiton\Multiton $instance
      *
      * @return void
@@ -48,8 +50,7 @@ trait MultitonTrait
     public static function setInstance(
         string $identifier,
         Multiton $instance
-    ): void
-    {
+    ): void {
         static::$instances[$identifier] = $instance;
     }
 
