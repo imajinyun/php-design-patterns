@@ -46,7 +46,7 @@ class ItemList implements \Countable
      */
     public function addItem(Item $item)
     {
-        if (!\in_array($item, $this->list, true)) {
+        if (! \in_array($item, $this->list, true)) {
             $this->list[] = $item;
         }
     }
