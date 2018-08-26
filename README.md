@@ -5,10 +5,10 @@
 [![Build Status](https://travis-ci.org/imajinyun/php-design-pattern.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-pattern)
 [![Build status](https://ci.appveyor.com/api/projects/status/lbf61giw9iavhtt5/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-design-pattern/branch/master)
 [![codecov](https://codecov.io/gh/imajinyun/php-study-codes/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-study-codes)
-[![Coverage Status](https://coveralls.io/repos/github/imajinyun/php-design-pattern/badge.svg?branch=master)](https://coveralls.io/github/imajinyun/php-design-pattern?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/?branch=master)
 [![StyleCI](https://styleci.io/repos/112085360/shield?branch=master)](https://styleci.io/repos/112085360)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/368998e20fe64b2da7f8ef1f42444527)](https://www.codacy.com/app/imajinyun/php-design-pattern?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-design-pattern&amp;utm_campaign=Badge_Grade)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern?ref=badge_shield)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/imajinyun/php-design-pattern.svg)](http://php.net/releases/)
 
 
@@ -750,7 +750,7 @@ $ phpunit -v
 
 - 当要为一个复杂子系统提供一个简单接口时可以使用外观模式. 该接口可以满足大多数用户的需求, 而且用户也可以越过外观类直接访问子系统
 - 客户程序与多个子系统之间存在很大的依赖性. 引入外观类将子系统与客户以及其他子系统解耦, 可以提高子系统的独立性和可移植性
-- 在层次化结构中, 可以使用外观模式定义系统中每一层的入口, 层与层之间不直接产生联系, 而通过外观类建立联系, 降低层之间的耦合度 
+- 在层次化结构中, 可以使用外观模式定义系统中每一层的入口, 层与层之间不直接产生联系, 而通过外观类建立联系, 降低层之间的耦合度
 
 #### 特性
 
@@ -770,7 +770,7 @@ $ phpunit -v
 
 #### 定义
 
-又称流接口或方法链, 实现一种面向对象的, 能提高代码可读性的 `API` 的方法 
+又称流接口或方法链, 实现一种面向对象的, 能提高代码可读性的 `API` 的方法
 
 #### 场景
 
