@@ -15,7 +15,7 @@ class ChainOfResponsibilityTest extends TestCase
      */
     private $chain;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->chain = new MemoryHandler(
             ['/foo/bar?page=1' => 'Storage data in Memory.'],

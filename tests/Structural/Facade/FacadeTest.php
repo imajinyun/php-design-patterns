@@ -5,11 +5,12 @@ namespace DesignPattern\Test\Structural\Facade;
 use DesignPattern\Structural\Facade\BiosInterface;
 use DesignPattern\Structural\Facade\Facade;
 use DesignPattern\Structural\Facade\MacOSInterface;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class FacadeTest extends TestCase
 {
-    public function testComputerTurnOnAndOff()
+    public function testComputerTurnOnAndOff(): void
     {
         $macOS = $this->getMacOSMock();
         $bios = $this->getBiosMock();
@@ -25,16 +26,16 @@ class FacadeTest extends TestCase
         self::assertEquals('Mac Pro', $macOS->getName());
     }
 
-    protected function getMacOSMock()
+    protected function getMacOSMock(): MockObject
     {
         $macOS = $this->createMock(MacOSInterface::class);
         $macOS->method('getName')
-            ->will($this->returnValue('Mac Pro'));
+            ->willReturn('Mac Pro');
 
         return $macOS;
     }
 
-    protected function getBiosMock()
+    protected function getBiosMock(): MockObject
     {
         $bios = $this->getMockBuilder(BiosInterface::class)
             ->setMethods([

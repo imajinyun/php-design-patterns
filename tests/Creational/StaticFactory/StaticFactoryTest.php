@@ -28,11 +28,9 @@ class StaticFactoryTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testException()
     {
+        $this->expectException(\InvalidArgumentException::class);
         StaticFactory::factory('test');
     }
 }

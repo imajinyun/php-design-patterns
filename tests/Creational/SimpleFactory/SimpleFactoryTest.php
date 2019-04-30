@@ -13,7 +13,7 @@ class SimpleFactoryTest extends TestCase
      */
     protected $factory;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->factory = new SimpleFactory();
@@ -35,7 +35,7 @@ class SimpleFactoryTest extends TestCase
      *
      * @param string $language
      */
-    public function testSimpleFactory(string $language)
+    public function testSimpleFactory(string $language): void
     {
         $expected = LanguageInterface::class;
         $object = $this->factory->create($language);
@@ -47,7 +47,7 @@ class SimpleFactoryTest extends TestCase
      *
      * @param string $language
      */
-    public function testLanguage(string $language)
+    public function testLanguage(string $language): void
     {
         $object = $this->factory->create($language);
         $actual = $object->toWriteApplication($language);
@@ -57,13 +57,9 @@ class SimpleFactoryTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    /**
-     * Test bad language.
-     *
-     * @expectedException \InvalidArgumentException
-     */
-    public function testBadLanguage()
+    public function testBadLanguage(): void
     {
+        $this->expectException(\InvalidArgumentException::class);
         $this->factory->create('Unknown');
     }
 }

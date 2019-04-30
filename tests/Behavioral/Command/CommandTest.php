@@ -12,7 +12,7 @@ class CommandTest extends TestCase
 {
     private $computer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->computer = new Computer();
     }

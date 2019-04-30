@@ -15,7 +15,7 @@ class MediatorTest extends TestCase
      */
     private $consumer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $mediator = new Mediator();
         $this->consumer = new Consumer($mediator);
@@ -25,7 +25,7 @@ class MediatorTest extends TestCase
             ->setDatabase(new Database($mediator));
     }
 
-    public function testConsumerRequest()
+    public function testConsumerRequest(): void
     {
         $this->expectOutputString('Hello World!');
         $this->consumer->request();

@@ -15,42 +15,36 @@ class StateTest extends TestCase
      */
     private $order;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->order = new Order();
     }
 
-    /**
-     * @expectedException \Exception
-     * @expectedExceptionCode 1
-     */
-    public function testCancelOfCancelState()
+    public function testCancelOfCancelState(): void
     {
+        $this->expectException(\Exception::class);
+        $this->expectExceptionCode(1);
         $this->order->setState(new Cancel());
         $this->order->cancel();
     }
 
-    /**
-     * @expectedException \Exception
-     * @expectedExceptionCode 2
-     */
-    public function testPayOfCancelState()
+    public function testPayOfCancelState(): void
     {
+        $this->expectException(\Exception::class);
+        $this->expectExceptionCode(2);
         $this->order->setState(new Cancel());
         $this->order->pay();
     }
 
-    /**
-     * @expectedException \Exception
-     * @expectedExceptionCode 3
-     */
-    public function testDispatchOfCancelState()
+    public function testDispatchOfCancelState(): void
     {
+        $this->expectException(\Exception::class);
+        $this->expectExceptionCode(3);
         $this->order->setState(new Cancel());
         $this->order->dispatch();
     }
 
-    public function testPayState()
+    public function testPayState(): void
     {
         $this->order->setState(new Pay());
         self::assertTrue($this->order->cancel());
@@ -65,7 +59,7 @@ class StateTest extends TestCase
         $this->order->dispatch();
     }
 
-    public function testDispatchState()
+    public function testDispatchState(): void
     {
         $this->order->setState(new Dispatch());
         self::assertTrue($this->order->cancel());
@@ -78,12 +72,10 @@ class StateTest extends TestCase
         $this->order->pay();
     }
 
-    /**
-     * @expectedException \Exception
-     * @expectedExceptionMessage Already dispatched.
-     */
-    public function testDispatchOfDispatchState()
+    public function testDispatchOfDispatchState(): void
     {
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage('Already dispatched.');
         $this->order->setState(new Dispatch());
         $this->order->dispatch();
     }

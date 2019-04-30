@@ -9,16 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class SpecificationTest extends TestCase
 {
-    /**
-     * @expectedException \InvalidArgumentException
-     */
-    public function testInvalidArgumentException()
+    public function testInvalidArgumentException(): void
     {
+        $this->expectException(\InvalidArgumentException::class);
         $range = new RangeSpecification(1, 100);
         new LogicalSpecification('test', $range);
     }
 
-    public function testOr()
+    public function testOr(): void
     {
         $range1 = new RangeSpecification(1, 99);
         $range2 = new RangeSpecification(101, 199);

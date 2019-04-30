@@ -26,7 +26,7 @@ class DependencyInjectionTest extends TestCase
      *
      * @param AbstractMap $map
      */
-    public function testMapDependencyInjection(AbstractMap $map)
+    public function testMapDependencyInjection(AbstractMap $map): void
     {
         $store = new DepartmentStore($map);
         $address = '中关村大厦';

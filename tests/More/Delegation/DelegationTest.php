@@ -13,7 +13,7 @@ class DelegationTest extends TestCase
      */
     private $controller;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->controller = new Controller(new Component());
     }

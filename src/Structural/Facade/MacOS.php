@@ -49,9 +49,8 @@ class MacOS implements MacOSInterface
      */
     protected function execute($command)
     {
-        if (\in_array($command, ['restart', 'shutdown'], true)) {
-            return sprintf('The system is executing the %s command...',
-                $command);
+        if (in_array($command, ['restart', 'shutdown'], true)) {
+            return sprintf('The system is executing the %s command...', $command);
         }
 
         return false;

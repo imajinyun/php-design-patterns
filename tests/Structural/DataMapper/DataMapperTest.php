@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class DataMapperTest extends TestCase
 {
-    public function testCanMapUserFromRepository()
+    public function testCanMapUserFromRepository(): void
     {
         $repository = new Repository([
             1 => ['username' => 'user1', 'email' => 'user1@163.com'],
@@ -24,13 +24,11 @@ class DataMapperTest extends TestCase
         self::assertEquals('user1@163.com', $user->getEmail());
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage User #1 not found.
-     * @expectedExceptionCode    1
-     */
-    public function testWillNotMapInvalidData()
+    public function testWillNotMapInvalidData(): void
     {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('User #1 not found.');
+        $this->expectExceptionCode(1);
         $repository = new Repository([]);
         $mapper = new UserMapper($repository);
 

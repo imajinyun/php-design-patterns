@@ -19,7 +19,7 @@ class ProxyTest extends TestCase
      */
     private $wifiNetworkProxy;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->wifiNetwork = new WifiNetwork('MyCompanyWifi');
         $this->wifiNetworkProxy = new WifiNetworkProxy('MyCompanyWifiProxy');

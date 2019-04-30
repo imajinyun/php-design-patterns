@@ -14,7 +14,7 @@ class ServiceLocatorTest extends TestCase
      */
     private $serviceLocator;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->serviceLocator = new ServiceLocator();
     }
@@ -39,7 +39,7 @@ class ServiceLocatorTest extends TestCase
         self::assertFalse($this->serviceLocator->has(self::class));
     }
 
-    public function testInstantiatedServices()
+    public function testInstantiatedServices(): void
     {
         $this->serviceLocator->addClass(RequestService::class, []);
         $request = $this->serviceLocator->get(RequestService::class);
@@ -50,11 +50,9 @@ class ServiceLocatorTest extends TestCase
         self::assertInstanceOf(ResponseService::class, $response);
     }
 
-    /**
-     * @expectedException \OutOfRangeException
-     */
-    public function testManyArgument()
+    public function testManyArgument(): void
     {
+        $this->expectException(\OutOfRangeException::class);
         $this->serviceLocator->addClass(
             \stdClass::class,
             [1, 2, 3, 4, 5, 6],

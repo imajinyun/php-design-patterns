@@ -14,12 +14,12 @@ class MementoTest extends TestCase
      */
     private $order;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->order = new Order(new State());
     }
 
-    public function testUndoMementoState()
+    public function testUndoMementoState(): void
     {
         $history = new History();
         $history->addMemento($this->order->saveStateToMemento());
@@ -32,7 +32,7 @@ class MementoTest extends TestCase
         self::assertEquals($previousState, $this->order->getState());
     }
 
-    public function testMementoStateInstanceIsDifferentFromState()
+    public function testMementoStateInstanceIsDifferentFromState(): void
     {
         $history = new History();
         $history->addMemento($this->order->saveStateToMemento());
@@ -42,7 +42,7 @@ class MementoTest extends TestCase
         self::assertNotSame($state, $this->order->getState());
     }
 
-    public function testPopupMementoInstance()
+    public function testPopupMementoInstance(): void
     {
         $stub = $this->getMockBuilder(History::class)->getMock();
         $stub->method('popMemento')
@@ -51,7 +51,7 @@ class MementoTest extends TestCase
         self::assertSame($stub, $stub->popMemento());
     }
 
-    public function testPopupMementoNull()
+    public function testPopupMementoNull(): void
     {
         $stub = $this->getMockBuilder(History::class)->getMock();
         $stub->method('popMemento')

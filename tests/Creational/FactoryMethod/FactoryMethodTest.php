@@ -34,7 +34,7 @@ class FactoryMethodTest extends TestCase
      *
      * @param FactoryMethod $method
      */
-    public function testFactoryMethod(FactoryMethod $method)
+    public function testFactoryMethod(FactoryMethod $method): void
     {
         $expected = NotebookInterface::class;
         foreach ($this->type as $type) {
@@ -43,11 +43,9 @@ class FactoryMethodTest extends TestCase
         }
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
-    public function testInvalidArgumentException()
+    public function testInvalidArgumentException(): void
     {
+        $this->expectException(\InvalidArgumentException::class);
         $expected = NotebookInterface::class;
         $actual = (new FoxconnFactory())->create(FactoryMethod::GENERAL_CONFIG);
         self::assertInstanceOf($expected, $actual);

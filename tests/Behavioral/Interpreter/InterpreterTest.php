@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class InterpreterTest extends TestCase
 {
-    public function testInterpreterWithContext()
+    public function testInterpreterWithContext(): void
     {
         $firstContext = [
             'x' => new Number(100),
@@ -34,17 +34,15 @@ class InterpreterTest extends TestCase
         );
     }
 
-    public function testInterpreterWithEmptyContext()
+    public function testInterpreterWithEmptyContext(): void
     {
         self::assertSame(10, (new Parser('1 1 + 8 +'))->interpret([]));
         self::assertSame(100, (new Parser('2 2 * 6 + 10 *'))->interpret([]));
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
-    public function testException()
+    public function testException(): void
     {
+        $this->expectException(\InvalidArgumentException::class);
         $num = ['num' => new Number(100)];
         (new Parser('5 test *'))->interpret($num);
     }

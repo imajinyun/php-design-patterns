@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class IteratorTest extends TestCase
 {
-    public function testItemKeyValue()
+    public function testItemKeyValue(): void
     {
         $list = new ItemList();
         $list->addItem(new Item(1001, 'Item 1001'));
@@ -25,7 +25,7 @@ class IteratorTest extends TestCase
         self::assertCount(2, $list->getItems());
     }
 
-    public function testItemList()
+    public function testItemList(): void
     {
         $list = new ItemList();
         $list->addItem(new Item(1, 'a'));
@@ -42,7 +42,7 @@ class IteratorTest extends TestCase
         self::assertEquals($expected, $items);
     }
 
-    public function testItemIterator()
+    public function testItemIterator(): void
     {
         $array = ['1 - a', '2 - b', '3 - c'];
         $list = new ItemList();

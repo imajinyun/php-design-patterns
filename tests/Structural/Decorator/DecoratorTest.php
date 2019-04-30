@@ -14,12 +14,12 @@ class DecoratorTest extends TestCase
      */
     private $service;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->service = new Webservice('DecoratorPattern');
     }
 
-    public function testJsonDecorator()
+    public function testJsonDecorator(): void
     {
         $json = new JsonRender($this->service);
 
@@ -27,7 +27,7 @@ class DecoratorTest extends TestCase
         self::assertEquals($expected, $json->render());
     }
 
-    public function testXmlDecorator()
+    public function testXmlDecorator(): void
     {
         $xml = new XmlRender($this->service);
 
