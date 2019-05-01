@@ -40,8 +40,7 @@ class Employee
         string $username,
         string $password,
         int $accessLevel
-    )
-    {
+    ) {
         $this->username = $username;
         $this->password = $password;
         $this->accessLevel = $accessLevel;
