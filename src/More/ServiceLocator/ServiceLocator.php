@@ -33,8 +33,7 @@ class ServiceLocator
         string $class,
         $service,
         bool $isShare = true
-    ): void
-    {
+    ): void {
         $this->services[$class] = $service;
         $this->instantiated[$class] = $service;
         $this->shared[$class] = $isShare;
@@ -53,8 +52,7 @@ class ServiceLocator
         string $class,
         array $parameter,
         bool $isShare = false
-    ): void
-    {
+    ): void {
         $this->services[$class] = $parameter;
         $this->shared[$class] = $isShare;
     }

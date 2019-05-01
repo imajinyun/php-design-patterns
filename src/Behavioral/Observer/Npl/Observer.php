@@ -29,8 +29,7 @@ class Observer implements ObserverInterface
         int $code,
         string $message,
         SubjectInterface $subject
-    )
-    {
+    ) {
         // TODO: Implement report() method.
     }
 }

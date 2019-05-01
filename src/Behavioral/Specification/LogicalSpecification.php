@@ -23,8 +23,7 @@ class LogicalSpecification extends AbstractSpecification
     public function __construct(
         string $type,
         SpecificationInterface ...$specification
-    )
-    {
+    ) {
         $this->type = strtolower(trim($type));
         self::checkType($this->type);
         $this->specifications = $specification;

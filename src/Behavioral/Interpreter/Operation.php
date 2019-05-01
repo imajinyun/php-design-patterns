@@ -30,8 +30,7 @@ class Operation implements ExpressionInterface
         ExpressionInterface $left,
         ExpressionInterface $right,
         string $operator = ''
-    )
-    {
+    ) {
         $this->left = $left;
         $this->right = $right;
         $this->operator = $operator;
