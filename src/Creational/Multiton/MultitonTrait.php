@@ -50,8 +50,7 @@ trait MultitonTrait
     public static function setInstance(
         string $identifier,
         Multiton $instance
-    ): void
-    {
+    ): void {
         static::$instances[$identifier] = $instance;
     }
 
