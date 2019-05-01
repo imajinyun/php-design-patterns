@@ -18,7 +18,7 @@ class BulletFactory
      */
     public static function getInstance(string $type): BulletInterface
     {
-        if (!array_key_exists($type, self::$bullets)) {
+        if (! array_key_exists($type, self::$bullets)) {
             if ($type === 'EmptyBullet') {
                 self::$bullets[$type] = new EmptyBullet();
             } elseif ($type === 'ExpandBullet') {

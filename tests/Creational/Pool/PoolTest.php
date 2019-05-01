@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class PoolTest extends TestCase
 {
-    public function testCanGetNewInstancesWithGet()
+    public function testCanGetNewInstancesWithGet(): void
     {
         $pool = new Pool();
         $worker1 = $pool->get();
@@ -17,7 +17,7 @@ class PoolTest extends TestCase
         self::assertNotSame($worker1, $worker2);
     }
 
-    public function testCanGetSameInstanceTwiceWhenDisposingItFirst()
+    public function testCanGetSameInstanceTwiceWhenDisposingItFirst(): void
     {
         $pool = new Pool();
         $worker1 = $pool->get();

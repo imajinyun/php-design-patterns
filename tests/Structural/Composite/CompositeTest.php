@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class CompositeTest extends TestCase
 {
-    public function testRender()
+    public function testRender(): void
     {
         $form = new Form('register.php', 'registerForm');
         $form->addElement(new LabelElement('username', 'Username:'));
@@ -25,10 +25,10 @@ class CompositeTest extends TestCase
         $other->addElement(new InputElement('phone', 'number'));
         $form->addElement($other);
 
-        self::assertEquals($this->getExpectedFormElement(), $form->render());
+        self::assertEquals(self::getExpectedFormElement(), $form->render());
     }
 
-    private function getExpectedFormElement()
+    private static function getExpectedFormElement(): string
     {
         $expected = '';
         $expected .= '<form action="register.php" name="registerForm">';

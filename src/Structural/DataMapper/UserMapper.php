@@ -24,8 +24,8 @@ class UserMapper
      *
      * @param int $id
      *
-     * @throws \InvalidArgumentException
      * @return mixed
+     * @throws \InvalidArgumentException
      */
     public function findById(int $id)
     {

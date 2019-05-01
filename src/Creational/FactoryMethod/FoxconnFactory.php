@@ -9,8 +9,8 @@ class FoxconnFactory extends FactoryMethod
      *
      * @param string $brand
      *
-     * @throws \InvalidArgumentException
      * @return MacBook|MacBookAir|MacBookPro
+     * @throws \InvalidArgumentException
      */
     public function createNotebook(string $brand)
     {

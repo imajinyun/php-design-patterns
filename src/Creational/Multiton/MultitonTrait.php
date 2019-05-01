@@ -42,7 +42,7 @@ trait MultitonTrait
     /**
      * Set multiton instance.
      *
-     * @param string                                      $identifier
+     * @param string $identifier
      * @param \DesignPattern\Creational\Multiton\Multiton $instance
      *
      * @return void
@@ -50,7 +50,8 @@ trait MultitonTrait
     public static function setInstance(
         string $identifier,
         Multiton $instance
-    ): void {
+    ): void
+    {
         static::$instances[$identifier] = $instance;
     }
 

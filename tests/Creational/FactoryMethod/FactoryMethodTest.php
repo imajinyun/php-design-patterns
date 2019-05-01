@@ -12,12 +12,11 @@ class FactoryMethodTest extends TestCase
     /**
      * @var array
      */
-    protected $type
-        = [
-            FactoryMethod::LOW_CONFIG,
-            FactoryMethod::MEDIUM_CONFIG,
-            FactoryMethod::HIGH_CONFIG,
-        ];
+    protected $type = [
+        FactoryMethod::LOW_CONFIG,
+        FactoryMethod::MEDIUM_CONFIG,
+        FactoryMethod::HIGH_CONFIG,
+    ];
 
     /**
      * @return array

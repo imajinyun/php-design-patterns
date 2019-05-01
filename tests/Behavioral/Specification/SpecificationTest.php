@@ -27,7 +27,7 @@ class SpecificationTest extends TestCase
         self::assertTrue($logical->isSatisfiedBy(new Item(150)));
     }
 
-    public function testAnd()
+    public function testAnd(): void
     {
         $range1 = new RangeSpecification(50, 100);
         $range2 = new RangeSpecification(80, 100);
@@ -40,7 +40,7 @@ class SpecificationTest extends TestCase
         self::assertTrue($logical->isSatisfiedBy(new Item(99)));
     }
 
-    public function testNot()
+    public function testNot(): void
     {
         $range = new RangeSpecification(1, 100);
 

@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class StrategyTest extends TestCase
 {
-    public function provideIdentifies()
+    public function provideIdentifies(): array
     {
         return [
             [
@@ -24,7 +24,7 @@ class StrategyTest extends TestCase
         ];
     }
 
-    public function provideDates()
+    public function provideDates(): array
     {
         return [
             [
@@ -52,7 +52,7 @@ class StrategyTest extends TestCase
      * @param array $collection
      * @param array $expected
      */
-    public function testIdentifyComparator($collection, $expected)
+    public function testIdentifyComparator($collection, $expected): void
     {
         $element = $this->getElement($collection, new IdentifyComparator());
         self::assertEquals($expected, $element);
@@ -64,7 +64,7 @@ class StrategyTest extends TestCase
      * @param array $collection
      * @param array $expected
      */
-    public function testDateComparator($collection, $expected)
+    public function testDateComparator($collection, $expected): void
     {
         $element = $this->getElement($collection, new DateComparator());
         self::assertEquals($expected, $element);
@@ -73,12 +73,12 @@ class StrategyTest extends TestCase
     /**
      * Get compare element.
      *
-     * @param                                                        $collection
+     * @param array $collection
      * @param \DesignPattern\Behavioral\Strategy\ComparatorInterface $comparator
      *
      * @return mixed
      */
-    protected function getElement($collection, ComparatorInterface $comparator)
+    protected function getElement(array $collection, ComparatorInterface $comparator)
     {
         $object = new Collection($collection);
         $object->setComparator($comparator);

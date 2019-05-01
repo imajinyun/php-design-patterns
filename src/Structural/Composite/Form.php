@@ -47,7 +47,7 @@ class Form implements RenderableInterface
             $form .= '<form action="%s" name="%s">';
         }
 
-        foreach ((array)$this->elements as $element) {
+        foreach ((array) $this->elements as $element) {
             $form .= $element->render();
             ++$i;
         }

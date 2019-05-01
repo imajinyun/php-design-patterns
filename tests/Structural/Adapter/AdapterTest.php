@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class AdapterTest extends TestCase
 {
-    public function testCanUserNumberOnUser()
+    public function testCanUserNumberOnUser(): void
     {
         $user = new User();
         $user->login('user1', 'pass1');
@@ -19,7 +19,7 @@ class AdapterTest extends TestCase
         self::assertEquals(2, $number);
     }
 
-    public function testCanLoginMemberNumberOnWeibo()
+    public function testCanLoginMemberNumberOnWeibo(): void
     {
         $appId = ['xXLa2CRTs7PWY4Bc', 'Ta9Z42qbFeHNBGfn'];
         $appSecret = [

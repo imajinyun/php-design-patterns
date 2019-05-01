@@ -13,6 +13,6 @@ class FormatterNumber implements FormatterInterface
      */
     public function format($value): int
     {
-        return (int)$value;
+        return (int) $value;
     }
 }

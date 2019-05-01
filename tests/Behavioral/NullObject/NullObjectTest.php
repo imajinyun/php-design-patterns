@@ -9,14 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class NullObjectTest extends TestCase
 {
-    public function testNullLogger()
+    public function testNullLogger(): void
     {
         $service = new Service(new NullLogger());
         $this->expectOutputString('');
         $service->error();
     }
 
-    public function testPrintLogger()
+    public function testPrintLogger(): void
     {
         $service = new Service(new PrintLogger());
         $expect = '[ ' . date('Y-m-d H:i:s') . ' ] - Error: ' . Service::class;

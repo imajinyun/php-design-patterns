@@ -10,13 +10,13 @@ use PHPUnit\Framework\TestCase;
 
 class ObserverTest extends TestCase
 {
-    public function testSubjectObserverInstance()
+    public function testSubjectObserverInstance(): void
     {
         $observer = new Observer();
         self::assertInstanceOf(ObserverInterface::class, $observer);
     }
 
-    public function testObserverIsUpdated()
+    public function testObserverIsUpdated(): void
     {
         $mock = $this->createMock(Observer::class);
         $mock->expects($this->once())
@@ -28,7 +28,7 @@ class ObserverTest extends TestCase
         $subject->notify();
     }
 
-    public function testObserverReported()
+    public function testObserverReported(): void
     {
         $observer = $this->getMockBuilder(Observer::class)
             ->setMethods(['report'])
@@ -39,8 +39,8 @@ class ObserverTest extends TestCase
             ->with(
                 self::greaterThan(0),
                 self::stringContains('something'),
-                self::callback(function ($subject) {
-                    return \is_callable([$subject, 'getName'])
+                self::callback(static function ($subject) {
+                    return is_callable([$subject, 'getName'])
                         && $subject->getName() == 'My Subject';
                 })
             );

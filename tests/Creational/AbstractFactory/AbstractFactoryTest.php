@@ -27,7 +27,7 @@ class AbstractFactoryTest extends TestCase
      *
      * @param AbstractFactory $factory
      */
-    public function testFactories(AbstractFactory $factory)
+    public function testFactories(AbstractFactory $factory): void
     {
         $type = RendererInterface::class;
         $haystack = [
@@ -43,7 +43,7 @@ class AbstractFactoryTest extends TestCase
      *
      * @param AbstractFactory $factory
      */
-    public function testHtmlFactory(AbstractFactory $factory)
+    public function testHtmlFactory(AbstractFactory $factory): void
     {
         $contains = [
             '<div>Render text.</div>',

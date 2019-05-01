@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class PrototypeTest extends TestCase
 {
-    public function testClassProperty()
+    public function testClassProperty(): void
     {
         $barPrototype = new BarPrototype();
         $fooPrototype = new FooPrototype();

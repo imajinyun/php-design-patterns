@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class StaticFactoryTest extends TestCase
 {
-    public function testFormatterInstance()
+    public function testFormatterInstance(): void
     {
         $stringObject = StaticFactory::factory('string');
         self::assertInstanceOf(FormatterString::class, $stringObject);
@@ -18,7 +18,7 @@ class StaticFactoryTest extends TestCase
         self::assertInstanceOf(FormatterNumber::class, $numberObject);
     }
 
-    public function testFormatterOutput()
+    public function testFormatterOutput(): void
     {
         $expect = ['Hello World!', '1000'];
         $actual = [
@@ -28,7 +28,7 @@ class StaticFactoryTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    public function testException()
+    public function testException(): void
     {
         $this->expectException(\InvalidArgumentException::class);
         StaticFactory::factory('test');

@@ -25,14 +25,13 @@ class ProxyTest extends TestCase
         $this->wifiNetworkProxy = new WifiNetworkProxy('MyCompanyWifiProxy');
     }
 
-    public function testInterfaceImplementation()
+    public function testInterfaceImplementation(): void
     {
         self::assertInstanceOf(WifiNetwork::class, $this->wifiNetwork);
-        self::assertInstanceOf(WifiNetworkProxy::class,
-            $this->wifiNetworkProxy);
+        self::assertInstanceOf(WifiNetworkProxy::class, $this->wifiNetworkProxy);
     }
 
-    public function testWifiNetworkAccess()
+    public function testWifiNetworkAccess(): void
     {
         $allow1 = new Employee('Amy', 'pass', Employee::ACCESS_LEVEL_ALLOW);
         self::assertTrue($this->wifiNetwork->grantAccess($allow1));
@@ -41,7 +40,7 @@ class ProxyTest extends TestCase
         self::assertTrue($this->wifiNetwork->grantAccess($allow2));
     }
 
-    public function testWifiNetworkProxyAccess()
+    public function testWifiNetworkProxyAccess(): void
     {
         $allow = new Employee('Amy', 'pass', Employee::ACCESS_LEVEL_ALLOW);
         self::assertTrue($this->wifiNetworkProxy->grantAccess($allow));

@@ -6,14 +6,9 @@ use DesignPattern\Behavioral\TemplateMethod\HtmlTemplate;
 use DesignPattern\Behavioral\TemplateMethod\JsonTemplate;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Class TemplateMethodTest
- *
- * @package DesignPattern\Test\Behavioral\TemplateMethod
- */
 class TemplateMethodTest extends TestCase
 {
-    public function testHtmlTemplateDoSomething()
+    public function testHtmlTemplateDoSomething(): void
     {
         $html = new HtmlTemplate();
         $html->run();
@@ -26,7 +21,7 @@ class TemplateMethodTest extends TestCase
         self::assertEquals($expected, $html->getToDoThings());
     }
 
-    public function testJsonTemplateDoSomething()
+    public function testJsonTemplateDoSomething(): void
     {
         $json = new JsonTemplate();
         $json->run();

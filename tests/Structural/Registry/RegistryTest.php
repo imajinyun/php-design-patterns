@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class RegistryTest extends TestCase
 {
-    public function testSetAndGetLogger()
+    public function testSetAndGetLogger(): void
     {
         $key = Registry::LOGGER;
         $object = new \stdClass();

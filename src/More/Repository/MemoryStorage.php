@@ -70,7 +70,7 @@ class MemoryStorage
      */
     private function validate(int $id): void
     {
-        if (!isset($this->data[$id])) {
+        if (! isset($this->data[$id])) {
             throw new \OutOfRangeException(sprintf('Data for ID #%d is not found.',
                 $id));
         }

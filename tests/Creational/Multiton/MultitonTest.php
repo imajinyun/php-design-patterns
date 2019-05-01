@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class MultitonTest extends TestCase
 {
-    public function testMultitonInstance()
+    public function testMultitonInstance(): void
     {
         $firstInstance = Multiton::getInstance('a', 'hello');
         $secondInstance = Multiton::getInstance('a', 'world');
@@ -26,7 +26,7 @@ class MultitonTest extends TestCase
         self::assertEquals('english', Multiton::getInstance('c')->value);
     }
 
-    public function testPrivateMethods()
+    public function testPrivateMethods(): void
     {
         $object = Multiton::getInstance('multiton', 'hello world');
         $reflection = new \ReflectionClass($object);

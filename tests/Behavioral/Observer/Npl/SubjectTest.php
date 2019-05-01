@@ -9,32 +9,32 @@ use PHPUnit\Framework\TestCase;
 
 class SubjectTest extends TestCase
 {
-    public function testSubjectInstance()
+    public function testSubjectInstance(): void
     {
         $subject = new Subject();
         self::assertInstanceOf(SubjectInterface::class, $subject);
     }
 
-    public function testAttachAndDetachMethod()
+    public function testAttachAndDetachMethod(): void
     {
         $subject = new Subject();
         $observer = new Observer();
         $observers = &$subject->getObservers();
 
-        self::assertTrue(is_array($observers));
-        self::assertFalse(in_array($observer, $observers, true));
+        self::assertInternalType('array', $observers);
+        self::assertNotContains($observer, $observers);
 
         $subject->attach($observer);
-        self::assertTrue(in_array($observer, $observers, true));
+        self::assertInternalType('array', $observers);
 
         $subject->detach($observer);
-        self::assertFalse(in_array($observer, $observers, true));
+        self::assertNotContains($observer, $observers);
     }
 
     /**
      * Testing if notify method is called when modifying the subject's author.
      */
-    public function testNotify()
+    public function testNotify(): void
     {
         $mock = $this->getMockBuilder(Subject::class)
             ->setMethods(['notify'])

@@ -32,7 +32,7 @@ class RepositoryTest extends TestCase
         $repository->delete($user2);
     }
 
-    public function testUser()
+    public function testUser(): void
     {
         $repository = new UserRepository(new MemoryStorage());
         $user = new User(0, '', '');

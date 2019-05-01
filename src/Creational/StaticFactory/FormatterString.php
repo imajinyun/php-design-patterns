@@ -13,6 +13,6 @@ class FormatterString implements FormatterInterface
      */
     public function format($value): string
     {
-        return (string)trim($value);
+        return (string) trim($value);
     }
 }

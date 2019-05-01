@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class BridgeTest extends TestCase
 {
-    public function testCanFormatterUsingTheDateFormatter()
+    public function testCanFormatterUsingTheDateFormatter(): void
     {
         $time = time();
         $service = new StringService(new DateFormatter());

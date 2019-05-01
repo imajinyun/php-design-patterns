@@ -17,13 +17,14 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * LogicalSpecification constructor.
      *
-     * @param string                                                         $type
+     * @param string $type
      * @param \DesignPattern\Behavioral\Specification\SpecificationInterface ...$specification
      */
     public function __construct(
         string $type,
         SpecificationInterface ...$specification
-    ) {
+    )
+    {
         $this->type = strtolower(trim($type));
         self::checkType($this->type);
         $this->specifications = $specification;

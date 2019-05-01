@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ProductTest extends TestCase
 {
-    public function testAttachAndDetachMethod()
+    public function testAttachAndDetachMethod(): void
     {
         $product = new Product();
         $observer = new ProductObserver();
@@ -28,7 +28,7 @@ class ProductTest extends TestCase
     /**
      * Testing if notify method is called when modifying the product's price.
      */
-    public function testNotify()
+    public function testNotify(): void
     {
         $observer = $this->getMockBuilder(Product::class)
             ->setMethods(['notify'])

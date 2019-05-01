@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class FlyweightTest extends TestCase
 {
-    public function testFlyweight()
+    public function testFlyweight(): void
     {
         $gun = new Gun(2);
         BulletFactory::getInstance('EmptyBullet');
@@ -19,7 +19,7 @@ class FlyweightTest extends TestCase
             BulletFactory::getBulletCount());
     }
 
-    public function testReload()
+    public function testReload(): void
     {
         $gun = new Gun(3);
 
@@ -30,7 +30,7 @@ class FlyweightTest extends TestCase
         self::assertEquals($gun->getMaxBullets(), $actual);
     }
 
-    public function testBulletsAreSameObject()
+    public function testBulletsAreSameObject(): void
     {
         $gun = new Gun(5);
         $gun->reload('EmptyBullet');
@@ -41,7 +41,7 @@ class FlyweightTest extends TestCase
         }
     }
 
-    public function testExtrinsicState()
+    public function testExtrinsicState(): void
     {
         $gun = new Gun(2);
         $gun->reload('EmptyBullet');

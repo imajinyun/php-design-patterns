@@ -18,7 +18,7 @@ class DelegationTest extends TestCase
         $this->controller = new Controller(new Component());
     }
 
-    public function testStringToArray()
+    public function testStringToArray(): void
     {
         $expected = '1,2,3,4,5,';
         $actual = $this->controller->toArray($expected);

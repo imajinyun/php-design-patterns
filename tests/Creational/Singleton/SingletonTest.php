@@ -10,7 +10,7 @@ class SingletonTest extends TestCase
     /**
      * Test uniqueness.
      */
-    public function testUniqueness()
+    public function testUniqueness(): void
     {
         $expected = Singleton::class;
 
@@ -24,7 +24,7 @@ class SingletonTest extends TestCase
     /**
      * Test constructor, clone, wakeup, sleep method is private.
      */
-    public function testPrivateMethods()
+    public function testPrivateMethods(): void
     {
         $object = Singleton::getInstance();
         $reflection = new \ReflectionClass($object);

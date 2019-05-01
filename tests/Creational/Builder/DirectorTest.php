@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class DirectorTest extends TestCase
 {
-    public function testCanBuildNotebook()
+    public function testCanBuildNotebook(): void
     {
         $builder = new NotebookBuilder();
         $notebook = (new Director())->build($builder);

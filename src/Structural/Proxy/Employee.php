@@ -34,13 +34,14 @@ class Employee
      *
      * @param string $username
      * @param string $password
-     * @param int    $accessLevel
+     * @param int $accessLevel
      */
     public function __construct(
         string $username,
         string $password,
         int $accessLevel
-    ) {
+    )
+    {
         $this->username = $username;
         $this->password = $password;
         $this->accessLevel = $accessLevel;

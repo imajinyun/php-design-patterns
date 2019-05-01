@@ -36,20 +36,20 @@ class VisitorTest extends TestCase
      *
      * @param RoleInterface $role
      */
-    public function testVisitSomeRole(RoleInterface $role)
+    public function testVisitSomeRole(RoleInterface $role): void
     {
         $role->allow($this->visitor);
         self::assertSame($role, $this->visitor->getRole()[0]);
     }
 
-    public function testGroup()
+    public function testGroup(): void
     {
         $group = new Group('Administrator');
         $expect = 'Group: Administrator';
         self::assertEquals($expect, $group->getName());
     }
 
-    public function testUser()
+    public function testUser(): void
     {
         $user = new User('Admin');
         $expect = 'User: Admin';

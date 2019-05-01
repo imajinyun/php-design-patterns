@@ -25,7 +25,7 @@ class ServiceLocator
      * @param string $class
      * @param \DesignPattern\More\ServiceLocator\RequestService|
      *        \DesignPattern\More\ServiceLocator\ResponseService $service
-     * @param bool   $isShare
+     * @param bool $isShare
      *
      * @return void
      */
@@ -33,7 +33,8 @@ class ServiceLocator
         string $class,
         $service,
         bool $isShare = true
-    ): void {
+    ): void
+    {
         $this->services[$class] = $service;
         $this->instantiated[$class] = $service;
         $this->shared[$class] = $isShare;
@@ -43,8 +44,8 @@ class ServiceLocator
      * Add class.
      *
      * @param string $class
-     * @param array  $parameter
-     * @param bool   $isShare
+     * @param array $parameter
+     * @param bool $isShare
      *
      * @return void
      */
@@ -52,7 +53,8 @@ class ServiceLocator
         string $class,
         array $parameter,
         bool $isShare = false
-    ): void {
+    ): void
+    {
         $this->services[$class] = $parameter;
         $this->shared[$class] = $isShare;
     }

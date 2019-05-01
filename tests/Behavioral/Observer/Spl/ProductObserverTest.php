@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ProductObserverTest extends TestCase
 {
-    public function testObserverIsUpdated()
+    public function testObserverIsUpdated(): void
     {
         $observer = $this->getMockBuilder(ProductObserver::class)
             ->setMethods(['update'])

@@ -9,22 +9,22 @@ use PHPUnit\Framework\TestCase;
 
 class EntityAttributeValueTest extends TestCase
 {
-    public function testAttribute()
+    public function testAttribute(): void
     {
         $attribute = new Attribute('attribute');
 
         self::assertInstanceOf(\SplObjectStorage::class, $attribute->getValue());
     }
 
-    public function testValue()
+    public function testValue(): void
     {
         $value = new Value(new Attribute('attribute'), 'value');
         $expect = 'attribute: value';
 
-        self::assertEquals($expect, (string)$value);
+        self::assertEquals($expect, (string) $value);
     }
 
-    public function testAddAttributeToEntity()
+    public function testAddAttributeToEntity(): void
     {
         $colorAttribute = new Attribute('color');
         $colorWhite = new Value($colorAttribute, 'white');
@@ -34,6 +34,6 @@ class EntityAttributeValueTest extends TestCase
         $entity = new Entity('MI 6 Phone', [$colorWhite, $colorBlack, $memory]);
 
         $expect = 'MI 6 Phone, color: white, color: black, memory: 6GB';
-        self::assertEquals($expect, (string)$entity);
+        self::assertEquals($expect, (string) $entity);
     }
 }
