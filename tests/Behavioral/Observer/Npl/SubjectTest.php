@@ -21,11 +21,11 @@ class SubjectTest extends TestCase
         $observer = new Observer();
         $observers = &$subject->getObservers();
 
-        self::assertInternalType('array', $observers);
+        self::assertIsArray($observers);
         self::assertNotContains($observer, $observers);
 
         $subject->attach($observer);
-        self::assertInternalType('array', $observers);
+        self::assertIsArray($observers);
 
         $subject->detach($observer);
         self::assertNotContains($observer, $observers);
