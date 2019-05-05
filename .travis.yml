@@ -3,21 +3,24 @@ dist: trusty
 sudo: false
 group: deprecated-2017Q4
 
+env:
+  global:
+    - SETUP=stable
+
 php:
-  - 7.1
   - 7.2
+  - 7.3
 
 matrix:
   fast_finish: true
 
-  allow_failures:
-    - php: 7.2 # Does not work until https://github.com/sebastianbergmann/phpunit/issues/2754 is resolved
-
   include:
-    - php: 7.1
-      env: PHPCS=1 DEFAULT=0
     - php: 7.2
-      env: PHPCS=1 DEFAULT=0
+    - php: 7.2
+      env: SETUP=lowest
+    - php: 7.3
+    - php: 7.3
+      env: SETUP=lowest
 
 cache:
   directories:
@@ -26,9 +29,11 @@ cache:
 
 install:
   - curl -s http://getcomposer.org/installer | php
-  - composer install --prefer-dist --no-interaction
+  - if [[ $SETUP = 'stable' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-stable --no-suggest; fi
+  - if [[ $SETUP = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable --no-suggest; fi
 
 before_script:
+  - phpenv config-rm xdebug.ini || true
   - mkdir -p build/logs
 
   # show some versions and env information
@@ -38,7 +43,6 @@ before_script:
 
 script:
   - composer require php-coveralls/php-coveralls
-  - if [[ $PHPCS = 1 ]]; then vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover=build/logs/clover.xml; fi
   - php vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover build/logs/clover.xml
 
 after_script:
@@ -46,10 +50,10 @@ after_script:
   - php ocular.phar code-coverage:upload --format=clover build/logs/clover.xml
 
 after_success:
-    - travis_retry php vendor/bin/coveralls -v
-    - if [[ $PHPCS = 1 ]]; then bash <(curl -s https://codecov.io/bash); fi
-    - if [[ $PHPCS = 1 ]]; then travis_retry php vendor/bin/coveralls -v; fi
-    - php vendor/bin/codacycoverage clover build/logs/clover.xml
+  - travis_retry php vendor/bin/coveralls -v
+  - if [[ $SETUP = 'stable' ]]; then bash <(curl -s https://codecov.io/bash); fi
+  - if [[ $SETUP = 'stable' ]]; then travis_retry php vendor/bin/coveralls -v; fi
+  - php vendor/bin/codacycoverage clover build/logs/clover.xml
 
 notifications:
   email: false
