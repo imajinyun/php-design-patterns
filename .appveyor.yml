@@ -11,9 +11,9 @@ skip_tags: true
 environment:
   matrix:
     - dependencies: highest
-      php_version: 7.1
-    - dependencies: highest
       php_version: 7.2
+    - dependencies: highest
+      php_version: 7.3
 matrix:
   fast_finish: true
 cache:
