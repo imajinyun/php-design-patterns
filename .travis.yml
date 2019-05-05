@@ -24,14 +24,13 @@ matrix:
 
 cache:
   directories:
-    - vendor
     - $HOME/.composer/cache
 
 install:
   - curl -s http://getcomposer.org/installer | php
-  - composer require php-coveralls/php-coveralls
   - if [[ $SETUP = 'stable' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-stable --no-suggest; fi
   - if [[ $SETUP = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable --no-suggest; fi
+  - composer require php-coveralls/php-coveralls
 
 before_script:
   - phpenv config-rm xdebug.ini || true
