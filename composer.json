@@ -1,20 +1,23 @@
 {
     "name": "imajinyun/php-design-pattern",
-    "description": "An example of some design patterns implemented in PHP language.",
+    "description": "An example of some design patterns implemented using PHP language.",
     "type": "project",
-    "require": {
-        "php": "^7.1.3",
-        "ext-json": "*",
-        "psr/http-message": "^1.0",
-        "phpunit/phpunit": "^8.1"
-    },
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/imajinyun/php-design-pattern/issues"
+    },
     "authors": [
         {
             "name": "imajinyun",
             "email": "imajinyun@gmail.com"
         }
     ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "psr/http-message": "^1.0",
+        "phpunit/phpunit": "^8.1"
+    },
     "autoload": {
         "psr-4": {
             "DesignPattern\\": "src/"
@@ -25,5 +28,6 @@
             "DesignPattern\\Test\\": "tests/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
