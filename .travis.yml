@@ -29,6 +29,7 @@ cache:
 
 install:
   - curl -s http://getcomposer.org/installer | php
+  - composer require php-coveralls/php-coveralls
   - if [[ $SETUP = 'stable' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-stable --no-suggest; fi
   - if [[ $SETUP = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable --no-suggest; fi
 
@@ -37,17 +38,15 @@ before_script:
   - mkdir -p build/logs
 
   # show some versions and env information
-  - mysql --version
   - php --version
   - composer --version
 
 script:
-  - composer require php-coveralls/php-coveralls
   - php vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover build/logs/clover.xml
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=clover build/logs/clover.xml
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
 
 after_success:
   - travis_retry php vendor/bin/coveralls -v
