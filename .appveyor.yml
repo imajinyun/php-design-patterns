@@ -1,6 +1,6 @@
 version: 0.0.{build}
 clone_depth: 2
-clone_folder: c:\projects\php-design-pattern
+clone_folder: C:\projects\php-design-pattern
 branches:
   only:
     - master
@@ -13,11 +13,11 @@ environment:
   VC: "vc15"
   matrix:
     - dependencies: highest
-      php_version: 7.2
+      php_ver_target: 7.2
     - dependencies: lowest
-      php_version: 7.3
+      php_ver_target: 7.3
     - dependencies: highest
-      php_version: 7.3
+      php_ver_target: 7.3
 
 matrix:
   fast_finish: true
@@ -33,7 +33,7 @@ cache:
 init:
   - git config --global core.autocrlf input
   - SET PATH=C:\Program Files\OpenSSL;C:\tools\php;%PATH%
-  - SET PHP=1
+  - SET PHP=1 # This var is connected to PHP install cache
   - SET ANSICON=121x90 (121x90)
   - SET COMPOSER_NO_INTERACTION=1
 
@@ -45,8 +45,7 @@ install:
   - ps: Set-Service wuauserv -StartupType Manual
 
   # Install PHP
-  - ps: >-
-      appveyor-retry cinst --params '""/InstallDir:C:\tools\php""' --ignore-checksums -y php --version ((choco search php --exact --all-versions -r | select-string -pattern $env:php_version | sort { [version]($_ -split '\|' | select -last 1) } -Descending | Select-Object -first 1) -replace '[php|]','')
+  - ps: appveyor-retry cinst --params '""/InstallDir:C:\tools\php""' --ignore-checksums -y php --version ((choco search php --exact --all-versions -r | select-string -pattern $env:php_ver_target | sort { [version]($_ -split '\|' | select -last 1) } -Descending | Select-Object -first 1) -replace '[php|]','')
   - cd C:\tools\php
   - IF %PHP%==1 copy php.ini-production php.ini /Y
   - IF %PHP%==1 echo date.timezone="PRC" >> php.ini
@@ -54,17 +53,20 @@ install:
   - IF %PHP%==1 echo extension=php_openssl.dll >> php.ini
   - IF %PHP%==1 echo extension=php_mbstring.dll >> php.ini
   - IF %PHP%==1 echo extension=php_fileinfo.dll >> php.ini
+  - IF %PHP%==1 echo zend.assertions=1 >> php.ini
+  - IF %PHP%==1 echo assert.exception=On >> php.ini
+  - IF %PHP%==1 echo error_reporting=E_ALL >> php.ini
   - IF %PHP%==1 echo @php %%~dp0composer.phar %%* > composer.bat
 
   # Install composer and update per matrix
   - appveyor-retry appveyor DownloadFile https://getcomposer.org/composer.phar
-  - cd c:\projects\php-design-pattern
+  - cd C:\projects\php-design-pattern
   - appveyor-retry composer install --no-progress --profile
   - IF %dependencies%==lowest appveyor-retry composer update --no-suggest --prefer-dist --prefer-lowest
   - IF %dependencies%==highest appveyor-retry composer update --no-suggest --prefer-dist
   - composer show
 test_script:
-  - cd c:\projects\php-design-pattern
+  - cd C:\projects\php-design-pattern
   - php --version
   - composer --version
   - vendor/bin/phpunit -c phpunit.xml.dist
