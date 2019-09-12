@@ -1,5 +1,5 @@
 version: 0.0.{build}
-clone_depth: 50
+clone_depth: 2
 clone_folder: c:\projects\php-design-pattern
 branches:
   only:
@@ -9,6 +9,8 @@ platform: Any CPU
 build: false
 skip_tags: true
 environment:
+  PHPBuild: "x64"
+  VC: "vc15"
   matrix:
     - dependencies: highest
       php_version: 7.2
@@ -16,8 +18,10 @@ environment:
       php_version: 7.3
     - dependencies: highest
       php_version: 7.3
+
 matrix:
   fast_finish: true
+
 cache:
   # cache is cleared when linked file is modified
   - '%LOCALAPPDATA%\Composer\files -> composer.lock'
@@ -25,31 +29,37 @@ cache:
   - C:\ProgramData\chocolatey\bin -> .appveyor.yml
   - C:\ProgramData\chocolatey\lib -> .appveyor.yml
   - C:\tools\php -> .appveyor.yml
+
 init:
   - git config --global core.autocrlf input
-  - SET PATH=c:\Program Files\OpenSSL;c:\tools\php;%PATH%
+  - SET PATH=C:\Program Files\OpenSSL;C:\tools\php;%PATH%
   - SET PHP=1
   - SET ANSICON=121x90 (121x90)
   - SET COMPOSER_NO_INTERACTION=1
+
+# Install PHP and composer, and run the appropriate composer command.
 install:
-  - IF EXIST c:\tool\php (SET PHP=0)
+  - IF EXIST C:\tool\php (SET PHP=0)
 
   # Enable Windows update service
   - ps: Set-Service wuauserv -StartupType Manual
 
   # Install PHP
-  - ps: appveyor-retry choco --params '""/InstallDir:c:\tools\php""' --ignore-checksums -y php --version ((choco search php --exact --all-versions -r | select-string -pattern $env:php_version | sort { [version]($_ -split '\|' | select -last 1) } -Descending | Select-Object -first 1) -replace '[php|]','')
+  - ps: >-
+      appveyor-retry cinst --params '""/InstallDir:C:\tools\php""' --ignore-checksums -y php --version ((choco search php --exact --all-versions -r | select-string -pattern $env:php_version | sort { [version]($_ -split '\|' | select -last 1) } -Descending | Select-Object -first 1) -replace '[php|]','')
   - cd C:\tools\php
   - IF %PHP%==1 copy php.ini-production php.ini /Y
   - IF %PHP%==1 echo date.timezone="PRC" >> php.ini
   - IF %PHP%==1 echo extension_dir=ext >> php.ini
   - IF %PHP%==1 echo extension=php_openssl.dll >> php.ini
   - IF %PHP%==1 echo extension=php_mbstring.dll >> php.ini
+  - IF %PHP%==1 echo extension=php_fileinfo.dll >> php.ini
   - IF %PHP%==1 echo @php %%~dp0composer.phar %%* > composer.bat
 
   # Install composer and update per matrix
   - appveyor-retry appveyor DownloadFile https://getcomposer.org/composer.phar
   - cd c:\projects\php-design-pattern
+  - appveyor-retry composer install --no-progress --profile
   - IF %dependencies%==lowest appveyor-retry composer update --no-suggest --prefer-dist --prefer-lowest
   - IF %dependencies%==highest appveyor-retry composer update --no-suggest --prefer-dist
   - composer show
