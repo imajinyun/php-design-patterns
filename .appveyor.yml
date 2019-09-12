@@ -10,6 +10,7 @@ build: false
 skip_tags: true
 environment:
   PHPBuild: "x64"
+  DLLVersion: "5.3.0"
   VC: "vc15"
   matrix:
     - dependencies: highest
@@ -40,12 +41,14 @@ init:
 # Install PHP and composer, and run the appropriate composer command.
 install:
   - IF EXIST C:\tool\php (SET PHP=0)
+  - ps: choco upgrade chocolatey -y --version 0.10.13 --allow-downgrade
 
   # Enable Windows update service
   - ps: Set-Service wuauserv -StartupType Manual
 
   # Install PHP
   - ps: appveyor-retry cinst --params '""/InstallDir:C:\tools\php""' --ignore-checksums -y php --version ((choco search php --exact --all-versions -r | select-string -pattern $env:php_ver_target | sort { [version]($_ -split '\|' | select -last 1) } -Descending | Select-Object -first 1) -replace '[php|]','')
+  - appveyor-retry cinst -y sqlite
   - cd C:\tools\php
   - IF %PHP%==1 copy php.ini-production php.ini /Y
   - IF %PHP%==1 echo date.timezone="PRC" >> php.ini
