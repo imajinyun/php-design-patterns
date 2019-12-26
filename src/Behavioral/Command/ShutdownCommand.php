@@ -7,7 +7,7 @@ class ShutdownCommand implements CommandInterface
     /**
      * @var \DesignPattern\Behavioral\Command\Computer
      */
-    private $computer;
+    private Computer $computer;
 
     /**
      * ShutdownCommand constructor.

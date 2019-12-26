@@ -9,7 +9,7 @@ abstract class Handler
     /**
      * @var \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null
      */
-    private $handler;
+    private ?Handler $handler;
 
     /**
      * Handler constructor.

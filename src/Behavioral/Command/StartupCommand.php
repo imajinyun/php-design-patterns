@@ -7,7 +7,7 @@ class StartupCommand implements CommandInterface
     /**
      * @var \DesignPattern\Behavioral\Command\Computer
      */
-    private $computer;
+    private Computer $computer;
 
     /**
      * StartupCommand constructor.

@@ -9,7 +9,7 @@ class MemoryHandler extends Handler
     /**
      * @var array
      */
-    private $data;
+    private array $data;
 
     /**
      * MemoryHandler constructor.

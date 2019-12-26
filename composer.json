@@ -1,6 +1,6 @@
 {
     "name": "imajinyun/php-design-pattern",
-    "description": "An example of some design patterns implemented using PHP language.",
+    "description": "🌷 An example of some design patterns implemented using PHP language.",
     "type": "project",
     "license": "MIT",
     "support": {
@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "ext-json": "*",
         "psr/http-message": "^1.0"
     },

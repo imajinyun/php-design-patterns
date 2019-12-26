@@ -7,7 +7,7 @@ class Console
     /**
      * @var \DesignPattern\Behavioral\Command\CommandInterface
      */
-    private $command;
+    private CommandInterface $command;
 
     /**
      * Console constructor.
