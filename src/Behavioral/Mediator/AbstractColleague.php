@@ -7,7 +7,7 @@ abstract class AbstractColleague
     /**
      * @var \DesignPattern\Behavioral\Mediator\MediatorInterface
      */
-    private $mediator;
+    private MediatorInterface $mediator;
 
     /**
      * AbstractColleague constructor.

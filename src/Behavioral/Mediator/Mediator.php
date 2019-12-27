@@ -7,17 +7,17 @@ class Mediator implements MediatorInterface
     /**
      * @var \DesignPattern\Behavioral\Mediator\Consumer
      */
-    private $consumer;
+    private Consumer $consumer;
 
     /**
      * @var \DesignPattern\Behavioral\Mediator\Database
      */
-    private $database;
+    private Database $database;
 
     /**
      * @var \DesignPattern\Behavioral\Mediator\Server
      */
-    private $server;
+    private Server $server;
 
     /**
      * Set consumer instance.
@@ -82,13 +82,13 @@ class Mediator implements MediatorInterface
     }
 
     /**
-     * Send response.
+     * Recv response.
      *
      * @param string $content
      *
      * @return void
      */
-    public function sendResponse($content): void
+    public function recvResponse($content): void
     {
         echo $this->consumer->output($content);
     }

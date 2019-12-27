@@ -13,7 +13,7 @@ class MediatorTest extends TestCase
     /**
      * @var Consumer
      */
-    private $consumer;
+    private Consumer $consumer;
 
     protected function setUp(): void
     {

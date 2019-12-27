@@ -8,6 +8,6 @@ class Server extends AbstractColleague
     {
         $data = $this->getMediator()->query();
 
-        return $this->getMediator()->sendResponse(sprintf('Hello %s', $data));
+        return $this->getMediator()->recvResponse(sprintf('Hello %s', $data));
     }
 }

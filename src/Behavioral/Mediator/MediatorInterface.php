@@ -8,5 +8,5 @@ interface MediatorInterface
 
     public function query();
 
-    public function sendResponse($content);
+    public function recvResponse($content);
 }
