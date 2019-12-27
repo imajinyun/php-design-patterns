@@ -7,7 +7,7 @@ class ItemList implements \Countable
     /**
      * @var array|\DesignPattern\Behavioral\Iterator\Item[]
      */
-    private $list;
+    private array $list;
 
     /**
      * ItemList constructor.
@@ -44,7 +44,7 @@ class ItemList implements \Countable
     /**
      * @param \DesignPattern\Behavioral\Iterator\Item $item
      */
-    public function addItem(Item $item)
+    public function addItem(Item $item): void
     {
         if (! \in_array($item, $this->list, true)) {
             $this->list[] = $item;
@@ -54,7 +54,7 @@ class ItemList implements \Countable
     /**
      * @param \DesignPattern\Behavioral\Iterator\Item $item
      */
-    public function deleteItem(Item $item)
+    public function deleteItem(Item $item): void
     {
         $id = array_search($item, $this->list, true);
 

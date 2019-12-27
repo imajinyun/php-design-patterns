@@ -7,12 +7,12 @@ class ItemIterator implements \Iterator
     /**
      * @var \DesignPattern\Behavioral\Iterator\ItemList
      */
-    private $list;
+    private ItemList $list;
 
     /**
      * @var int
      */
-    private $index;
+    private int $index;
 
     /**
      * ItemIterator constructor.

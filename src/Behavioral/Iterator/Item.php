@@ -7,12 +7,12 @@ class Item
     /**
      * @var int
      */
-    private $id;
+    private int $id;
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * Item constructor.
