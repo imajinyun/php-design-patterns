@@ -7,7 +7,7 @@ class Number implements ExpressionInterface
     /**
      * @var int
      */
-    private $value;
+    private int $value;
 
     /**
      * Number constructor.

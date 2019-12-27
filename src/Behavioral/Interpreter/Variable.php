@@ -7,7 +7,7 @@ class Variable implements ExpressionInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * Variable constructor.

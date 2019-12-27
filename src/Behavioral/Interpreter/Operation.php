@@ -7,17 +7,17 @@ class Operation implements ExpressionInterface
     /**
      * @var \DesignPattern\Behavioral\Interpreter\ExpressionInterface
      */
-    private $left;
+    private ExpressionInterface $left;
 
     /**
      * @var \DesignPattern\Behavioral\Interpreter\ExpressionInterface
      */
-    private $right;
+    private ExpressionInterface $right;
 
     /**
      * @var string
      */
-    private $operator;
+    private string $operator;
 
     /**
      * Operation constructor.
