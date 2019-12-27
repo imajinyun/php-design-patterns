@@ -46,7 +46,7 @@ class ItemList implements \Countable
      */
     public function addItem(Item $item): void
     {
-        if (! \in_array($item, $this->list, true)) {
+        if (! in_array($item, $this->list, true)) {
             $this->list[] = $item;
         }
     }
@@ -68,6 +68,6 @@ class ItemList implements \Countable
      */
     public function count(): int
     {
-        return \count($this->list);
+        return count($this->list);
     }
 }
