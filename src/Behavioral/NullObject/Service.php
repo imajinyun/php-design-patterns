@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\NullObject;
 
@@ -7,7 +8,7 @@ class Service
     /**
      * @var \DesignPattern\Behavioral\NullObject\LoggerInterface
      */
-    private $logger;
+    private LoggerInterface $logger;
 
     /**
      * Service constructor.
