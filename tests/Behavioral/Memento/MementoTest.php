@@ -12,7 +12,7 @@ class MementoTest extends TestCase
     /**
      * @var Order
      */
-    private $order;
+    private Order $order;
 
     protected function setUp(): void
     {

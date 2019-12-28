@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\Memento;
 
@@ -7,7 +8,7 @@ class History implements \Countable
     /**
      * @var \DesignPattern\Behavioral\Memento\Memento[]
      */
-    private $mementos;
+    private array $mementos;
 
     /**
      * History constructor.
@@ -22,7 +23,7 @@ class History implements \Countable
      *
      * @param \DesignPattern\Behavioral\Memento\Memento $memento
      */
-    public function addMemento(Memento $memento)
+    public function addMemento(Memento $memento): void
     {
         $this->mementos[] = $memento;
     }
@@ -46,6 +47,6 @@ class History implements \Countable
      */
     public function count(): int
     {
-        return \count($this->mementos);
+        return count($this->mementos);
     }
 }

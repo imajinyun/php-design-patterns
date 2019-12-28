@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\Memento;
 
@@ -15,33 +16,33 @@ class State
     /**
      * @var int
      */
-    private $state;
+    private int $state;
+
 
     /**
      * @var \DateTime
      */
-    private $createdAt;
+    private \DateTime $createdAt;
 
     /**
      * @var array
      */
-    private static $validStates
-        = [
-            self::STATUS_LOCKED,
-            self::STATUS_CONFIRMED,
-            self::STATUS_PAID,
-            self::STATUS_SHIPPED,
-            self::STATUS_SETTLED,
-            self::STATUS_COMPLETED,
-            self::STATUS_CANCELED,
-        ];
+    private static array $validStates = [
+        self::STATUS_LOCKED,
+        self::STATUS_CONFIRMED,
+        self::STATUS_PAID,
+        self::STATUS_SHIPPED,
+        self::STATUS_SETTLED,
+        self::STATUS_COMPLETED,
+        self::STATUS_CANCELED,
+    ];
 
     /**
      * State constructor.
      *
      * @param int $state
      *
-     * @throws \InvalidArgumentException
+     * @throws \Exception|\InvalidArgumentException
      */
     public function __construct($state = self::STATUS_LOCKED)
     {
@@ -57,11 +58,12 @@ class State
      * @param int $state
      *
      * @return void
+     *
      * @throws \InvalidArgumentException When state is not set.
      */
     private static function isValidState(int $state): void
     {
-        if (! \in_array($state, self::$validStates, true)) {
+        if (! in_array($state, self::$validStates, true)) {
             throw new \InvalidArgumentException('Invalid state given.');
         }
     }

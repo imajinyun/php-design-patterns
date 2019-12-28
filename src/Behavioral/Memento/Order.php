@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\Memento;
 
@@ -7,7 +8,7 @@ class Order
     /**
      * @var \DesignPattern\Behavioral\Memento\State
      */
-    private $state;
+    private State $state;
 
     /**
      * Order constructor.
