@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\Observer\Spl;
 
@@ -7,17 +8,17 @@ class Product implements \SplSubject
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @var int
      */
-    private $price;
+    private int $price;
 
     /**
      * @var \SplObjectStorage
      */
-    private $observers;
+    private \SplObjectStorage $observers;
 
     /**
      * Product constructor.
@@ -96,7 +97,7 @@ class Product implements \SplSubject
      *
      * @param int $price
      */
-    public function setPrice(int $price)
+    public function setPrice(int $price): void
     {
         $this->price = $price;
 

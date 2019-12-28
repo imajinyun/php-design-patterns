@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DesignPattern\Behavioral\Observer\Npl;
 
@@ -7,17 +8,17 @@ class Subject implements SubjectInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @var string
      */
-    private $author;
+    private string $author;
 
     /**
      * @var array
      */
-    private $observers;
+    private array $observers;
 
     /**
      * Subject constructor.
@@ -37,7 +38,7 @@ class Subject implements SubjectInterface
      */
     public function attach(ObserverInterface $observer)
     {
-        if (! \in_array($observer, $this->observers, true)) {
+        if (! in_array($observer, $this->observers, true)) {
             $this->observers[] = $observer;
         }
     }
@@ -71,7 +72,7 @@ class Subject implements SubjectInterface
      *
      * @throws \Exception
      */
-    public function doSomethingReport()
+    public function doSomethingReport(): void
     {
         /** @var \DesignPattern\Behavioral\Observer\Npl\Observer $observer */
         foreach ($this->observers as $observer) {
@@ -104,7 +105,7 @@ class Subject implements SubjectInterface
      *
      * @param string $author
      */
-    public function setAuthor(string $author)
+    public function setAuthor(string $author): void
     {
         $this->author = $author;
 
