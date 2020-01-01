@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Specification;
 
 class Item
@@ -7,7 +9,7 @@ class Item
     /**
      * @var int
      */
-    private $value;
+    private int $value;
 
     /**
      * Item constructor.

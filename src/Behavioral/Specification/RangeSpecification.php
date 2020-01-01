@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Specification;
 
 class RangeSpecification extends AbstractSpecification
@@ -7,12 +9,12 @@ class RangeSpecification extends AbstractSpecification
     /**
      * @var int|null
      */
-    private $min;
+    private ?int $min;
 
     /**
      * @var int|null
      */
-    private $max;
+    private ?int $max;
 
     /**
      * RangeSpecification constructor.

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Specification;
 
 class LogicalSpecification extends AbstractSpecification
@@ -12,7 +14,7 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * @var SpecificationInterface[]|array
      */
-    private $specifications;
+    private array $specifications;
 
     /**
      * LogicalSpecification constructor.
@@ -48,7 +50,9 @@ class LogicalSpecification extends AbstractSpecification
         foreach ($this->specifications as $specification) {
             if ($flag && ! $specification->isSatisfiedBy($item)) {
                 return false;
-            } elseif (! $flag && $specification->isSatisfiedBy($item)) {
+            }
+
+            if (! $flag && $specification->isSatisfiedBy($item)) {
                 return true;
             }
         }
@@ -63,7 +67,7 @@ class LogicalSpecification extends AbstractSpecification
      *
      * @throws \InvalidArgumentException
      */
-    private static function checkType(string $type)
+    private static function checkType(string $type): void
     {
         if (! \in_array($type, ['not', 'and', 'or'], true)) {
             throw new \InvalidArgumentException('Logical type parameter error.');
