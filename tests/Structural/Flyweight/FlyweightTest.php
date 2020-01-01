@@ -15,8 +15,10 @@ class FlyweightTest extends TestCase
         BulletFactory::getInstance('EmptyBullet');
         BulletFactory::getInstance('ExpandBullet');
 
-        self::assertEquals($gun->getMaxBullets(),
-            BulletFactory::getBulletCount());
+        self::assertEquals(
+            $gun->getMaxBullets(),
+            BulletFactory::getBulletCount()
+        );
     }
 
     public function testReload(): void
@@ -36,8 +38,10 @@ class FlyweightTest extends TestCase
         $gun->reload('EmptyBullet');
 
         foreach ($gun->getBullets() as $bullet) {
-            self::assertSame(BulletFactory::getInstance('EmptyBullet'),
-                $bullet);
+            self::assertSame(
+                BulletFactory::getInstance('EmptyBullet'),
+                $bullet
+            );
         }
     }
 

@@ -11,10 +11,12 @@ class DataMapperTest extends TestCase
 {
     public function testCanMapUserFromRepository(): void
     {
-        $repository = new Repository([
-            1 => ['username' => 'user1', 'email' => 'user1@163.com'],
-            2 => ['username' => 'user2', 'email' => 'user2@qq.com'],
-        ]);
+        $repository = new Repository(
+            [
+                1 => ['username' => 'user1', 'email' => 'user1@163.com'],
+                2 => ['username' => 'user2', 'email' => 'user2@qq.com'],
+            ]
+        );
         $mapper = new UserMapper($repository);
 
         /** @var User $user */

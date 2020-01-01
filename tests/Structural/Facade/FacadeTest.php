@@ -38,13 +38,15 @@ class FacadeTest extends TestCase
     protected function getBiosMock(): MockObject
     {
         $bios = $this->getMockBuilder(BiosInterface::class)
-            ->setMethods([
-                'launch',
-                'execute',
-                'waitingForPressAnyKey',
-                'powerOn',
-                'powerOff',
-            ])
+            ->setMethods(
+                [
+                    'launch',
+                    'execute',
+                    'waitingForPressAnyKey',
+                    'powerOn',
+                    'powerOff',
+                ]
+            )
             ->disableAutoload()
             ->getMock();
 

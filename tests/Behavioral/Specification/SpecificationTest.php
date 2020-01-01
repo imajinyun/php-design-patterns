@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Behavioral\Specification;
 
 use DesignPattern\Behavioral\Specification\Item;

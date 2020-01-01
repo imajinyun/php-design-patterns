@@ -39,10 +39,12 @@ class ObserverTest extends TestCase
             ->with(
                 self::greaterThan(0),
                 self::stringContains('something'),
-                self::callback(static function ($subject) {
-                    return is_callable([$subject, 'getName'])
-                        && $subject->getName() == 'My Subject';
-                })
+                self::callback(
+                    static function ($subject) {
+                        return is_callable([$subject, 'getName'])
+                            && $subject->getName() == 'My Subject';
+                    }
+                )
             );
 
         $subject = new Subject('My Subject');

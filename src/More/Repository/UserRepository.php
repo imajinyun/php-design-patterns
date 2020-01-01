@@ -47,10 +47,12 @@ class UserRepository implements RepositoryInterface
      */
     public function save(User $user): void
     {
-        $id = $this->storage->write([
-            'username' => $user->getUsername(),
-            'email' => $user->getEmail(),
-        ]);
+        $id = $this->storage->write(
+            [
+                'username' => $user->getUsername(),
+                'email' => $user->getEmail(),
+            ]
+        );
 
         $user->setId($id);
     }
