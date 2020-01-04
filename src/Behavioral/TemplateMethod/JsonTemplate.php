@@ -1,12 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\TemplateMethod;
 
-/**
- * Class JsonTemplate
- *
- * @package DesignPattern\Behavioral\TemplateMethod
- */
 class JsonTemplate extends AbstractTemplate
 {
     /**
@@ -17,7 +14,7 @@ class JsonTemplate extends AbstractTemplate
         $stdClass = new \stdClass();
         $stdClass->method = __METHOD__;
 
-        return json_encode($stdClass);
+        return json_encode($stdClass, JSON_THROW_ON_ERROR, 512);
     }
 
     protected function getHelper(): void

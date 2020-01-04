@@ -1,18 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\TemplateMethod;
 
-/**
- * Class AbstractTemplate
- *
- * @package DesignPattern\Behavioral\TemplateMethod
- */
 abstract class AbstractTemplate
 {
     /**
      * @var array
      */
-    private $toDoThings = [];
+    private array $toDoThings = [];
 
     /**
      * This is the public service provided by this class and its subclasses.

@@ -1,12 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\TemplateMethod;
 
-/**
- * Class HtmlTemplate
- *
- * @package DesignPattern\Behavioral\TemplateMethod
- */
 class HtmlTemplate extends AbstractTemplate
 {
     /**

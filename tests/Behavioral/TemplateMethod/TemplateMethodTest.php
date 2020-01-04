@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Behavioral\TemplateMethod;
 
 use DesignPattern\Behavioral\TemplateMethod\HtmlTemplate;
