@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\State;
 
 class Order
@@ -7,7 +9,7 @@ class Order
     /**
      * @var \DesignPattern\Behavioral\State\StateInterface|null
      */
-    private $state;
+    private ?StateInterface $state;
 
     public function cancel()
     {

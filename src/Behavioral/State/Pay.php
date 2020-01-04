@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\State;
 
 class Pay extends AbstractState

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\State;
 
 abstract class AbstractState implements StateInterface

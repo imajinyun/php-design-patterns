@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase;
 class StateTest extends TestCase
 {
     /**
-     * @var Order
+     * @var \DesignPattern\Behavioral\State\Order
      */
-    private $order;
+    private Order $order;
 
     protected function setUp(): void
     {
