@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Strategy;
 
 class Collection
@@ -7,12 +9,12 @@ class Collection
     /**
      * @var array
      */
-    private $elements;
+    private array $elements;
 
     /**
      * @var \DesignPattern\Behavioral\Strategy\ComparatorInterface
      */
-    private $comparator;
+    private ComparatorInterface $comparator;
 
     /**
      * Collection constructor.

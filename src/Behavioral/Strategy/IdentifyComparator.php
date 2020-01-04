@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Strategy;
 
 class IdentifyComparator implements ComparatorInterface

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Strategy;
 
 class DateComparator implements ComparatorInterface
@@ -11,6 +13,8 @@ class DateComparator implements ComparatorInterface
      * @param mixed $right
      *
      * @return int
+     *
+     * @throws \Exception
      */
     public function compare($left, $right): int
     {
