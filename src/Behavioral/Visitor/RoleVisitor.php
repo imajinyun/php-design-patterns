@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Visitor;
 
 class RoleVisitor implements VisitorInterface
@@ -7,7 +9,7 @@ class RoleVisitor implements VisitorInterface
     /**
      * @var \DesignPattern\Behavioral\Visitor\RoleInterface[]
      */
-    private $roles = [];
+    private array $roles = [];
 
     /**
      * @param \DesignPattern\Behavioral\Visitor\User $user

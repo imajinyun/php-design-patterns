@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Visitor;
 
 class User implements RoleInterface
@@ -7,7 +9,7 @@ class User implements RoleInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * User constructor.
@@ -20,7 +22,7 @@ class User implements RoleInterface
     }
 
     /**
-     * Get name.
+     * Get user name.
      *
      * @return string
      */

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Behavioral\Visitor;
 
 use DesignPattern\Behavioral\Visitor\Group;
@@ -13,7 +15,7 @@ class VisitorTest extends TestCase
     /**
      * @var RoleVisitor
      */
-    private $visitor;
+    private RoleVisitor $visitor;
 
     protected function setUp(): void
     {

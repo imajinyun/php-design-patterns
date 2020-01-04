@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Visitor;
 
 class Group implements RoleInterface
@@ -7,7 +9,7 @@ class Group implements RoleInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * Group constructor.
@@ -20,7 +22,7 @@ class Group implements RoleInterface
     }
 
     /**
-     * Get name.
+     * Get group name.
      *
      * @return string
      */
