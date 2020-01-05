@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Builder;
 
 use DesignPattern\Creational\Builder\Component\Brand;
@@ -15,7 +17,7 @@ class NotebookBuilder implements BuilderInterface
     /**
      * @var \DesignPattern\Creational\Builder\Component\Notebook
      */
-    private $notebook;
+    private Notebook $notebook;
 
     /**
      * Create notebook computer.

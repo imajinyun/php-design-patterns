@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Builder\Component;
 
 abstract class Computer
@@ -7,7 +9,7 @@ abstract class Computer
     /**
      * @var array
      */
-    private $data = [];
+    private array $data = [];
 
     /**
      * Set component of computer.
