@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\AbstractFactory\Html;
 
 use DesignPattern\Creational\AbstractFactory\Text as BaseText;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\AbstractFactory;
 
 use DesignPattern\Creational\AbstractFactory\Json\Image as JsonImage;

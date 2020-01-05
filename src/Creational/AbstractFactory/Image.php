@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\AbstractFactory;
 
 abstract class Image implements RendererInterface
@@ -7,12 +9,12 @@ abstract class Image implements RendererInterface
     /**
      * @var string
      */
-    protected $path;
+    protected string $path;
 
     /**
      * @var string
      */
-    protected $title = '';
+    protected string $title = '';
 
     /**
      * Image constructor.

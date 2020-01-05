@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\AbstractFactory\Json;
 
 use DesignPattern\Creational\AbstractFactory\Text as BaseText;
@@ -13,6 +15,8 @@ class Text extends BaseText
      */
     public function render(): string
     {
-        return json_encode(['text' => $this->text]);
+        $value = ['text' => $this->text];
+
+        return json_encode($value, JSON_THROW_ON_ERROR, 512);
     }
 }

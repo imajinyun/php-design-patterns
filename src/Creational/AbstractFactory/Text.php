@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\AbstractFactory;
 
 abstract class Text implements RendererInterface
@@ -7,7 +9,7 @@ abstract class Text implements RendererInterface
     /**
      * @var string
      */
-    protected $text;
+    protected string $text;
 
     /**
      * Text constructor.
