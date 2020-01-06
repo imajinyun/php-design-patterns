@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\FactoryMethod;
 
 class FoxconnFactory extends FactoryMethod
@@ -9,13 +11,14 @@ class FoxconnFactory extends FactoryMethod
      *
      * @param string $brand
      *
-     * @return MacBook|MacBookAir|MacBookPro
+     * @return \DesignPattern\Creational\FactoryMethod\NotebookInterface
+     *
      * @throws \InvalidArgumentException
      */
-    public function createNotebook(string $brand)
+    public function createNotebook(string $brand): NotebookInterface
     {
         $brand = strtolower(trim($brand));
-        switch ($brand) {
+        switch ((int) $brand) {
             case parent::LOW_CONFIG:
                 return new MacBookAir();
             case parent::MEDIUM_CONFIG:

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\FactoryMethod;
 
 abstract class FactoryMethod
@@ -23,9 +25,9 @@ abstract class FactoryMethod
      *
      * @param string $brand
      *
-     * @return object
+     * @return \DesignPattern\Creational\FactoryMethod\NotebookInterface
      */
-    public function create(string $brand)
+    public function create(string $brand): NotebookInterface
     {
         $object = $this->createNotebook($brand);
         $object->setColor('#000');

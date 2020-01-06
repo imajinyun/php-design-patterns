@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Creational\FactoryMethod;
 
 use DesignPattern\Creational\FactoryMethod\FactoryMethod;
@@ -12,7 +14,7 @@ class FactoryMethodTest extends TestCase
     /**
      * @var array
      */
-    protected $type = [
+    protected array $type = [
         FactoryMethod::LOW_CONFIG,
         FactoryMethod::MEDIUM_CONFIG,
         FactoryMethod::HIGH_CONFIG,
@@ -37,7 +39,7 @@ class FactoryMethodTest extends TestCase
     {
         $expected = NotebookInterface::class;
         foreach ($this->type as $type) {
-            $notebook = $method->create($type);
+            $notebook = $method->create((string) $type);
             $this->assertInstanceOf($expected, $notebook);
         }
     }
@@ -46,7 +48,7 @@ class FactoryMethodTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
         $expected = NotebookInterface::class;
-        $actual = (new FoxconnFactory())->create(FactoryMethod::GENERAL_CONFIG);
+        $actual = (new FoxconnFactory())->create((string) FactoryMethod::GENERAL_CONFIG);
         self::assertInstanceOf($expected, $actual);
     }
 }
