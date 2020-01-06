@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Singleton;
 
 final class Singleton
@@ -7,9 +9,9 @@ final class Singleton
     /**
      * Singleton reference to singleton instance.
      *
-     * @var Singleton
+     * @var \DesignPattern\Creational\Singleton\Singleton|null
      */
-    private static $instance;
+    private static ?Singleton $instance = null;
 
     /**
      * Get the instance via lazy initialization (created on first usage).
