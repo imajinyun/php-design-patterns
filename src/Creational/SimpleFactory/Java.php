@@ -1,12 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\SimpleFactory;
 
-/**
- * Class Java
- *
- * @package DesignPattern\Creational\SimpleFactory
- */
 class Java implements LanguageInterface
 {
     /**

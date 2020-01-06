@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\SimpleFactory;
 
 class SimpleFactory
@@ -7,7 +9,7 @@ class SimpleFactory
     /**
      * @var array
      */
-    protected $language = [];
+    protected array $language = [];
 
     /**
      * SimpleFactory constructor.
@@ -25,7 +27,8 @@ class SimpleFactory
      *
      * @param string $language
      *
-     * @return mixed
+     * @return \DesignPattern\Creational\SimpleFactory\LanguageInterface
+     *
      * @throws \InvalidArgumentException
      */
     public function create(string $language): LanguageInterface

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Creational\SimpleFactory;
 
 use DesignPattern\Creational\SimpleFactory\LanguageInterface;
@@ -11,7 +13,7 @@ class SimpleFactoryTest extends TestCase
     /**
      * @var SimpleFactory
      */
-    protected $factory;
+    protected SimpleFactory $factory;
 
     protected function setUp(): void
     {
@@ -51,8 +53,8 @@ class SimpleFactoryTest extends TestCase
     {
         $object = $this->factory->create($language);
         $actual = $object->toWriteApplication($language);
-        $expect = 'using ' . ucfirst($language)
-            . ' language to write application.';
+        $format = 'using %s language to write application.';
+        $expect = sprintf($format, ucfirst($language));
 
         self::assertEquals($expect, $actual);
     }

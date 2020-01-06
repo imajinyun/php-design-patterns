@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\SimpleFactory;
 
 class Swift implements LanguageInterface
