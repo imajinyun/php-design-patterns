@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\More\Delegation;
 
 use DesignPattern\More\Delegation\Component;
@@ -11,7 +13,7 @@ class DelegationTest extends TestCase
     /**
      * @var \DesignPattern\More\Delegation\Controller
      */
-    private $controller;
+    private Controller $controller;
 
     protected function setUp(): void
     {

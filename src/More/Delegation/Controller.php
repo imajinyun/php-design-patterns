@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\Delegation;
 
 class Controller
@@ -7,7 +9,7 @@ class Controller
     /**
      * @var \DesignPattern\More\Delegation\Component
      */
-    private $component;
+    private Component $component;
 
     /**
      * Controller constructor.
