@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\StaticFactory;
 
 final class StaticFactory
@@ -10,6 +12,7 @@ final class StaticFactory
      * @param string $type
      *
      * @return \DesignPattern\Creational\StaticFactory\FormatterInterface
+     *
      * @throws \InvalidArgumentException
      */
     public static function factory(string $type): FormatterInterface

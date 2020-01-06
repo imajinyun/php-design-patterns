@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Creational\StaticFactory;
 
 use DesignPattern\Creational\StaticFactory\FormatterNumber;
