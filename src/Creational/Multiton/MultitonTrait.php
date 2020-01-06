@@ -7,7 +7,7 @@ trait MultitonTrait
     /**
      * @var array MultitonTrait[]
      */
-    public static $instances = [];
+    public static array $instances = [];
 
     /**
      * Get multiton instance.

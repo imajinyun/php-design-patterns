@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Creational\Multiton;
 
 use DesignPattern\Creational\Multiton\Multiton;
@@ -7,6 +9,9 @@ use PHPUnit\Framework\TestCase;
 
 class MultitonTest extends TestCase
 {
+    /**
+     * @throws \ReflectionException
+     */
     public function testMultitonInstance(): void
     {
         $firstInstance = Multiton::getInstance('a', 'hello');
@@ -26,6 +31,9 @@ class MultitonTest extends TestCase
         self::assertEquals('english', Multiton::getInstance('c')->value);
     }
 
+    /**
+     * @throws \ReflectionException
+     */
     public function testPrivateMethods(): void
     {
         $object = Multiton::getInstance('multiton', 'hello world');

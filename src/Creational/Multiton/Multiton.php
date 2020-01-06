@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Multiton;
 
 final class Multiton
@@ -9,7 +11,7 @@ final class Multiton
     /**
      * @var string
      */
-    public $value;
+    public string $value;
 
     /**
      * Multiton constructor.
