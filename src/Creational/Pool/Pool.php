@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Pool;
 
 class Pool implements \Countable
@@ -7,12 +9,12 @@ class Pool implements \Countable
     /**
      * @var array StringReverseWorker[]
      */
-    private $usedWorker = [];
+    private array $usedWorker = [];
 
     /**
      * @var array StringReverseWorker[]
      */
-    private $freeWorker = [];
+    private array $freeWorker = [];
 
     /**
      * Get worker.
@@ -21,7 +23,7 @@ class Pool implements \Countable
      */
     public function get(): StringReverseWorker
     {
-        if (\count($this->freeWorker) === 0) {
+        if (count($this->freeWorker) === 0) {
             $worker = new StringReverseWorker();
         } else {
             $worker = array_pop($this->freeWorker);
@@ -37,7 +39,7 @@ class Pool implements \Countable
      *
      * @param \DesignPattern\Creational\Pool\StringReverseWorker $worker
      */
-    public function dispose(StringReverseWorker $worker)
+    public function dispose(StringReverseWorker $worker): void
     {
         $key = spl_object_hash($worker);
 
@@ -52,6 +54,6 @@ class Pool implements \Countable
      */
     public function count(): int
     {
-        return \count($this->usedWorker) + \count($this->freeWorker);
+        return count($this->usedWorker) + count($this->freeWorker);
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Creational\Pool;
 
 class StringReverseWorker
@@ -7,7 +9,7 @@ class StringReverseWorker
     /**
      * @var \DateTime
      */
-    private $createdAt;
+    private \DateTime $createdAt;
 
     /**
      * StringReverseWorker constructor.
