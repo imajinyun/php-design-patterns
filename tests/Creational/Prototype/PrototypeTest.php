@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Creational\Prototype;
 
 use DesignPattern\Creational\Prototype\BarPrototype;
