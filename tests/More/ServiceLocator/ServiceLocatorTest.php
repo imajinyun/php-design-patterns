@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\More\ServiceLocator;
 
 use DesignPattern\More\ServiceLocator\RequestService;
@@ -12,7 +14,7 @@ class ServiceLocatorTest extends TestCase
     /**
      * @var \DesignPattern\More\ServiceLocator\ServiceLocator
      */
-    private $serviceLocator;
+    private ServiceLocator $serviceLocator;
 
     protected function setUp(): void
     {

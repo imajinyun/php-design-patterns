@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\ServiceLocator;
 
 class ServiceLocator
@@ -7,20 +9,20 @@ class ServiceLocator
     /**
      * @var array
      */
-    private $services = [];
+    private array $services = [];
 
     /**
      * @var array
      */
-    private $instantiated = [];
+    private array $instantiated = [];
 
     /**
      * @var array
      */
-    private $shared = [];
+    private array $shared = [];
 
     /**
-     * Add instance.
+     * Add an instance.
      *
      * @param string $class
      * @param \DesignPattern\More\ServiceLocator\RequestService|
@@ -40,7 +42,7 @@ class ServiceLocator
     }
 
     /**
-     * Add class.
+     * Add a class.
      *
      * @param string $class
      * @param array $parameter
@@ -73,6 +75,7 @@ class ServiceLocator
      * @param string $class
      *
      * @return mixed
+     *
      * @throws \OutOfRangeException
      */
     public function get(string $class)
@@ -96,6 +99,8 @@ class ServiceLocator
      * @param string $class
      *
      * @return \DesignPattern\More\ServiceLocator\ServiceInterface
+     *
+     * @throws \OutOfRangeException
      */
     private function getInstance(string $class): ServiceInterface
     {
