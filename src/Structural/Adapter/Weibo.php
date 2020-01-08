@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Adapter;
 
 class Weibo implements MemberInterface
@@ -7,7 +9,7 @@ class Weibo implements MemberInterface
     /**
      * @var int
      */
-    private $number = 0;
+    private int $number = 0;
 
     /**
      * Get member token.

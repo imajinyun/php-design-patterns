@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\Adapter;
 
 use DesignPattern\Structural\Adapter\User;

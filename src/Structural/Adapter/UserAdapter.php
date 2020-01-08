@@ -1,18 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Adapter;
 
-/**
- * Class UserAdapter
- *
- * @package DesignPattern\Structural\Adapter
- */
 class UserAdapter implements UserInterface
 {
     /**
      * @var \DesignPattern\Structural\Adapter\MemberInterface
      */
-    private $member;
+    private MemberInterface $member;
 
     /**
      * UserAdapter constructor.

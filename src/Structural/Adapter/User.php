@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Adapter;
 
 class User implements UserInterface
@@ -7,7 +9,7 @@ class User implements UserInterface
     /**
      * @var int
      */
-    private $number = 0;
+    private int $number = 0;
 
     /**
      * User login.
