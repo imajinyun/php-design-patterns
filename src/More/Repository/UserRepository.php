@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\Repository;
 
 class UserRepository implements RepositoryInterface
@@ -7,7 +9,7 @@ class UserRepository implements RepositoryInterface
     /**
      * @var \DesignPattern\More\Repository\MemoryStorage
      */
-    private $storage;
+    private MemoryStorage $storage;
 
     /**
      * UserRepository constructor.

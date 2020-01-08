@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\Repository;
 
 class User
@@ -7,17 +9,17 @@ class User
     /**
      * @var int|null
      */
-    private $id;
+    private ?int $id;
 
     /**
      * @var string
      */
-    private $username;
+    private string $username;
 
     /**
      * @var string
      */
-    private $email;
+    private string $email;
 
     /**
      * User constructor.

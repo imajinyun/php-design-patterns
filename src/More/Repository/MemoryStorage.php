@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\Repository;
 
 class MemoryStorage
@@ -7,12 +9,12 @@ class MemoryStorage
     /**
      * @var array
      */
-    private $data;
+    private array $data;
 
     /**
      * @var int
      */
-    private $lastIndex = 0;
+    private int $lastIndex = 0;
 
     /**
      * Read data from memory.
