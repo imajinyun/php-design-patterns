@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\More\EntityAttributeValue;
 
 use DesignPattern\More\EntityAttributeValue\Attribute;
@@ -13,6 +15,7 @@ class EntityAttributeValueTest extends TestCase
     {
         $attribute = new Attribute('attribute');
 
+        self::assertNotNull($attribute->getValue());
         self::assertInstanceOf(\SplObjectStorage::class, $attribute->getValue());
     }
 

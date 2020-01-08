@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\EntityAttributeValue;
 
 class Value
@@ -7,12 +9,12 @@ class Value
     /**
      * @var \DesignPattern\More\EntityAttributeValue\Attribute
      */
-    private $attribute;
+    private Attribute $attribute;
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * Value constructor.

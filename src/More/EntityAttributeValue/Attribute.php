@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\More\EntityAttributeValue;
 
 class Attribute
@@ -7,12 +9,12 @@ class Attribute
     /**
      * @var \SplObjectStorage
      */
-    private $storage;
+    private \SplObjectStorage $storage;
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * Attribute constructor.
