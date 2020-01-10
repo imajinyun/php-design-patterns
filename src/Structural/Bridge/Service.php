@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Bridge;
 
 abstract class Service
@@ -7,7 +9,7 @@ abstract class Service
     /**
      * @var \DesignPattern\Structural\Bridge\FormatterInterface
      */
-    protected $formatter;
+    protected FormatterInterface $formatter;
 
     /**
      * Service constructor.
