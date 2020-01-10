@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Composite;
 
 class InputElement implements RenderableInterface
@@ -7,12 +9,12 @@ class InputElement implements RenderableInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @var string
      */
-    private $type;
+    private string $type;
 
     /**
      * InputElement constructor.

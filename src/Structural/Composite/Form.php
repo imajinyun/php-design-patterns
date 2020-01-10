@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Composite;
 
 class Form implements RenderableInterface
@@ -7,19 +9,22 @@ class Form implements RenderableInterface
     /**
      * @var string
      */
-    private $action;
+    private string $action;
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
-    private $elements;
+    /**
+     * @var array
+     */
+    private array $elements;
 
     /**
      * @var int
      */
-    private static $elementNumber;
+    private static int $elementNumber = 0;
 
     /**
      * Form constructor.
@@ -47,7 +52,7 @@ class Form implements RenderableInterface
             $form .= '<form action="%s" name="%s">';
         }
 
-        foreach ((array) $this->elements as $element) {
+        foreach ($this->elements as $element) {
             $form .= $element->render();
             ++$i;
         }
@@ -60,13 +65,13 @@ class Form implements RenderableInterface
     }
 
     /**
-     * Add element.
+     * Add element to elements array.
      *
      * @param \DesignPattern\Structural\Composite\RenderableInterface $element
      */
-    public function addElement(RenderableInterface $element)
+    public function addElement(RenderableInterface $element): void
     {
         $this->elements[] = $element;
-        self::$elementNumber++;
+        static::$elementNumber++;
     }
 }

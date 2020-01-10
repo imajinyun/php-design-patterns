@@ -7,12 +7,12 @@ class LabelElement implements RenderableInterface
     /**
      * @var string
      */
-    private $for;
+    private string $for;
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * TextElement constructor.
