@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Facade;
 
 class Facade
@@ -7,12 +9,12 @@ class Facade
     /**
      * @var \DesignPattern\Structural\Facade\BiosInterface
      */
-    private $bios;
+    private BiosInterface $bios;
 
     /**
      * @var \DesignPattern\Structural\Facade\MacOSInterface
      */
-    private $macOS;
+    private MacOSInterface $macOS;
 
     /**
      * Facade constructor.

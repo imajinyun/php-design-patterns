@@ -1,18 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Facade;
 
-/**
- * Class MacOS.
- *
- * @package DesignPattern\Structural\Facade
- */
 class MacOS implements MacOSInterface
 {
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     public function restart(): bool
     {

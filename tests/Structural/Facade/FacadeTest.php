@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\Facade;
 
 use DesignPattern\Structural\Facade\BiosInterface;
@@ -37,8 +39,8 @@ class FacadeTest extends TestCase
 
     protected function getBiosMock(): MockObject
     {
-        $bios = $this->getMockBuilder(BiosInterface::class)
-            ->setMethods(
+        return $this->getMockBuilder(BiosInterface::class)
+            ->onlyMethods(
                 [
                     'launch',
                     'execute',
@@ -49,7 +51,5 @@ class FacadeTest extends TestCase
             )
             ->disableAutoload()
             ->getMock();
-
-        return $bios;
     }
 }
