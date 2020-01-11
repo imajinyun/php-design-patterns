@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Decorator;
 
 abstract class RendererDecorator
@@ -7,7 +9,7 @@ abstract class RendererDecorator
     /**
      * @var \DesignPattern\Structural\Decorator\RenderableInterface
      */
-    protected $renderable;
+    protected RenderableInterface $renderable;
 
     /**
      * RenderDecorator constructor.

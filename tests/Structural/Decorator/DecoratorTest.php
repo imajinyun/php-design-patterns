@@ -1,10 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\Decorator;
 
-use DesignPattern\Structural\Decorator\JsonRender;
-use DesignPattern\Structural\Decorator\Webservice;
-use DesignPattern\Structural\Decorator\XmlRender;
+use DesignPattern\Structural\Decorator\{JsonRender, Webservice, XmlRender};
 use PHPUnit\Framework\TestCase;
 
 class DecoratorTest extends TestCase
@@ -12,7 +12,7 @@ class DecoratorTest extends TestCase
     /**
      * @var \DesignPattern\Structural\Decorator\Webservice
      */
-    private $service;
+    private Webservice $service;
 
     protected function setUp(): void
     {

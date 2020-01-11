@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Decorator;
 
 class Webservice implements RenderableInterface
@@ -7,7 +9,7 @@ class Webservice implements RenderableInterface
     /**
      * @var string
      */
-    private $data;
+    private string $data;
 
     /**
      * Webservice constructor.
