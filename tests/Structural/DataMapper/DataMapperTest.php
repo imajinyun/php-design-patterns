@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\DataMapper;
 
 use DesignPattern\Structural\DataMapper\Repository;

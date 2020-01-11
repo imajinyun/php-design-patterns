@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\DataMapper;
 
 class UserMapper
@@ -7,7 +9,7 @@ class UserMapper
     /**
      * @var \DesignPattern\Structural\DataMapper\Repository
      */
-    private $repository;
+    private Repository $repository;
 
     /**
      * UserMapper constructor.

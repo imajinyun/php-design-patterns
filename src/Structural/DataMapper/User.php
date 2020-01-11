@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\DataMapper;
 
 class User
@@ -7,12 +9,12 @@ class User
     /**
      * @var string
      */
-    private $username;
+    private string $username;
 
     /**
      * @var string
      */
-    private $email;
+    private string $email;
 
     /**
      * User constructor.
