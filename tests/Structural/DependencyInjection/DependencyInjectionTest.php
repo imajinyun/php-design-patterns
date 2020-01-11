@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\DependencyInjection;
 
 use DesignPattern\Structural\DependencyInjection\AbstractMap;
@@ -36,7 +38,7 @@ class DependencyInjectionTest extends TestCase
             'address' => $address,
         ];
         sort($google);
-        $expected = json_encode($google);
+        $expected = json_encode($google, JSON_THROW_ON_ERROR, 512);
         self::assertEquals($expected, $store->getStoreCoordinate($address));
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\DependencyInjection;
 
 abstract class AbstractMap implements GeolocationServiceInterface
@@ -20,6 +22,6 @@ abstract class AbstractMap implements GeolocationServiceInterface
         ];
         sort($data);
 
-        return json_encode($data);
+        return json_encode($data, JSON_THROW_ON_ERROR, 512);
     }
 }

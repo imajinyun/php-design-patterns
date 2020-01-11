@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\DependencyInjection;
 
 class DepartmentStore
@@ -7,7 +9,7 @@ class DepartmentStore
     /**
      * @var \DesignPattern\Structural\DependencyInjection\AbstractMap
      */
-    private $mapService;
+    private AbstractMap $mapService;
 
     /**
      * DepartmentStore constructor.
@@ -25,6 +27,7 @@ class DepartmentStore
      * @param string $address
      *
      * @return string
+     *
      * @throws \InvalidArgumentException
      */
     public function getStoreCoordinate(string $address): string
