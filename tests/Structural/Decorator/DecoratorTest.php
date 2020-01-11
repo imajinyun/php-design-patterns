@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace DesignPattern\Test\Structural\Decorator;
 
-use DesignPattern\Structural\Decorator\{JsonRender, Webservice, XmlRender};
+use DesignPattern\Structural\Decorator\JsonRender;
+use DesignPattern\Structural\Decorator\Webservice;
+use DesignPattern\Structural\Decorator\XmlRender;
 use PHPUnit\Framework\TestCase;
 
 class DecoratorTest extends TestCase
