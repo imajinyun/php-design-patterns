@@ -1,6 +1,6 @@
 version: 0.0.{build}
 clone_depth: 2
-clone_folder: C:\projects\php-design-pattern
+clone_folder: C:\projects\php-design-patterns
 branches:
   only:
     - master
@@ -61,13 +61,13 @@ install:
 
   # Install composer and update per matrix
   - appveyor-retry appveyor DownloadFile https://getcomposer.org/composer.phar
-  - cd C:\projects\php-design-pattern
+  - cd C:\projects\php-design-patterns
   - appveyor-retry composer install --no-progress --profile
   - IF %dependencies%==lowest appveyor-retry composer update --no-suggest --prefer-dist --prefer-lowest
   - IF %dependencies%==highest appveyor-retry composer update --no-suggest --prefer-dist
   - composer show
 test_script:
-  - cd C:\projects\php-design-pattern
+  - cd C:\projects\php-design-patterns
   - php --version
   - composer --version
   - vendor/bin/phpunit -c phpunit.xml.dist

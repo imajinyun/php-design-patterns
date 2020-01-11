@@ -1,10 +1,10 @@
 {
-    "name": "imajinyun/php-design-pattern",
+    "name": "imajinyun/php-design-patterns",
     "description": "🌷 An example of some design patterns implemented using PHP language.",
     "type": "project",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/imajinyun/php-design-pattern/issues"
+        "issues": "https://github.com/imajinyun/php-design-patterns/issues"
     },
     "authors": [
         {
