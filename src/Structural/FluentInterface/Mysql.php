@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\FluentInterface;
 
 class Mysql implements FluentInterface
@@ -7,17 +9,17 @@ class Mysql implements FluentInterface
     /**
      * @var array
      */
-    private $fields;
+    private array $fields;
 
     /**
      * @var array
      */
-    private $table;
+    private array $table;
 
     /**
      * @var array
      */
-    private $conditions;
+    private array $conditions;
 
     /**
      * @return string

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\FluentInterface;
 
 use DesignPattern\Structural\FluentInterface\Mysql;
