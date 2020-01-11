@@ -2,12 +2,15 @@
 
 > 🌹 一个使用 **PHP** 语言实现的设计模式实例。
 
-[![Build Status](https://travis-ci.org/imajinyun/php-design-pattern.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-pattern)
+[![Build Status](https://travis-ci.org/imajinyun/php-design-patterns.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-patterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/lbf61giw9iavhtt5/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-design-pattern/branch/master)
-[![codecov](https://codecov.io/gh/imajinyun/php-study-codes/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-study-codes)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-pattern/?branch=master)
+[![codecov](https://codecov.io/gh/imajinyun/php-design-patterns/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-design-patterns)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/badges/build.png?b=master)](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/imajinyun/php-design-patterns/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![StyleCI](https://styleci.io/repos/112085360/shield?branch=master)](https://styleci.io/repos/112085360)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/368998e20fe64b2da7f8ef1f42444527)](https://www.codacy.com/app/imajinyun/php-design-pattern?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-design-pattern&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/368998e20fe64b2da7f8ef1f42444527)](https://www.codacy.com/app/imajinyun/php-design-pattern?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-design-patterns&amp;utm_campaign=Badge_Grade)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern?ref=badge_shield)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/imajinyun/php-design-pattern.svg)](http://php.net/releases/)
 
