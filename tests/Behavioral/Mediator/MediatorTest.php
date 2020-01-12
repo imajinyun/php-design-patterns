@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase;
 class MediatorTest extends TestCase
 {
     /**
-     * @var Consumer
+     * @var Consumer|null
      */
-    private Consumer $consumer;
+    private ?Consumer $consumer;
 
     protected function setUp(): void
     {
