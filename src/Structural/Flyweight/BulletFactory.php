@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Flyweight;
 
 class BulletFactory
@@ -7,7 +9,7 @@ class BulletFactory
     /**
      * @var array|\DesignPattern\Structural\Flyweight\BulletInterface[]
      */
-    private static $bullets = [];
+    private static array $bullets = [];
 
     /**
      * Get bullet instance by type.
@@ -34,6 +36,6 @@ class BulletFactory
      */
     public static function getBulletCount(): int
     {
-        return \count(self::$bullets);
+        return count(self::$bullets);
     }
 }

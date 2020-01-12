@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Flyweight;
 
 class EmptyBullet extends AbstractBullet
@@ -9,7 +11,7 @@ class EmptyBullet extends AbstractBullet
      *
      * @var int
      */
-    private $damage;
+    private int $damage;
 
     /**
      * EmptyBullet constructor.

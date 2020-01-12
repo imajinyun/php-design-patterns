@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Flyweight;
 
 class Gun
@@ -7,12 +9,12 @@ class Gun
     /**
      * @var array|BulletInterface[]
      */
-    private $bullets;
+    private array $bullets;
 
     /**
      * @var int
      */
-    private $maxBullets;
+    private int $maxBullets;
 
     /**
      * Gun constructor.
@@ -48,7 +50,7 @@ class Gun
      */
     public function reload(string $type): void
     {
-        $count = \count($this->bullets);
+        $count = count($this->bullets);
         for (; $count < $this->maxBullets; $count++) {
             $this->bullets[] = BulletFactory::getInstance($type);
         }
@@ -59,14 +61,14 @@ class Gun
      */
     public function fire(): string
     {
-        if ($count = \count($this->bullets)) {
-            $bullet = \array_shift($this->bullets);
+        if ($count = count($this->bullets)) {
+            $bullet = array_shift($this->bullets);
             $bullet->setPositionInMagazine($this->maxBullets - $count + 1);
 
             return sprintf(
                 'Bullet %d fired - `%s`',
                 $bullet->getPositionInMagazine(),
-                \get_class($bullet)
+                get_class($bullet)
             );
         }
 

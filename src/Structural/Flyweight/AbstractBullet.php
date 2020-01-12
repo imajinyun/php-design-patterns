@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Flyweight;
 
 abstract class AbstractBullet implements BulletInterface
@@ -9,7 +11,7 @@ abstract class AbstractBullet implements BulletInterface
      *
      * @var int
      */
-    private $positionInMagazine;
+    private int $positionInMagazine;
 
     /**
      * Setting extrinsic state.

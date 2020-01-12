@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Flyweight;
 
 class ExpandBullet extends AbstractBullet
@@ -7,9 +9,9 @@ class ExpandBullet extends AbstractBullet
     /**
      * Intrinsic state.
      *
-     * @var
+     * @var int
      */
-    private $damage;
+    private int $damage;
 
     /**
      * ExpandBullet constructor.
