@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Proxy;
 
 class Employee
@@ -17,17 +19,17 @@ class Employee
     /**
      * @var string
      */
-    protected $username;
+    protected string $username;
 
     /**
      * @var string
      */
-    protected $password;
+    protected string $password;
 
     /**
      * @var int
      */
-    protected $accessLevel;
+    protected int $accessLevel;
 
     /**
      * Employee constructor.

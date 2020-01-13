@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Proxy;
 
 class WifiNetwork implements WifiNetworkInterface
@@ -7,7 +9,7 @@ class WifiNetwork implements WifiNetworkInterface
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * WifiNetwork constructor.
