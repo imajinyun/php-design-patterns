@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Structural\Registry;
 
 abstract class Registry
@@ -9,7 +11,7 @@ abstract class Registry
     /**
      * @var array
      */
-    protected static $collection = [];
+    protected static array $collection = [];
 
     /**
      * Gets a value from the registry.

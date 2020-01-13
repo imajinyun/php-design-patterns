@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Test\Structural\Proxy;
 
 use DesignPattern\Structural\Proxy\Employee;
@@ -17,7 +19,7 @@ class ProxyTest extends TestCase
     /**
      * @var \DesignPattern\Structural\Proxy\WifiNetworkProxy
      */
-    private $wifiNetworkProxy;
+    private WifiNetworkProxy $wifiNetworkProxy;
 
     protected function setUp(): void
     {

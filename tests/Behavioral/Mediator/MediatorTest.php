@@ -10,10 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class MediatorTest extends TestCase
 {
-    /**
-     * @var Consumer|null
-     */
-    private ?Consumer $consumer;
+    private $consumer;
 
     protected function setUp(): void
     {
