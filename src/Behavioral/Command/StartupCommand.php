@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Command;
 
 class StartupCommand implements CommandInterface
