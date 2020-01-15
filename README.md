@@ -14,51 +14,26 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern?ref=badge_shield)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/imajinyun/php-design-pattern.svg)](http://php.net/releases/)
 
-
 ## 安装 PHPUnit 测试扩展包
 
 > [PHPUnit](https://phpunit.de/getting-started.html)
 
 ```bash
-$ wget https://phar.phpunit.de/phpunit.phar
-$ chmod +x phpunit.phar
-$ sudo mv phpunit.phar /usr/local/bin/phpunit
-$ phpunit --version
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+phpunit --version
 ```
 
 ## 代码测试
 
 ```bash
-$ git clone https://github.com/imajinyun/php-design-pattern.git
-$ cd ./php-design-pattern
-$ phpunit -v
+git clone https://github.com/imajinyun/php-design-pattern.git
+cd ./php-design-pattern
+phpunit -v
 ```
 
 ## 行为型模式 - `Behavioral Pattern`
-
-### [解释器 - `Interpreter`](src/Behavioral/Interpreter)
-
-#### 定义
-
-给定一个语言, 定义它的文法的一种表示, 并定义一个解释器, 该解释器使用该表示来解释语言中的句子
-
-#### 场景
-
-- 有一个简单的语法规则, 比如: 一个 `sql` 语句, 如果我们需要根据 `sql` 语句进行 `rm` 转换, 就可以使用解释器模式来对语句进行解释
-- 一些重复发生的问题, 比如: 加减乘除四则运算, 但是公式每次都不同, 有时是 `a+b-cd`, 有时是 `ab+c-d` 等等, 公式千变万化, 但是都是由加减乘除四个非终结符来连接的, 这时我们就可以使用解释器模式
-
-#### 特性
-
-##### 优点
-
-- 可扩展性比较好, 灵活
-- 增加了新的解释表达式的方式
-- 易于实现文法
-
-##### 缺点
-
-- 解释器是一个简单的语法分析工具, 它最显著的优点就是扩展性, 修改语法规则只需要修改相应的非终结符就可以了, 若扩展语法, 只需要增加非终结符类就可以了
-- 解释器模式会引起类的膨胀, 每个语法都需要产生一个非终结符表达式, 语法规则比较复杂时, 就可能产生大量的类文件, 为维护带来非常多的麻烦. 同时, 由于采用递归调用方法, 每个非终结符表达式只关心与自己相关的表达式, 每个表达式需要知道最终的结果, 必须通过递归方式, 无论是面向对象的语言还是面向过程的语言, 递归都是一个不推荐的方式. 由于使用了大量的循环和递归, 效率是一个不容忽视的问题. 特别是用于解释一个解析复杂或冗长的语法时, 效率是难以忍受的
 
 ### [迭代器 - `Iterator`](src/Behavioral/Iterator)
 

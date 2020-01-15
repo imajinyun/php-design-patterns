@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPattern\Behavioral\Interpreter;
 
 class Operation implements ExpressionInterface
