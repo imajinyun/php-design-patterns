@@ -51,7 +51,7 @@ class Parser
                     $stack[] = $this->arithmetic($stack, $item);
                     break;
                 case is_numeric($item): // Number
-                    $stack[] = new Number($item);
+                    $stack[] = new Number((int) $item);
                     break;
                 default: // Variable.
                     $stack[] = new Variable($item);

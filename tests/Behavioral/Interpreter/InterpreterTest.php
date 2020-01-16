@@ -25,7 +25,7 @@ class InterpreterTest extends TestCase
             if ($i >= 2) {
                 $expression .= " $i +";
             } else {
-                $expression .= "$i";
+                $expression .= (string) $i;
             }
         }
         self::assertSame(
