@@ -19,8 +19,8 @@ class Entity
     /**
      * Entity constructor.
      *
-     * @param string $name
-     * @param array $value
+     * @param  string  $name
+     * @param  array  $value
      */
     public function __construct(string $name, array $value)
     {

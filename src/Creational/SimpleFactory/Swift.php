@@ -9,7 +9,7 @@ class Swift implements LanguageInterface
     /**
      * Swift language write application.
      *
-     * @param string $language
+     * @param  string  $language
      *
      * @return string
      */

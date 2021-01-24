@@ -9,7 +9,7 @@ interface StateInterface
     /**
      * Order cancel.
      *
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @return mixed
      */
@@ -18,7 +18,7 @@ interface StateInterface
     /**
      * Order payment.
      *
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @return mixed
      */
@@ -27,7 +27,7 @@ interface StateInterface
     /**
      * Order dispatch.
      *
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @return mixed
      */

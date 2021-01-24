@@ -9,7 +9,7 @@ abstract class AbstractState implements StateInterface
     /**
      * To cancel order.
      *
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @return mixed
      */

@@ -14,7 +14,7 @@ class Parser
     /**
      * Parser constructor.
      *
-     * @param string $expression
+     * @param  string  $expression
      */
     public function __construct(string $expression)
     {
@@ -23,7 +23,7 @@ class Parser
     }
 
     /**
-     * @param array $context
+     * @param  array  $context
      *
      * @return mixed
      */
@@ -35,7 +35,7 @@ class Parser
     /**
      * Decompose expression.
      *
-     * @param string $expression
+     * @param  string  $expression
      *
      * @return array
      */
@@ -51,7 +51,7 @@ class Parser
                     $stack[] = $this->arithmetic($stack, $item);
                     break;
                 case is_numeric($item): // Number
-                    $stack[] = new Number((int) $item);
+                    $stack[] = new Number((int)$item);
                     break;
                 default: // Variable.
                     $stack[] = new Variable($item);
@@ -63,8 +63,8 @@ class Parser
     }
 
     /**
-     * @param array $array
-     * @param string $item
+     * @param  array  $array
+     * @param  string  $item
      *
      * @return \DesignPattern\Behavioral\Interpreter\Operation
      */

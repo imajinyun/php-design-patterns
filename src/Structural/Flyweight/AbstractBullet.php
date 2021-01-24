@@ -16,7 +16,7 @@ abstract class AbstractBullet implements BulletInterface
     /**
      * Setting extrinsic state.
      *
-     * @param int $positionInMagazine
+     * @param  int  $positionInMagazine
      *
      * @return void
      */

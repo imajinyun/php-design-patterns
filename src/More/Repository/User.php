@@ -24,9 +24,9 @@ class User
     /**
      * User constructor.
      *
-     * @param int $id
-     * @param string $username
-     * @param string $email
+     * @param  int  $id
+     * @param  string  $username
+     * @param  string  $email
      */
     public function __construct(int $id, string $username, string $email)
     {
@@ -38,7 +38,7 @@ class User
     /**
      * Converting user information into object using static method.
      *
-     * @param array $array
+     * @param  array  $array
      *
      * @return User
      */
@@ -60,7 +60,7 @@ class User
     }
 
     /**
-     * @param int|null $id
+     * @param  int|null  $id
      */
     public function setId(int $id): void
     {
@@ -76,7 +76,7 @@ class User
     }
 
     /**
-     * @param string $username
+     * @param  string  $username
      */
     public function setUsername(string $username): void
     {
@@ -92,7 +92,7 @@ class User
     }
 
     /**
-     * @param string $email
+     * @param  string  $email
      */
     public function setEmail(string $email): void
     {

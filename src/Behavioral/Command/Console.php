@@ -14,7 +14,7 @@ class Console
     /**
      * Console constructor.
      *
-     * @param \DesignPattern\Behavioral\Command\CommandInterface $command
+     * @param  \DesignPattern\Behavioral\Command\CommandInterface  $command
      */
     public function __construct(CommandInterface $command)
     {
@@ -34,7 +34,7 @@ class Console
     /**
      * Set command.
      *
-     * @param \DesignPattern\Behavioral\Command\CommandInterface $command
+     * @param  \DesignPattern\Behavioral\Command\CommandInterface  $command
      *
      * @return void
      */

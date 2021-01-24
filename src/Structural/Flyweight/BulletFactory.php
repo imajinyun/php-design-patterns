@@ -14,7 +14,7 @@ class BulletFactory
     /**
      * Get bullet instance by type.
      *
-     * @param string $type
+     * @param  string  $type
      *
      * @return \DesignPattern\Structural\Flyweight\BulletInterface
      */

@@ -9,7 +9,7 @@ interface SubjectInterface
     /**
      * Attach an ObserverInterface.
      *
-     * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
+     * @param  \DesignPattern\Behavioral\Observer\Npl\ObserverInterface  $observer
      *
      * @return mixed
      */
@@ -18,7 +18,7 @@ interface SubjectInterface
     /**
      * Detach an observer.
      *
-     * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
+     * @param  \DesignPattern\Behavioral\Observer\Npl\ObserverInterface  $observer
      *
      * @return mixed
      */

@@ -24,9 +24,9 @@ class Operation implements ExpressionInterface
     /**
      * Operation constructor.
      *
-     * @param \DesignPattern\Behavioral\Interpreter\ExpressionInterface $left
-     * @param \DesignPattern\Behavioral\Interpreter\ExpressionInterface $right
-     * @param string $operator
+     * @param  \DesignPattern\Behavioral\Interpreter\ExpressionInterface  $left
+     * @param  \DesignPattern\Behavioral\Interpreter\ExpressionInterface  $right
+     * @param  string  $operator
      */
     public function __construct(
         ExpressionInterface $left,
@@ -39,7 +39,7 @@ class Operation implements ExpressionInterface
     }
 
     /**
-     * @param array $context
+     * @param  array  $context
      *
      * @return float|int|mixed|string
      */

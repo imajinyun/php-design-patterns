@@ -14,7 +14,7 @@ class User implements RoleInterface
     /**
      * User constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name)
     {
@@ -32,7 +32,7 @@ class User implements RoleInterface
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Visitor\VisitorInterface $visitor
+     * @param  \DesignPattern\Behavioral\Visitor\VisitorInterface  $visitor
      *
      * @return mixed|void
      */

@@ -14,7 +14,7 @@ class Order
     /**
      * Order constructor.
      *
-     * @param \DesignPattern\Behavioral\Memento\State $state
+     * @param  \DesignPattern\Behavioral\Memento\State  $state
      */
     public function __construct(State $state)
     {
@@ -34,7 +34,7 @@ class Order
     /**
      * Restore state from memento.
      *
-     * @param \DesignPattern\Behavioral\Memento\Memento|null $memento
+     * @param  \DesignPattern\Behavioral\Memento\Memento|null  $memento
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class Order
     /**
      * Set current state object.
      *
-     * @param \DesignPattern\Behavioral\Memento\State $state
+     * @param  \DesignPattern\Behavioral\Memento\State  $state
      *
      * @return void
      */

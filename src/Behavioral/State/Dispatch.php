@@ -9,7 +9,7 @@ class Dispatch extends AbstractState
     /**
      * To pay.
      *
-     * @param Order $order
+     * @param  Order  $order
      *
      * @throws \LogicException
      */
@@ -21,7 +21,7 @@ class Dispatch extends AbstractState
     /**
      * To dispatch.
      *
-     * @param Order $order
+     * @param  Order  $order
      *
      * @throws \LogicException
      */

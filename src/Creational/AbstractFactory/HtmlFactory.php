@@ -12,8 +12,8 @@ class HtmlFactory extends AbstractFactory
     /**
      * Create a Image component implementation.
      *
-     * @param string $src
-     * @param string $title
+     * @param  string  $src
+     * @param  string  $title
      *
      * @return \DesignPattern\Creational\AbstractFactory\Image
      */
@@ -25,7 +25,7 @@ class HtmlFactory extends AbstractFactory
     /**
      * Create a Text component implementation.
      *
-     * @param string $text
+     * @param  string  $text
      *
      * @return \DesignPattern\Creational\AbstractFactory\Text
      */

@@ -14,7 +14,7 @@ class MacBookAir implements NotebookInterface
     /**
      * Sets the color of the MacBookAir.
      *
-     * @param string $color
+     * @param  string  $color
      */
     public function setColor(string $color)
     {

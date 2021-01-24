@@ -14,7 +14,7 @@ class UserAdapter implements UserInterface
     /**
      * UserAdapter constructor.
      *
-     * @param \DesignPattern\Structural\Adapter\MemberInterface $member
+     * @param  \DesignPattern\Structural\Adapter\MemberInterface  $member
      */
     public function __construct(MemberInterface $member)
     {
@@ -24,8 +24,8 @@ class UserAdapter implements UserInterface
     /**
      * User login.
      *
-     * @param string $appId
-     * @param string $appSecret
+     * @param  string  $appId
+     * @param  string  $appSecret
      *
      * @return bool
      */

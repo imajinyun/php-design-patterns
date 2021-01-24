@@ -14,7 +14,7 @@ class Webservice implements RenderableInterface
     /**
      * Webservice constructor.
      *
-     * @param string $data
+     * @param  string  $data
      */
     public function __construct(string $data)
     {

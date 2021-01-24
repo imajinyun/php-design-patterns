@@ -19,7 +19,7 @@ class Collection
     /**
      * Collection constructor.
      *
-     * @param array $elements
+     * @param  array  $elements
      */
     public function __construct(array $elements = [])
     {
@@ -44,7 +44,7 @@ class Collection
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Strategy\ComparatorInterface $comparator
+     * @param  \DesignPattern\Behavioral\Strategy\ComparatorInterface  $comparator
      *
      * @return void
      */

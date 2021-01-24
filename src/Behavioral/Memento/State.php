@@ -41,7 +41,7 @@ class State
     /**
      * State constructor.
      *
-     * @param int $state
+     * @param  int  $state
      *
      * @throws \Exception|\InvalidArgumentException
      */
@@ -56,7 +56,7 @@ class State
     /**
      * Check state.
      *
-     * @param int $state
+     * @param  int  $state
      *
      * @return void
      *

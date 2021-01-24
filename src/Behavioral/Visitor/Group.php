@@ -14,7 +14,7 @@ class Group implements RoleInterface
     /**
      * Group constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name)
     {
@@ -32,7 +32,7 @@ class Group implements RoleInterface
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Visitor\VisitorInterface $visitor
+     * @param  \DesignPattern\Behavioral\Visitor\VisitorInterface  $visitor
      *
      * @return mixed|void
      */

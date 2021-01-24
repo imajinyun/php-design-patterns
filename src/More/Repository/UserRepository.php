@@ -14,7 +14,7 @@ class UserRepository implements RepositoryInterface
     /**
      * UserRepository constructor.
      *
-     * @param \DesignPattern\More\Repository\MemoryStorage $storage
+     * @param  \DesignPattern\More\Repository\MemoryStorage  $storage
      */
     public function __construct(MemoryStorage $storage)
     {
@@ -24,7 +24,7 @@ class UserRepository implements RepositoryInterface
     /**
      * Find user by ID.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return \DesignPattern\More\Repository\User
      *
@@ -43,7 +43,7 @@ class UserRepository implements RepositoryInterface
     }
 
     /**
-     * @param \DesignPattern\More\Repository\User $user
+     * @param  \DesignPattern\More\Repository\User  $user
      *
      * @return void
      */
@@ -60,7 +60,7 @@ class UserRepository implements RepositoryInterface
     }
 
     /**
-     * @param \DesignPattern\More\Repository\User $user
+     * @param  \DesignPattern\More\Repository\User  $user
      *
      * @return void
      */

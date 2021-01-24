@@ -24,7 +24,7 @@ class Product implements \SplSubject
     /**
      * Product constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name = '')
     {
@@ -36,7 +36,7 @@ class Product implements \SplSubject
     /**
      * Attach an SplObserver.
      *
-     * @param \SplObserver $observer
+     * @param  \SplObserver  $observer
      *
      * @return void
      * @link http://php.net/manual/en/splsubject.attach.php
@@ -49,7 +49,7 @@ class Product implements \SplSubject
     /**
      * Detach an observer.
      *
-     * @param \SplObserver $observer
+     * @param  \SplObserver  $observer
      *
      * @return void
      * @link http://php.net/manual/en/splsubject.detach.php
@@ -96,7 +96,7 @@ class Product implements \SplSubject
     /**
      * Set the price for the product and notify observers.
      *
-     * @param int $price
+     * @param  int  $price
      */
     public function setPrice(int $price): void
     {

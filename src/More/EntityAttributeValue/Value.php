@@ -19,8 +19,8 @@ class Value
     /**
      * Value constructor.
      *
-     * @param \DesignPattern\More\EntityAttributeValue\Attribute $attribute
-     * @param string $name
+     * @param  \DesignPattern\More\EntityAttributeValue\Attribute  $attribute
+     * @param  string  $name
      */
     public function __construct(Attribute $attribute, string $name)
     {

@@ -14,7 +14,7 @@ class Controller
     /**
      * Controller constructor.
      *
-     * @param \DesignPattern\More\Delegation\Component $component
+     * @param  \DesignPattern\More\Delegation\Component  $component
      */
     public function __construct(Component $component)
     {
@@ -24,7 +24,7 @@ class Controller
     /**
      * Convert string to array.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return array
      */

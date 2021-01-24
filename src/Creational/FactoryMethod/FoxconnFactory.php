@@ -9,7 +9,7 @@ class FoxconnFactory extends FactoryMethod
     /**
      * {@inheritdoc}
      *
-     * @param string $brand
+     * @param  string  $brand
      *
      * @return \DesignPattern\Creational\FactoryMethod\NotebookInterface
      *
@@ -18,7 +18,7 @@ class FoxconnFactory extends FactoryMethod
     public function createNotebook(string $brand): NotebookInterface
     {
         $brand = strtolower(trim($brand));
-        switch ((int) $brand) {
+        switch ((int)$brand) {
             case parent::LOW_CONFIG:
                 return new MacBookAir();
             case parent::MEDIUM_CONFIG:

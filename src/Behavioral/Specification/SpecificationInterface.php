@@ -7,7 +7,7 @@ namespace DesignPattern\Behavioral\Specification;
 interface SpecificationInterface
 {
     /**
-     * @param Item $item
+     * @param  Item  $item
      *
      * @return bool
      */

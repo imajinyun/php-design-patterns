@@ -24,7 +24,7 @@ class Mediator implements MediatorInterface
     /**
      * Set consumer instance.
      *
-     * @param \DesignPattern\Behavioral\Mediator\Consumer $consumer
+     * @param  \DesignPattern\Behavioral\Mediator\Consumer  $consumer
      *
      * @return $this
      */
@@ -38,7 +38,7 @@ class Mediator implements MediatorInterface
     /**
      * Set database instance.
      *
-     * @param \DesignPattern\Behavioral\Mediator\Database $database
+     * @param  \DesignPattern\Behavioral\Mediator\Database  $database
      *
      * @return $this
      */
@@ -52,7 +52,7 @@ class Mediator implements MediatorInterface
     /**
      * Set server instance.
      *
-     * @param \DesignPattern\Behavioral\Mediator\Server $server
+     * @param  \DesignPattern\Behavioral\Mediator\Server  $server
      *
      * @return $this
      */
@@ -86,7 +86,7 @@ class Mediator implements MediatorInterface
     /**
      * Recv response.
      *
-     * @param string $content
+     * @param  string  $content
      *
      * @return void
      */

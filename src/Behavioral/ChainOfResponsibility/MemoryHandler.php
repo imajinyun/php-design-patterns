@@ -16,8 +16,8 @@ class MemoryHandler extends Handler
     /**
      * MemoryHandler constructor.
      *
-     * @param array $data
-     * @param \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null $handler
+     * @param  array  $data
+     * @param  \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null  $handler
      */
     public function __construct(array $data, Handler $handler = null)
     {
@@ -29,7 +29,7 @@ class MemoryHandler extends Handler
     /**
      * Memory processing.
      *
-     * @param \Psr\Http\Message\RequestInterface $request
+     * @param  \Psr\Http\Message\RequestInterface  $request
      *
      * @return mixed|null
      */

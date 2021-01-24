@@ -9,7 +9,7 @@ class Java implements LanguageInterface
     /**
      * Java language write application.
      *
-     * @param string $language
+     * @param  string  $language
      *
      * @return string
      */

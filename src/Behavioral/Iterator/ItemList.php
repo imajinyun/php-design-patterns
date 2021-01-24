@@ -30,7 +30,7 @@ class ItemList implements \Countable
     /**
      * Get item by id.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return \DesignPattern\Behavioral\Iterator\Item|null
      */
@@ -44,7 +44,7 @@ class ItemList implements \Countable
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Iterator\Item $item
+     * @param  \DesignPattern\Behavioral\Iterator\Item  $item
      */
     public function addItem(Item $item): void
     {
@@ -54,7 +54,7 @@ class ItemList implements \Countable
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Iterator\Item $item
+     * @param  \DesignPattern\Behavioral\Iterator\Item  $item
      */
     public function deleteItem(Item $item): void
     {

@@ -35,7 +35,7 @@ class Order
     }
 
     /**
-     * @param \DesignPattern\Behavioral\State\StateInterface $state
+     * @param  \DesignPattern\Behavioral\State\StateInterface  $state
      *
      * @return void
      */

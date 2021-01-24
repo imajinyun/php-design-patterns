@@ -34,9 +34,9 @@ class Employee
     /**
      * Employee constructor.
      *
-     * @param string $username
-     * @param string $password
-     * @param int $accessLevel
+     * @param  string  $username
+     * @param  string  $password
+     * @param  int  $accessLevel
      */
     public function __construct(
         string $username,

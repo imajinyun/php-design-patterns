@@ -7,7 +7,7 @@ namespace DesignPattern\Behavioral\Interpreter;
 interface ExpressionInterface
 {
     /**
-     * @param array $context
+     * @param  array  $context
      *
      * @return mixed
      */

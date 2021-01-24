@@ -14,7 +14,7 @@ class ShutdownCommand implements CommandInterface
     /**
      * ShutdownCommand constructor.
      *
-     * @param \DesignPattern\Behavioral\Command\Computer $computer
+     * @param  \DesignPattern\Behavioral\Command\Computer  $computer
      */
     public function __construct(Computer $computer)
     {

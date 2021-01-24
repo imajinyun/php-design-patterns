@@ -15,7 +15,7 @@ class Bios implements BiosInterface
     }
 
     /**
-     * @param \DesignPattern\Structural\Facade\MacOSInterface $macOS
+     * @param  \DesignPattern\Structural\Facade\MacOSInterface  $macOS
      *
      * @return mixed
      */

@@ -14,7 +14,7 @@ abstract class AbstractColleague
     /**
      * AbstractColleague constructor.
      *
-     * @param \DesignPattern\Behavioral\Mediator\MediatorInterface $mediator
+     * @param  \DesignPattern\Behavioral\Mediator\MediatorInterface  $mediator
      */
     public function __construct(MediatorInterface $mediator)
     {

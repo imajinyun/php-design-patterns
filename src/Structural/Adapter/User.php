@@ -14,8 +14,8 @@ class User implements UserInterface
     /**
      * User login.
      *
-     * @param string $username
-     * @param string $password
+     * @param  string  $username
+     * @param  string  $password
      *
      * @return bool
      */

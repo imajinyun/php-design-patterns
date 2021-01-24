@@ -14,7 +14,7 @@ class Number implements ExpressionInterface
     /**
      * Number constructor.
      *
-     * @param int $value
+     * @param  int  $value
      */
     public function __construct(int $value)
     {
@@ -22,7 +22,7 @@ class Number implements ExpressionInterface
     }
 
     /**
-     * @param array $context
+     * @param  array  $context
      *
      * @return int
      */

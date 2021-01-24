@@ -16,7 +16,7 @@ final class Multiton
     /**
      * Multiton constructor.
      *
-     * @param string $value
+     * @param  string  $value
      */
     private function __construct(string $value)
     {

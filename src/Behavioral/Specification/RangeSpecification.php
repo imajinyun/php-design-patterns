@@ -19,8 +19,8 @@ class RangeSpecification extends AbstractSpecification
     /**
      * RangeSpecification constructor.
      *
-     * @param int $min
-     * @param int $max
+     * @param  int  $min
+     * @param  int  $max
      */
     public function __construct(int $min, int $max)
     {
@@ -29,7 +29,7 @@ class RangeSpecification extends AbstractSpecification
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Specification\Item $item
+     * @param  \DesignPattern\Behavioral\Specification\Item  $item
      *
      * @return bool
      */

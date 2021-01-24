@@ -19,8 +19,8 @@ class Item
     /**
      * Item constructor.
      *
-     * @param int $id
-     * @param string $name
+     * @param  int  $id
+     * @param  string  $name
      */
     public function __construct(int $id, string $name)
     {

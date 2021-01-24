@@ -13,6 +13,6 @@ class StringService extends Service
      */
     public function get(): string
     {
-        return $this->formatter->format((string) time());
+        return $this->formatter->format((string)time());
     }
 }

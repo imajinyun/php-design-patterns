@@ -9,7 +9,7 @@ interface GeolocationServiceInterface
     /**
      * Get coordinate from address.
      *
-     * @param string $address
+     * @param  string  $address
      *
      * @return string
      */

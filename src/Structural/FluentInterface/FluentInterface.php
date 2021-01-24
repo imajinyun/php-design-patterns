@@ -9,7 +9,7 @@ interface FluentInterface
     /**
      * Select sentence.
      *
-     * @param array $field
+     * @param  array  $field
      *
      * @return mixed
      */
@@ -18,8 +18,8 @@ interface FluentInterface
     /**
      * Table sentence.
      *
-     * @param string $table
-     * @param string $alias
+     * @param  string  $table
+     * @param  string  $alias
      *
      * @return mixed
      */
@@ -28,7 +28,7 @@ interface FluentInterface
     /**
      * Where sentence.
      *
-     * @param string $condition
+     * @param  string  $condition
      *
      * @return mixed
      */

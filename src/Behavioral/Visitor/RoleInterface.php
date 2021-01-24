@@ -7,7 +7,7 @@ namespace DesignPattern\Behavioral\Visitor;
 interface RoleInterface
 {
     /**
-     * @param \DesignPattern\Behavioral\Visitor\VisitorInterface $visitor
+     * @param  \DesignPattern\Behavioral\Visitor\VisitorInterface  $visitor
      *
      * @return mixed
      */

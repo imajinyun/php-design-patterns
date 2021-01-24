@@ -24,10 +24,10 @@ class ServiceLocator
     /**
      * Add an instance.
      *
-     * @param string $class
-     * @param \DesignPattern\More\ServiceLocator\RequestService|
+     * @param  string  $class
+     * @param  \DesignPattern\More\ServiceLocator\RequestService|
      *        \DesignPattern\More\ServiceLocator\ResponseService $service
-     * @param bool $isShare
+     * @param  bool  $isShare
      *
      * @return void
      */
@@ -44,9 +44,9 @@ class ServiceLocator
     /**
      * Add a class.
      *
-     * @param string $class
-     * @param array $parameter
-     * @param bool $isShare
+     * @param  string  $class
+     * @param  array  $parameter
+     * @param  bool  $isShare
      *
      * @return void
      */
@@ -60,7 +60,7 @@ class ServiceLocator
     }
 
     /**
-     * @param string $class
+     * @param  string  $class
      *
      * @return bool
      */
@@ -72,7 +72,7 @@ class ServiceLocator
     /**
      * Get a new instance.
      *
-     * @param string $class
+     * @param  string  $class
      *
      * @return mixed
      *
@@ -96,7 +96,7 @@ class ServiceLocator
     /**
      * Get an instance.
      *
-     * @param string $class
+     * @param  string  $class
      *
      * @return \DesignPattern\More\ServiceLocator\ServiceInterface
      *

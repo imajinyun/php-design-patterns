@@ -37,7 +37,7 @@ class Pool implements \Countable
     /**
      * Dispose worker.
      *
-     * @param \DesignPattern\Creational\Pool\StringReverseWorker $worker
+     * @param  \DesignPattern\Creational\Pool\StringReverseWorker  $worker
      */
     public function dispose(StringReverseWorker $worker): void
     {

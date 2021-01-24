@@ -14,7 +14,7 @@ class Memento
     /**
      * Memento constructor.
      *
-     * @param \DesignPattern\Behavioral\Memento\State $state
+     * @param  \DesignPattern\Behavioral\Memento\State  $state
      */
     public function __construct(State $state)
     {

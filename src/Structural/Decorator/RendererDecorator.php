@@ -14,7 +14,7 @@ abstract class RendererDecorator
     /**
      * RenderDecorator constructor.
      *
-     * @param \DesignPattern\Structural\Decorator\RenderableInterface $renderable
+     * @param  \DesignPattern\Structural\Decorator\RenderableInterface  $renderable
      */
     public function __construct(RenderableInterface $renderable)
     {

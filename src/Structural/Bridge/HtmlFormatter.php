@@ -9,7 +9,7 @@ class HtmlFormatter implements FormatterInterface
     /**
      * Format string to HTML.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return string
      */

@@ -7,7 +7,7 @@ namespace DesignPattern\Behavioral\State;
 class Pay extends AbstractState
 {
     /**
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @return bool
      */
@@ -19,7 +19,7 @@ class Pay extends AbstractState
     }
 
     /**
-     * @param \DesignPattern\Behavioral\State\Order $order
+     * @param  \DesignPattern\Behavioral\State\Order  $order
      *
      * @throws \LogicException
      */

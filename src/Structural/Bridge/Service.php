@@ -14,7 +14,7 @@ abstract class Service
     /**
      * Service constructor.
      *
-     * @param \DesignPattern\Structural\Bridge\FormatterInterface $formatter
+     * @param  \DesignPattern\Structural\Bridge\FormatterInterface  $formatter
      */
     public function __construct(FormatterInterface $formatter)
     {
@@ -22,7 +22,7 @@ abstract class Service
     }
 
     /**
-     * @param \DesignPattern\Structural\Bridge\FormatterInterface $formatter
+     * @param  \DesignPattern\Structural\Bridge\FormatterInterface  $formatter
      *
      * @return void
      */

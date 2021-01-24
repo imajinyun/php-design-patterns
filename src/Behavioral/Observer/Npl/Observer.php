@@ -9,7 +9,7 @@ class Observer implements ObserverInterface
     /**
      * Receive update from subject.
      *
-     * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
+     * @param  \DesignPattern\Behavioral\Observer\Npl\SubjectInterface  $subject
      *
      * @return mixed|void
      */
@@ -21,9 +21,9 @@ class Observer implements ObserverInterface
     /**
      * Report something.
      *
-     * @param int $code
-     * @param string $message
-     * @param \DesignPattern\Behavioral\Observer\Npl\SubjectInterface $subject
+     * @param  int  $code
+     * @param  string  $message
+     * @param  \DesignPattern\Behavioral\Observer\Npl\SubjectInterface  $subject
      *
      * @return mixed|void
      */

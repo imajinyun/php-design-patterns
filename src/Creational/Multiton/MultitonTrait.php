@@ -14,7 +14,7 @@ trait MultitonTrait
     /**
      * Get multiton instance.
      *
-     * @param string $identifier
+     * @param  string  $identifier
      *
      * @return \DesignPattern\Creational\Multiton\Multiton
      *
@@ -44,8 +44,8 @@ trait MultitonTrait
     /**
      * Set multiton instance.
      *
-     * @param string $identifier
-     * @param \DesignPattern\Creational\Multiton\Multiton $instance
+     * @param  string  $identifier
+     * @param  \DesignPattern\Creational\Multiton\Multiton  $instance
      *
      * @return void
      */
@@ -71,7 +71,7 @@ trait MultitonTrait
      *
      * @throws \RuntimeException
      */
-    private function __wakeup()
+    public function __wakeup()
     {
         throw new \RuntimeException('Unable to unserialize a multiton object.');
     }

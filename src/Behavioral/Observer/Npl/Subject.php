@@ -24,7 +24,7 @@ class Subject implements SubjectInterface
     /**
      * Subject constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name = '')
     {
@@ -35,7 +35,7 @@ class Subject implements SubjectInterface
     /**
      * Attach an SplObserver.
      *
-     * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
+     * @param  \DesignPattern\Behavioral\Observer\Npl\ObserverInterface  $observer
      */
     public function attach(ObserverInterface $observer)
     {
@@ -47,7 +47,7 @@ class Subject implements SubjectInterface
     /**
      * Detach an observer.
      *
-     * @param \DesignPattern\Behavioral\Observer\Npl\ObserverInterface $observer
+     * @param  \DesignPattern\Behavioral\Observer\Npl\ObserverInterface  $observer
      */
     public function detach(ObserverInterface $observer)
     {
@@ -104,7 +104,7 @@ class Subject implements SubjectInterface
     /**
      * Set the author for the subject and notify observers.
      *
-     * @param string $author
+     * @param  string  $author
      */
     public function setAuthor(string $author): void
     {

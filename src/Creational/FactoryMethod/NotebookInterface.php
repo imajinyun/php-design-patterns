@@ -9,7 +9,7 @@ interface NotebookInterface
     /**
      * Set the color of the Notebook.
      *
-     * @param string $color
+     * @param  string  $color
      *
      * @return mixed
      */

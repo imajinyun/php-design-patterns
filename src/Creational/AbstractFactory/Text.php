@@ -14,7 +14,7 @@ abstract class Text implements RendererInterface
     /**
      * Text constructor.
      *
-     * @param string $text
+     * @param  string  $text
      */
     public function __construct(string $text)
     {

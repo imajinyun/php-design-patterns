@@ -12,8 +12,8 @@ class JsonFactory extends AbstractFactory
     /**
      * Create a image component implementation.
      *
-     * @param string $src
-     * @param string $title
+     * @param  string  $src
+     * @param  string  $title
      *
      * @return \DesignPattern\Creational\AbstractFactory\Image
      */
@@ -25,7 +25,7 @@ class JsonFactory extends AbstractFactory
     /**
      * Create a text component implementation.
      *
-     * @param string $text
+     * @param  string  $text
      *
      * @return \DesignPattern\Creational\AbstractFactory\Text
      */

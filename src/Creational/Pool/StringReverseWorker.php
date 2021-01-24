@@ -22,7 +22,7 @@ class StringReverseWorker
     /**
      * Run string reverse.
      *
-     * @param string $text
+     * @param  string  $text
      *
      * @return string
      */

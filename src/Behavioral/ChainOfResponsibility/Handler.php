@@ -16,7 +16,7 @@ abstract class Handler
     /**
      * Handler constructor.
      *
-     * @param \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null $handler
+     * @param  \DesignPattern\Behavioral\ChainOfResponsibility\Handler|null  $handler
      */
     public function __construct(Handler $handler = null)
     {
@@ -26,7 +26,7 @@ abstract class Handler
     /**
      * Handle request.
      *
-     * @param \Psr\Http\Message\RequestInterface $request
+     * @param  \Psr\Http\Message\RequestInterface  $request
      *
      * @return mixed
      */
@@ -44,7 +44,7 @@ abstract class Handler
     /**
      * Processing method.
      *
-     * @param RequestInterface $request
+     * @param  RequestInterface  $request
      *
      * @return mixed
      */

@@ -40,7 +40,7 @@ class MacOS implements MacOSInterface
     /**
      * Executive operation.
      *
-     * @param string $command
+     * @param  string  $command
      *
      * @return mixed
      */

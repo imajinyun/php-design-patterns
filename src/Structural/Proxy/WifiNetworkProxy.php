@@ -14,7 +14,7 @@ class WifiNetworkProxy implements WifiNetworkInterface
     /**
      * WifiNetworkProxy constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name)
     {
@@ -24,7 +24,7 @@ class WifiNetworkProxy implements WifiNetworkInterface
     /**
      * Grant access to the WiFi network to an employee.
      *
-     * @param \DesignPattern\Structural\Proxy\Employee $employee
+     * @param  \DesignPattern\Structural\Proxy\Employee  $employee
      *
      * @return bool
      */

@@ -14,7 +14,7 @@ class MacBookPro implements NotebookInterface
     /**
      * Sets the color of the MacBookPro.
      *
-     * @param string $color
+     * @param  string  $color
      */
     public function setColor(string $color)
     {

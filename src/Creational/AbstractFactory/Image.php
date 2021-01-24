@@ -19,8 +19,8 @@ abstract class Image implements RendererInterface
     /**
      * Image constructor.
      *
-     * @param string $path
-     * @param string $title
+     * @param  string  $path
+     * @param  string  $title
      */
     public function __construct(string $path, string $title = '')
     {

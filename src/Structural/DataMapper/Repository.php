@@ -14,7 +14,7 @@ class Repository
     /**
      * Repository constructor.
      *
-     * @param array $data
+     * @param  array  $data
      */
     public function __construct(array $data)
     {
@@ -24,7 +24,7 @@ class Repository
     /**
      * Find user info.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return mixed|null
      */

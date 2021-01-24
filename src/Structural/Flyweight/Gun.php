@@ -19,7 +19,7 @@ class Gun
     /**
      * Gun constructor.
      *
-     * @param int $maxBullets
+     * @param  int  $maxBullets
      */
     public function __construct(int $maxBullets)
     {
@@ -44,7 +44,7 @@ class Gun
     }
 
     /**
-     * @param string $type
+     * @param  string  $type
      *
      * @return void
      */

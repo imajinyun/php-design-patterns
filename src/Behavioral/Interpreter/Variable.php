@@ -14,7 +14,7 @@ class Variable implements ExpressionInterface
     /**
      * Variable constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name)
     {
@@ -22,7 +22,7 @@ class Variable implements ExpressionInterface
     }
 
     /**
-     * @param array $context
+     * @param  array  $context
      *
      * @return mixed
      *

@@ -11,7 +11,7 @@ class DatabaseHandler extends Handler
     /**
      * Database processing.
      *
-     * @param \Psr\Http\Message\RequestInterface $request
+     * @param  \Psr\Http\Message\RequestInterface  $request
      *
      * @return string
      */

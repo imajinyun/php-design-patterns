@@ -9,8 +9,8 @@ class DateComparator implements ComparatorInterface
     /**
      * Compare the two given date values.
      *
-     * @param mixed $left
-     * @param mixed $right
+     * @param  mixed  $left
+     * @param  mixed  $right
      *
      * @return int
      *

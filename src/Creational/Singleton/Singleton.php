@@ -57,22 +57,26 @@ final class Singleton
     /**
      * Singleton wakeup.
      *
-     * The magic method __wakeup() is declared as private
-     * to prevent unserializing of an instance of the class via
+     * The magic method __wakeup() throw exception
+     * to prevent unserialize of an instance of the class via
      * the global function unserialize().
+     *
+     * @throws \RuntimeException
      */
-    private function __wakeup()
+    public function __wakeup()
     {
+        throw new \RuntimeException('Unable to unserialize a singleton object.');
     }
 
     /**
      * Singleton sleep.
      *
-     * The magic method __sleep() is declared as private
-     * to prevent unserializing of an instance of the class via
+     * The magic method __sleep() throw exception
+     * to prevent serialize of an instance of the class via
      * the global function serialize().
      */
-    private function __sleep()
+    public function __sleep()
     {
+        throw new \RuntimeException('Unable to serialize a singleton object.');
     }
 }

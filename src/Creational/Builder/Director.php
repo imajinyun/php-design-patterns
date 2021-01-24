@@ -9,7 +9,7 @@ class Director
     /**
      * Builder.
      *
-     * @param \DesignPattern\Creational\Builder\BuilderInterface $builder
+     * @param  \DesignPattern\Creational\Builder\BuilderInterface  $builder
      *
      * @return mixed
      */

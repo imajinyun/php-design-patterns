@@ -19,7 +19,7 @@ class Attribute
     /**
      * Attribute constructor.
      *
-     * @param string $name
+     * @param  string  $name
      */
     public function __construct(string $name)
     {
@@ -28,7 +28,7 @@ class Attribute
     }
 
     /**
-     * @param \DesignPattern\More\EntityAttributeValue\Value $value
+     * @param  \DesignPattern\More\EntityAttributeValue\Value  $value
      *
      * @return void
      */

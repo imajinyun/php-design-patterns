@@ -14,7 +14,7 @@ class UserMapper
     /**
      * UserMapper constructor.
      *
-     * @param \DesignPattern\Structural\DataMapper\Repository $repository
+     * @param  \DesignPattern\Structural\DataMapper\Repository  $repository
      */
     public function __construct(Repository $repository)
     {
@@ -24,7 +24,7 @@ class UserMapper
     /**
      * Find user by Id.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return mixed
      * @throws \InvalidArgumentException
@@ -43,7 +43,7 @@ class UserMapper
     /**
      * Map row table.
      *
-     * @param array $row
+     * @param  array  $row
      *
      * @return \DesignPattern\Structural\DataMapper\User
      */

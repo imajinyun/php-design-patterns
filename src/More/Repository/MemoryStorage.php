@@ -19,7 +19,7 @@ class MemoryStorage
     /**
      * Read data from memory.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return array
      * @throws \OutOfRangeException
@@ -34,7 +34,7 @@ class MemoryStorage
     /**
      * Write data to memory.
      *
-     * @param array $data
+     * @param  array  $data
      *
      * @return int
      */
@@ -50,7 +50,7 @@ class MemoryStorage
     /**
      * Delete data from memory.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return void
      * @throws \OutOfRangeException
@@ -65,7 +65,7 @@ class MemoryStorage
     /**
      * Check if ID exists.
      *
-     * @param int $id
+     * @param  int  $id
      *
      * @return void
      * @throws \OutOfRangeException

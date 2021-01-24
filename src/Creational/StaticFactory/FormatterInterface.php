@@ -9,7 +9,7 @@ interface FormatterInterface
     /**
      * Format value.
      *
-     * @param mixed $value
+     * @param  mixed  $value
      *
      * @return mixed
      */

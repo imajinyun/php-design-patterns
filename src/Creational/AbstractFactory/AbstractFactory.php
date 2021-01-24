@@ -9,8 +9,8 @@ abstract class AbstractFactory
     /**
      * Create a Image component.
      *
-     * @param string $src
-     * @param string $title
+     * @param  string  $src
+     * @param  string  $title
      *
      * @return \DesignPattern\Creational\AbstractFactory\Image
      */
@@ -22,7 +22,7 @@ abstract class AbstractFactory
     /**
      * Create a Text component.
      *
-     * @param string $text
+     * @param  string  $text
      *
      * @return \DesignPattern\Creational\AbstractFactory\Text
      */

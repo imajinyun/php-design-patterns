@@ -11,7 +11,7 @@ interface BiosInterface
     /**
      * Launch the operating system.
      *
-     * @param \DesignPattern\Structural\Facade\MacOSInterface $macOS
+     * @param  \DesignPattern\Structural\Facade\MacOSInterface  $macOS
      *
      * @return mixed
      */

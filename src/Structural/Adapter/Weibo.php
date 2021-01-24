@@ -14,8 +14,8 @@ class Weibo implements MemberInterface
     /**
      * Get member token.
      *
-     * @param string $appId
-     * @param string $appSecret
+     * @param  string  $appId
+     * @param  string  $appSecret
      *
      * @return bool
      */

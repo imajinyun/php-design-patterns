@@ -12,7 +12,7 @@ class RoleVisitor implements VisitorInterface
     private array $roles = [];
 
     /**
-     * @param \DesignPattern\Behavioral\Visitor\User $user
+     * @param  \DesignPattern\Behavioral\Visitor\User  $user
      *
      * @return mixed|void
      */
@@ -22,7 +22,7 @@ class RoleVisitor implements VisitorInterface
     }
 
     /**
-     * @param \DesignPattern\Behavioral\Visitor\Group $group
+     * @param  \DesignPattern\Behavioral\Visitor\Group  $group
      *
      * @return mixed|void
      */

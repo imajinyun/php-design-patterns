@@ -37,7 +37,7 @@ class Mysql implements FluentInterface
     /**
      * Select.
      *
-     * @param array $fields
+     * @param  array  $fields
      *
      * @return \DesignPattern\Structural\FluentInterface\Mysql
      */
@@ -51,8 +51,8 @@ class Mysql implements FluentInterface
     /**
      * Table.
      *
-     * @param string $table
-     * @param string $alias
+     * @param  string  $table
+     * @param  string  $alias
      *
      * @return \DesignPattern\Structural\FluentInterface\Mysql
      */
@@ -66,7 +66,7 @@ class Mysql implements FluentInterface
     /**
      * Where.
      *
-     * @param string $conditions
+     * @param  string  $conditions
      *
      * @return $this
      */

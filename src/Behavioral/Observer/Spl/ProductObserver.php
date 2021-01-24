@@ -9,7 +9,7 @@ class ProductObserver implements \SplObserver
     /**
      * Update product price.
      *
-     * @param \SplSubject $subject
+     * @param  \SplSubject  $subject
      *
      * @return void
      */

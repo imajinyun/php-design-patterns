@@ -14,7 +14,7 @@ class DepartmentStore
     /**
      * DepartmentStore constructor.
      *
-     * @param \DesignPattern\Structural\DependencyInjection\AbstractMap $mapService
+     * @param  \DesignPattern\Structural\DependencyInjection\AbstractMap  $mapService
      */
     public function __construct(AbstractMap $mapService)
     {
@@ -24,7 +24,7 @@ class DepartmentStore
     /**
      * Get store coordinate.
      *
-     * @param string $address
+     * @param  string  $address
      *
      * @return string
      *

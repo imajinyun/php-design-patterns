@@ -17,8 +17,8 @@ class LabelElement implements RenderableInterface
     /**
      * TextElement constructor.
      *
-     * @param string $for
-     * @param string $name
+     * @param  string  $for
+     * @param  string  $name
      */
     public function __construct(string $for, string $name = 'Label Name:')
     {

@@ -9,8 +9,8 @@ class IdentifyComparator implements ComparatorInterface
     /**
      * Compare the two given id values.
      *
-     * @param mixed $left
-     * @param mixed $right
+     * @param  mixed  $left
+     * @param  mixed  $right
      *
      * @return int
      */

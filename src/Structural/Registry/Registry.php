@@ -16,7 +16,7 @@ abstract class Registry
     /**
      * Gets a value from the registry.
      *
-     * @param string $key
+     * @param  string  $key
      *
      * @return mixed
      */
@@ -28,8 +28,8 @@ abstract class Registry
     /**
      * Sets a value.
      *
-     * @param string $key
-     * @param mixed $val
+     * @param  string  $key
+     * @param  mixed  $val
      *
      * @return void
      */

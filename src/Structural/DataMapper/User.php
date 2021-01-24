@@ -19,8 +19,8 @@ class User
     /**
      * User constructor.
      *
-     * @param string $username
-     * @param string $email
+     * @param  string  $username
+     * @param  string  $email
      */
     public function __construct(string $username, string $email)
     {
@@ -31,7 +31,7 @@ class User
     /**
      * From state.
      *
-     * @param array $state
+     * @param  array  $state
      *
      * @return \DesignPattern\Structural\DataMapper\User
      */

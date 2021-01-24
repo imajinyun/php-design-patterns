@@ -19,8 +19,8 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * LogicalSpecification constructor.
      *
-     * @param string $type
-     * @param \DesignPattern\Behavioral\Specification\SpecificationInterface ...$specification
+     * @param  string  $type
+     * @param  \DesignPattern\Behavioral\Specification\SpecificationInterface  ...$specification
      */
     public function __construct(
         string $type,
@@ -34,7 +34,7 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * If at least one specification is false, return false, else return true.
      *
-     * @param Item $item
+     * @param  Item  $item
      *
      * @return bool
      */
@@ -63,7 +63,7 @@ class LogicalSpecification extends AbstractSpecification
     /**
      * Check logical type.
      *
-     * @param string $type
+     * @param  string  $type
      *
      * @throws \InvalidArgumentException
      */

@@ -29,8 +29,8 @@ class Form implements RenderableInterface
     /**
      * Form constructor.
      *
-     * @param string $action
-     * @param string $name
+     * @param  string  $action
+     * @param  string  $name
      */
     public function __construct(string $action = '', string $name = '')
     {
@@ -67,7 +67,7 @@ class Form implements RenderableInterface
     /**
      * Add element to elements array.
      *
-     * @param \DesignPattern\Structural\Composite\RenderableInterface $element
+     * @param  \DesignPattern\Structural\Composite\RenderableInterface  $element
      */
     public function addElement(RenderableInterface $element): void
     {

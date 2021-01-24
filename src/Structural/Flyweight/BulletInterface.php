@@ -7,7 +7,7 @@ namespace DesignPattern\Structural\Flyweight;
 interface BulletInterface
 {
     /**
-     * @param int $position
+     * @param  int  $position
      */
     public function setPositionInMagazine(int $position = 0);
 

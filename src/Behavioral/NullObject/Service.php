@@ -14,7 +14,7 @@ class Service
     /**
      * Service constructor.
      *
-     * @param \DesignPattern\Behavioral\NullObject\LoggerInterface $logger
+     * @param  \DesignPattern\Behavioral\NullObject\LoggerInterface  $logger
      */
     public function __construct(LoggerInterface $logger)
     {
@@ -28,7 +28,7 @@ class Service
      */
     public function error(): void
     {
-        $log = '[ ' . date('Y-m-d H:i:s') . ' ] - Error: ' . __CLASS__;
+        $log = '[ '.date('Y-m-d H:i:s').' ] - Error: '.__CLASS__;
         $this->logger->log($log);
     }
 }

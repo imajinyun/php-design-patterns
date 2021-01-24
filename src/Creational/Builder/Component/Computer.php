@@ -14,8 +14,8 @@ abstract class Computer
     /**
      * Set component of computer.
      *
-     * @param string $key
-     * @param object $val
+     * @param  string  $key
+     * @param  object  $val
      *
      * @return void
      */

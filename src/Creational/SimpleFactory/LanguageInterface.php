@@ -9,7 +9,7 @@ interface LanguageInterface
     /**
      * Write application's language.
      *
-     * @param string $language
+     * @param  string  $language
      *
      * @return string
      */

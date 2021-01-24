@@ -11,7 +11,7 @@ class Cancel extends AbstractState
     public const ORDER_DISPATCH = 3;
 
     /**
-     * @param Order $order
+     * @param  Order  $order
      *
      * @throws \LogicException
      */
@@ -21,7 +21,7 @@ class Cancel extends AbstractState
     }
 
     /**
-     * @param Order $order
+     * @param  Order  $order
      *
      * @throws \LogicException
      */
@@ -31,7 +31,7 @@ class Cancel extends AbstractState
     }
 
     /**
-     * @param Order $order
+     * @param  Order  $order
      *
      * @throws \LogicException
      */

@@ -14,7 +14,7 @@ abstract class FactoryMethod
     /**
      * The children of the class must implement this method.
      *
-     * @param string $brand
+     * @param  string  $brand
      *
      * @return mixed
      */
@@ -23,7 +23,7 @@ abstract class FactoryMethod
     /**
      * Create a new Notebook.
      *
-     * @param string $brand
+     * @param  string  $brand
      *
      * @return \DesignPattern\Creational\FactoryMethod\NotebookInterface
      */

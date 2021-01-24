@@ -9,7 +9,7 @@ interface FormatterInterface
     /**
      * Formatter method.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return string
      */

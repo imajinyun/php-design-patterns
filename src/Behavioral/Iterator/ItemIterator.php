@@ -19,7 +19,7 @@ class ItemIterator implements \Iterator
     /**
      * ItemIterator constructor.
      *
-     * @param \DesignPattern\Behavioral\Iterator\ItemList $list
+     * @param  \DesignPattern\Behavioral\Iterator\ItemList  $list
      */
     public function __construct(ItemList $list)
     {

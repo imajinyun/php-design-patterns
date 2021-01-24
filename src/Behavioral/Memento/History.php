@@ -22,7 +22,7 @@ class History implements \Countable
     /**
      * Add to memento.
      *
-     * @param \DesignPattern\Behavioral\Memento\Memento $memento
+     * @param  \DesignPattern\Behavioral\Memento\Memento  $memento
      */
     public function addMemento(Memento $memento): void
     {

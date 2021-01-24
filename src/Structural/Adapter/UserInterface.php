@@ -9,8 +9,8 @@ interface UserInterface
     /**
      * Login.
      *
-     * @param string $username
-     * @param string $password
+     * @param  string  $username
+     * @param  string  $password
      *
      * @return bool
      */

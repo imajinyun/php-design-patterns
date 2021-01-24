@@ -9,7 +9,7 @@ interface LoggerInterface
     /**
      * Record log.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return mixed
      */

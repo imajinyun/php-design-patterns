@@ -12,7 +12,7 @@ abstract class Prototype
     abstract public function __clone();
 
     /**
-     * @param string $property
+     * @param  string  $property
      *
      * @return bool
      */
@@ -22,8 +22,8 @@ abstract class Prototype
     }
 
     /**
-     * @param string $property
-     * @param mixed $value
+     * @param  string  $property
+     * @param  mixed  $value
      */
     public function __set(string $property, $value)
     {
@@ -31,7 +31,7 @@ abstract class Prototype
     }
 
     /**
-     * @param string $property
+     * @param  string  $property
      *
      * @return null
      */
