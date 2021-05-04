@@ -17,8 +17,8 @@ class SimpleFactory
     public function __construct()
     {
         $this->language = [
-            'java' => __NAMESPACE__.'\\Java',
-            'swift' => __NAMESPACE__.'\\Swift',
+            'java' => __NAMESPACE__ . '\\Java',
+            'swift' => __NAMESPACE__ . '\\Swift',
         ];
     }
 

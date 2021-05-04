@@ -28,7 +28,7 @@ class Service
      */
     public function error(): void
     {
-        $log = '[ '.date('Y-m-d H:i:s').' ] - Error: '.__CLASS__;
+        $log = '[ ' . date('Y-m-d H:i:s') . ' ] - Error: ' . __CLASS__;
         $this->logger->log($log);
     }
 }
