@@ -1,6 +1,6 @@
-# PHP 版设计模式
+# php-design-patterns
 
-> 🌷 一个使用 **PHP** 语言实现的设计模式实例。
+> 🚀 An example of design pattern implemented in PHP language.
 
 [![Build Status](https://travis-ci.org/imajinyun/php-design-patterns.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-patterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/lbf61giw9iavhtt5/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-design-pattern/branch/master)
@@ -14,23 +14,26 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern?ref=badge_shield)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/imajinyun/php-design-pattern.svg)](http://php.net/releases/)
 
-## 安装 PHPUnit 测试扩展包
+## Requirements
+
+* PHP >= 8.0
+* PHPUnit >= 9.0
+
+## Installation
 
 > [PHPUnit](https://phpunit.de/getting-started.html)
 
 ```bash
-wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
-sudo mv phpunit.phar /usr/local/bin/phpunit
-phpunit --version
-```
+// Install PHPUnit.
+$ wget https://phar.phpunit.de/phpunit.phar
+$ chmod +x phpunit.phar
+$ sudo mv phpunit.phar /usr/local/bin/phpunit
+$ phpunit -v
 
-## 代码测试
-
-```bash
-git clone https://github.com/imajinyun/php-design-pattern.git
-cd ./php-design-pattern
-phpunit -v
+// Clone source code.
+$ git clone https://github.com/imajinyun/php-design-pattern.git
+$ cd ./php-design-pattern
+$ composer install && ./phpunit -vvv
 ```
 
 ## License

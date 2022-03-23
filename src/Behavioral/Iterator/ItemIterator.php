@@ -50,21 +50,21 @@ class ItemIterator implements \Iterator
     /**
      * Move forward to next Item.
      *
-     * @return int
+     * @return void
      */
-    public function next(): int
+    public function next(): void
     {
-        return $this->index++;
+        $this->index++;
     }
 
     /**
      * Rewind the Iterator to the first Item.
      *
-     * @return int
+     * @return void
      */
-    public function rewind(): int
+    public function rewind(): void
     {
-        return $this->index = 0;
+        $this->index = 0;
     }
 
     /**
