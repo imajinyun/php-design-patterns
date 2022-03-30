@@ -2,6 +2,7 @@
 
 > 🚀 An example of design pattern implemented in PHP language.
 
+[![PHP Composer](https://github.com/imajinyun/php-design-patterns/actions/workflows/php.yml/badge.svg)](https://github.com/imajinyun/php-design-patterns/actions/workflows/php.yml)
 [![Build Status](https://travis-ci.org/imajinyun/php-design-patterns.svg?branch=master)](https://travis-ci.org/imajinyun/php-design-patterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/lbf61giw9iavhtt5/branch/master?svg=true)](https://ci.appveyor.com/project/imajinyun/php-design-pattern/branch/master)
 [![codecov](https://codecov.io/gh/imajinyun/php-design-patterns/branch/master/graph/badge.svg)](https://codecov.io/gh/imajinyun/php-design-patterns)
