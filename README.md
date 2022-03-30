@@ -14,7 +14,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/607eec82c834475dada22ee136d3ada3)](https://www.codacy.com/gh/imajinyun/php-design-patterns/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imajinyun/php-design-patterns&amp;utm_campaign=Badge_Grade)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fimajinyun%2Fphp-design-pattern?ref=badge_shield)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/imajinyun/php-design-pattern.svg)](http://php.net/releases/)
-[![PHP Version](https://img.shields.io/static/v1?label=version&message=>=8.1&color=#4F5893&labelColor=grey&logo=PHP&logoColor=blue&style=flat&link=https://www.php.net/supported-versions.php)](https://www.php.net/supported-versions.php)
+[![PHP Version](https://img.shields.io/static/v1?label=version&message=%3E=8.1&color=#4F5893&labelColor=grey&logo=PHP&logoColor=blue&style=flat&link=https://www.php.net/supported-versions.php)](https://www.php.net/supported-versions.php)
 
 ## Requirements
 
